@@ -1,0 +1,8 @@
+FB IDs can be found at http://findmyfbid.com/
+Access tokens can be generated at https://developers.facebook.com/tools/explorer/
+
+Returns the number of friends user with facebook id '$fb_user_id' has
+https://graph.facebook.com/{$fb_user_id}/friends?access_token={$fb_access_token}
+
+Example (may not work for anyone but me (Andrew)):
+https://graph.facebook.com/659547687/friends?access_token=EAAE2jndeZBl4BAPWuxDgtiqLj52mOnCNGyrGNi6Vn03MWRR7X9ZCwUpHB9tFm2SZAmaZBsLVttkltTxL3ZAtQ0oEVgYmJYmyBb8shdSRqBqnUKgKHpUWkkMjZBG5GxWrogGZApFZAGMzpZBK4nMu5HjDfmg0ozl5WXjEvdK39Y5oZCrAZDZD
