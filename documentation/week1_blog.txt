@@ -42,6 +42,24 @@ Total hours:
 5
 
 
+Zac T.
+
+Completed:
+Made small writeup and had meeting with team. Came up with ideas for project planning phase and organized basic requirements and extended goals for the project. Began working on use cases for creation of notes and reminders.
+
+In Progress:
+Need to determine UI layout, create finalized project description, finish creation of use cases, and determine necessary data structures and other requirements (prior to creation of the first class diagram).
+
+Challenges:
+UI is particularly difficult considering the number of uses the application might have. Considering just the mock client's primary use of the application will help in this regard. Determining the best course of action in the creation of a properly marketable product would be significantly more complex. That being the case, we'll simply keep focused on the individual client's needs to make things go as smooth as possible. 
+The other challenge has been pinning down what features can be left out entirely, and what features we can leave as "extended goals." I primarily focused on minimizing the work necessary to create a verifiably "finished" program. There are requirements outside of this that, given more time and resources, could be accomplished, but are currently on hold until completion of the core parts of the program (and will be completed only if time permits). 
+
+Total Hours: 
+5H 0M
+
+
 TEAM
 Total hours:
 Questions/concerns:
+
+
