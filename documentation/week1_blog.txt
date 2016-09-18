@@ -13,7 +13,16 @@ Total hours:
 5.5
 
 
+Michael T.
+Completed:
+Team meeting - Discussed ideas for project and planning. Gathered requirements and organized goals
+Began studying C#
 
+In Progress:
+More in-depth studying of C#
+
+Total hours:
+5
 
 
 TEAM
