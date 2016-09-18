@@ -27,6 +27,21 @@ Total hours:
 5
 
 
+Daniel M.
+
+Completed:
+Met with group to discuss strategy and project requirements. Discussed goal feasibility and which goals to focus main efforts upon
+
+Challenges:
+Narrowing down possible use cases to just the few essentials
+
+In Progress:
+Refreshing skills with C# and researching social media APIs and their functionality
+
+Total hours:
+5
+
+
 TEAM
 Total hours:
 Questions/concerns:
