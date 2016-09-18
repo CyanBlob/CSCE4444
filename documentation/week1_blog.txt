@@ -69,8 +69,20 @@ Studying availible API's from different social media sources for aggregation.
 Total hours:
 5
 
+Paul G.
+Completed:
+Attended first team meeting disscussed project, technology stack, and requirements.
+
+In Progress:
+ Studying C#; research twitter, twitch, and facebook APIs.
+
+Total Hours:
+ 5
+
+
+
 TEAM
-Total hours:25.5
+Total hours:30.5
 Questions/concerns:
 
 
