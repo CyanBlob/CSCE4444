@@ -57,9 +57,20 @@ The other challenge has been pinning down what features can be left out entirely
 Total Hours: 
 5H 0M
 
+Narimon K.
+Completed:
+Team meeting - Discussed ideas for project and planning. Gathered requirements and organized goals
+Studying on UI design practices and implementations for windows desktop app.
+
+In Progress:
+Making a UI mockup on MacOS (as it's what I'm most familiar with) to be ported over to PC at a later date.
+Studying availible API's from different social media sources for aggregation.
+
+Total hours:
+5
 
 TEAM
-Total hours:
+Total hours:25.5
 Questions/concerns:
 
 
