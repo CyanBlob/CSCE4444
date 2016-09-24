@@ -35,13 +35,18 @@ Total hours:
 Daniel M.
 
 Completed:
+Met for teem meeting. Discussed use cases and APIs.
+Completed individual use case.
 
 In Progress:
+Studying Windows desktop development and web request functionality.
+Researching Social Media APIs.
 
 Challenges:
+Planning to use APIs when still not sure exactly which method we're developing with.
 
 Total hours:
-
+3.5
 
 
 Zac T.
