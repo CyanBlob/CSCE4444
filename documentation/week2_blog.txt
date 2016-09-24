@@ -47,12 +47,17 @@ Total hours:
 Zac T.
 
 Completed:
+Group Meeting
+Use Case for Quick Note
+Set up Trello board for tracking progress on the assignment and keeping organized
 
 In Progress:
+Class Diagram and general project planning
 
 Challenges:
+Finding the best order to complete tasks in. Still not sure what our primary focus should be when we begin actual development. 
 
-Total hours:
+Total hours: 3H 30M
 
 
 Narimon K.
