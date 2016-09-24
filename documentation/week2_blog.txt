@@ -16,14 +16,20 @@ Total hours:
 
 Michael T.
 
-Completed:
+Completed: 
+Discussed Use Cases with group
+Completed my Use Case
+Some planning
 
 In Progress:
+Planning
+Studying C#
 
 Challenges:
+Coming up with all three use cases, although that wasn't too challenging.
 
 Total hours:
-
+2.15
 
 
 Daniel M.
