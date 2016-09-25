@@ -5,12 +5,16 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Discussed use-cases
+Completed use-case document
 
 In Progress:
+API research
 
 Challenges:
 
 Total hours:
+1.5
 
 
 
