@@ -68,12 +68,18 @@ Total hours: 3H 30M
 Narimon K.
 
 Completed:
+Group Meeting
+Use Case for Quick Note
 
 In Progress:
+Mock UI made in xCode for MACOS (final product will be on windows, mac is just quicker to prototype.)
+Studying social media API and how to integate.
 
 Challenges:
+Planning port from Mac UI to Windows.
+Biggest challenge is using limited twitter API to retreive twitter info as twitter doesn't like 3rd part clients.
 
-Total hours:
+Total hours: 2h 45m
 
 
 Paul G.
