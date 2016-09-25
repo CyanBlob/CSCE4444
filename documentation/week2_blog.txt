@@ -88,6 +88,11 @@ Planning port from Mac UI to Windows.
 Biggest challenge is using limited twitter API to retreive twitter info as twitter doesn't like 3rd part clients.
 
 Total hours: 2h 45m
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7d215df832edc7a6d6db768d6222e3339c8b3627
 Paul G.
 
 Completed: Use case Assignment, Weekly Meeting discussing use case
