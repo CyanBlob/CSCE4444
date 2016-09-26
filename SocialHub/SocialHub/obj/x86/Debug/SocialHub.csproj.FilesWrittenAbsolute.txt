@@ -1,0 +1,11 @@
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/SocialHub.exe.mdb
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/SocialHub.exe
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/obj/x86/Debug/SocialHub.exe
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/obj/x86/Debug/SocialHub.exe.mdb
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Facebook.dll
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Owin.dll
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Newtonsoft.Json.dll
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Microsoft.Owin.dll
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Microsoft.Owin.Security.dll
+/home/andrew/Development/CSCE4444/SocialHub/SocialHub/bin/Debug/Microsoft.Owin.Security.Facebook.dll

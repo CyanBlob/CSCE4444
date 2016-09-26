@@ -5,4 +5,11 @@ Returns the number of friends user with facebook id '$fb_user_id' has
 https://graph.facebook.com/{$fb_user_id}/friends?access_token={$fb_access_token}
 
 Example (may not work for anyone but me (Andrew)):
-https://graph.facebook.com/659547687/friends?access_token=EAAE2jndeZBl4BAPWuxDgtiqLj52mOnCNGyrGNi6Vn03MWRR7X9ZCwUpHB9tFm2SZAmaZBsLVttkltTxL3ZAtQ0oEVgYmJYmyBb8shdSRqBqnUKgKHpUWkkMjZBG5GxWrogGZApFZAGMzpZBK4nMu5HjDfmg0ozl5WXjEvdK39Y5oZCrAZDZD
+https://graph.facebook.com/659547687/friends?access_token=EAAE2jndeZBl4BAJAV6Qusu3kB7AThkteYV8IfBnSLLVoO7tfXKbTiqZAKFKZCNYKZC8nPk7N8xeR8y0BTq6ZCZAGS7bCNLZA2sBE0IZCkJiCJi2fKwQVZBFQ5dH9YKelTyaBXzXzOVGF9ArwIH6mSEhgnlTt5p2TqECQZD
+
+App ID: 739835922850732
+
+
+https://www.facebook.com/v2.7/dialog/oauth?client_id=739835922850732&redirect_uri=https://www.facebook.com/connect/login_success.html
+
+https://www.facebook.com/connect/login_success.html?response_type=token&code=AQDS3J7kJjJ8n43-9b88UHLj5QZYqqD55GX8_Hhb7Ld2Uyr3QW4tyHhilkNfogKvmXtxoDrhJ-CV_mPMSuPMRW9wlMqaFzcxo7S3CwSqg0pqtculLYExrRWyvFTwwS9of6Z2mdMWkBTc2wIywk2T-t0Zq4TY5C_v55ZZWar8e7lZ4BAx-CuvyZMmcf7atN9T921jD6IiJOSGAsPj_9sZ98QVfbjqZf0h4_6nIftg93tZDwJ0JjMyXnjMDCIuIKyGRE8w-5Ut9aUFT3MB7Tk4XVVlEbRWnPUGJb75Ar3cl6ZpqRFnkeLYJUho1cs_NqEqXe4#_=_

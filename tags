@@ -4,3 +4,30 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ConvertJTokenToDictionary	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private static object ConvertJTokenToDictionary(JToken token)$/;"	m	class:Facebook.Serializers.JsonNetSerializer	file:
+DeserializeObject	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public T DeserializeObject<T>(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+DeserializeObject	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+DeserializeObject	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json, Type type)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+Facebook.Serializers	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^namespace Facebook.Serializers$/;"	n
+FacebookHelpers	SocialHub/SocialHub/Facebook.cs	/^static class FacebookHelpers$/;"	c
+GenerateLoginUrl	SocialHub/SocialHub/Facebook.cs	/^    private static Uri GenerateLoginUrl(string appId, string extendedPermissions)$/;"	m	class:FacebookHelpers	file:
+GetFacebookUserData	SocialHub/SocialHub/Facebook.cs	/^        static void GetFacebookUserData(string code)$/;"	m	class:FacebookHelpers	file:
+GetResponse	SocialHub/SocialHub/Facebook.cs	/^            public string GetResponse()$/;"	m	class:FacebookHelpers.MyWebRequest
+GrtUrl	SocialHub/SocialHub/Facebook.cs	/^    public static void GrtUrl(string url)$/;"	m	class:FacebookHelpers
+JsonNetSerializer	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public JsonNetSerializer()$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+JsonNetSerializer	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^    public class JsonNetSerializer$/;"	c	namespace:Facebook.Serializers
+Main	SocialHub/SocialHub/Program.cs	/^		public static void Main (string[] args)$/;"	m	class:SocialHub.MainClass
+MainClass	SocialHub/SocialHub/Program.cs	/^	class MainClass$/;"	c	namespace:SocialHub
+MyWebRequest	SocialHub/SocialHub/Facebook.cs	/^            public MyWebRequest(string url)$/;"	m	class:FacebookHelpers.MyWebRequest
+MyWebRequest	SocialHub/SocialHub/Facebook.cs	/^            public MyWebRequest(string url, string method)$/;"	m	class:FacebookHelpers.MyWebRequest
+MyWebRequest	SocialHub/SocialHub/Facebook.cs	/^            public MyWebRequest(string url, string method, string data)$/;"	m	class:FacebookHelpers.MyWebRequest
+MyWebRequest	SocialHub/SocialHub/Facebook.cs	/^    public class MyWebRequest$/;"	c	class:FacebookHelpers
+RedirectPath	SocialHub/SocialHub/Facebook.cs	/^    public static string RedirectPath(string url)$/;"	m	class:FacebookHelpers
+SerializeObject	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public string SerializeObject(object obj)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+SocialHub	SocialHub/SocialHub/Program.cs	/^namespace SocialHub$/;"	n
+Status	SocialHub/SocialHub/Facebook.cs	/^            public String Status$/;"	p	class:FacebookHelpers.MyWebRequest
+Test	SocialHub/SocialHub/Facebook.cs	/^	public static void Test()$/;"	m	class:FacebookHelpers
+_serializerSettings	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private JsonSerializerSettings _serializerSettings;$/;"	f	class:Facebook.Serializers.JsonNetSerializer	file:
+dataStream	SocialHub/SocialHub/Facebook.cs	/^            private Stream dataStream;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
+request	SocialHub/SocialHub/Facebook.cs	/^            private WebRequest request;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
+status	SocialHub/SocialHub/Facebook.cs	/^            private string status;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
