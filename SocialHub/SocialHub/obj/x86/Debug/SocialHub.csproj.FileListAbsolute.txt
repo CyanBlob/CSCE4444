@@ -1,0 +1,16 @@
+D:\CSCE4444\SocialHub\SocialHub\obj\x86\Debug\SocialHub.exe
+D:\CSCE4444\SocialHub\SocialHub\obj\x86\Debug\SocialHub.csprojResolveAssemblyReference.cache
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\SocialHub.exe
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\SocialHub.pdb
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Facebook.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.Security.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Newtonsoft.Json.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Owin.dll
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Facebook.xml
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Newtonsoft.Json.xml
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.xml
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.Security.xml
+D:\CSCE4444\SocialHub\SocialHub\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+D:\CSCE4444\SocialHub\SocialHub\obj\x86\Debug\SocialHub.pdb

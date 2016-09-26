@@ -4,11 +4,14 @@ using System.Net;
 using System.Text;
 using System.Dynamic;
 using System.Diagnostics;
-using Mono.WebBrowser;
+//using Mono.WebBrowser;
 using System.Windows.Forms;
+using System.Threading;
 
 static class FacebookHelpers
 {
+    static Uri uri;
+
         static void GetFacebookUserData(string code)
         {
             // Exchange the code for an access token
@@ -218,35 +221,6 @@ static class FacebookHelpers
     return fb.GetLoginUrl(parameters);
 }
 
-	private static void webBrowser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
-	{
-		// whenever the browser navigates to a new url, try parsing the url.
-		// the url may be the result of OAuth 2.0 authentication.
-
-		var fb = new Facebook.FacebookClient();
-		Facebook.FacebookOAuthResult oauthResult;
-		if (fb.TryParseOAuthCallbackUrl(e.Url, out oauthResult))
-		{
-			// The url is the result of OAuth 2.0 authentication
-			if (oauthResult.IsSuccess)
-			{
-				var accesstoken = oauthResult.AccessToken;
-				Console.WriteLine(accesstoken);
-			}
-			else
-			{
-				var errorDescription = oauthResult.ErrorDescription;
-				var errorReason = oauthResult.ErrorReason;
-			}
-		}
-		else
-		{
-			// The url is NOT the result of OAuth 2.0 authentication.
-			Console.WriteLine("FAIL");
-		}
-
-	}
-
 	public static void Test()
 	{
 		string url = "https://www.facebook.com/v2.7/dialog/oauth?client_id=739835922850732&redirect_uri=https://www.facebook.com/connect/login_success.html";
@@ -317,20 +291,84 @@ static class FacebookHelpers
     Console.WriteLine("\n\n\n");
     //GetFacebookUserData(null);
     
-    Uri uri = GenerateLoginUrl("739835922850732", null);
+    uri = GenerateLoginUrl("739835922850732", null);
 
     Console.WriteLine(uri.ToString());
     //MyWebRequest myRequest = new MyWebRequest(url);
     //HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create(uri); 
     //myHttpWebRequest.UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E)";
     //HttpWebResponse myHttpWebResponse = (HttpWebResponse)myHttpWebRequest.GetResponse();
+
+    var t = new Thread(whatever);
+    t.SetApartmentState(ApartmentState.STA);
+    t.Start();
+    Console.ReadLine();
     
-    WebBrowser webBrowser = new WebBrowser();
-    webBrowser.Navigate(uri);
+    
 
     //if (myHttpWebResponse.StatusCode == HttpStatusCode.OK)
    
 
 
 	}
+
+
+    public static void whatever()
+    {
+        Console.WriteLine("Function is working!");
+        WebBrowser browser = new WebBrowser();
+        browser.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(browser_DocumentCompleted);
+        browser.Navigated += new WebBrowserNavigatedEventHandler(browser_Navigated);
+        browser.Dock = DockStyle.Fill;
+        browser.Name = "webBrowser";
+        browser.ScrollBarsEnabled = false;
+        browser.TabIndex = 0;
+        
+        Form form = new Form();
+        form.WindowState = FormWindowState.Maximized;
+        form.Controls.Add(browser);
+        form.Name = "Browser";
+        browser.AllowNavigation = true;
+        
+        browser.Navigate(new Uri("https://www.facebook.com/dialog/oauth?client_id=739835922850732&redirect_uri=https:%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html&response_type=token&display=popup")); //= new Uri("https://www.facebook.com/dialog/oauth?client_id=739835922850732&redirect_uri=https:%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html&response_type=token&display=popup");
+        Application.Run(form);
+        
+        Thread.Sleep(2500);
+        browser.Navigate(new Uri("https://google.com"));
+        
+        //browser.Navigate(uri);
+    }
+    private static void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+    {
+        Console.WriteLine("Document Completed");
+    }
+
+    private static void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+    {
+        // whenever the browser navigates to a new url, try parsing the url.
+        // the url may be the result of OAuth 2.0 authentication.
+        Console.WriteLine("Navigated callback");
+        var fb = new Facebook.FacebookClient();
+        Facebook.FacebookOAuthResult oauthResult;
+        if (fb.TryParseOAuthCallbackUrl(e.Url, out oauthResult))
+        {
+            // The url is the result of OAuth 2.0 authentication
+            if (oauthResult.IsSuccess)
+            {
+                var accesstoken = oauthResult.AccessToken;
+                Console.WriteLine(accesstoken);
+            }
+            else
+            {
+                var errorDescription = oauthResult.ErrorDescription;
+                var errorReason = oauthResult.ErrorReason;
+            }
+        }
+        else
+        {
+            // The url is NOT the result of OAuth 2.0 authentication.
+            Console.WriteLine("FAIL");
+        }
+
+    }
 }
