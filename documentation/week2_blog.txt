@@ -2,6 +2,10 @@ Week of Sunday 9/18/16 - Saturday 9/24/16
 
 Link to repo: https://github.com/CyanBlob/CSCE4444
 
+Week of Sunday 9/18/16 - Saturday 9/24/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
 Andrew T.
 
 Completed:
@@ -84,21 +88,23 @@ Planning port from Mac UI to Windows.
 Biggest challenge is using limited twitter API to retreive twitter info as twitter doesn't like 3rd part clients.
 
 Total hours: 2h 45m
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 7d215df832edc7a6d6db768d6222e3339c8b3627
 Paul G.
 
-Completed:
+Completed: Use case Assignment, Weekly Meeting discussing use case
 
-In Progress:
+In Progress: Research APIs.
 
-Challenges:
+Challenges:  start implementing a program to fetch info from Facebook.
 
-Total hours:
-
+Total hours: 3.5
 
 TEAM
 
-Total hours: 
+Total hours: 14.5
 
 Questions/concerns:

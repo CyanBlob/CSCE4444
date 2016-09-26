@@ -72,6 +72,7 @@ Total hours:
 Paul G.
 Completed:
 Attended first team meeting disscussed project, technology stack, and requirements.
+Complete Process Grid document and get approval of teamates.
 
 In Progress:
  Studying C#; research twitter, twitch, and facebook APIs.
