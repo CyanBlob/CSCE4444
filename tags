@@ -31,3 +31,4 @@ _serializerSettings	SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSeriali
 dataStream	SocialHub/SocialHub/Facebook.cs	/^            private Stream dataStream;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
 request	SocialHub/SocialHub/Facebook.cs	/^            private WebRequest request;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
 status	SocialHub/SocialHub/Facebook.cs	/^            private string status;$/;"	f	class:FacebookHelpers.MyWebRequest	file:
+webBrowser_Navigated	SocialHub/SocialHub/Facebook.cs	/^	private static void webBrowser_Navigated(object sender, WebBrowserNavigatedEventArgs e)$/;"	m	class:FacebookHelpers	file:
