@@ -1,0 +1,83 @@
+Week of Sunday 9/25/16 - Saturday 10/1/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+SRS document and term definition
+User Stories
+Group Meeting
+
+In Progress:
+Class Diagram planning
+Link Trello board to Slack for easy access
+API research
+
+Challenges: 
+Determining what kind of API access we might have and potential workarounds where we don't have access to what we need.
+
+Total hours: 3H 30M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours: 
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+
+Total hours:
+
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns:
