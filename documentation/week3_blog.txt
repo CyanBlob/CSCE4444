@@ -5,12 +5,17 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Facebook authentication (creates an embedded web-browser where the user can sign in and give permissions to our system from Facebook. Returns an access token to be used for further API calls)
+Team meeting
 
 In Progress:
+More Facebook APIs
 
 Challenges:
+Creating the embedded web-browser and checking for the access token took way longer than expected. Further API calls should be substantially easier now that we have the access token
 
 Total hours:
+8 (6 API + 2 meeting)
 
 
 Michael T.
