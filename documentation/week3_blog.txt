@@ -37,13 +37,22 @@ Total hours:
 Daniel M.
 
 Completed:
+Weekly Team Meeting
+Found great commercially free icon set to use with UI along with a great UI template to apply to our own as well
+Contribution to requirements doc
+Studied WPF design/dev along with C#
 
 In Progress:
+Working with Twitter APIs to authenticate user access and communicate data with Twitter
+Continuing studies into WPF design/dev methods as well as C#
+Working on merging the icons and UI template with our own UI rough draft 
+Class diagrams
 
 Challenges:
+Twitter authentication and client web requests (May be able to borrow from our successful Facebook code)
 
 Total hours:
-
+6
 
 Zac T.
 
