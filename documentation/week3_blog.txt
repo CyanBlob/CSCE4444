@@ -76,13 +76,13 @@ Total hours:
 
 Paul G.
 
-Completed: 
+Completed: Inserting use Cases into Requirements as well as writing a few sections, looking over code in repository
 
-In Progress: 
+In Progress: API research
 
-Challenges: 
+Challenges: More API research
 
-Total hours:
+Total hours: 2.5 hrs
 
 
 ---------------
