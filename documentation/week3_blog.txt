@@ -16,13 +16,18 @@ Total hours:
 Michael T.
 
 Completed: 
+Most of the Facebook API
+Team Meeting
 
 In Progress:
+Finishing touches to Facebook API
+Studying C#
 
 Challenges:
+Retrieving an access token from the Facebook API. 
 
 Total hours:
-
+5
 
 Daniel M.
 
