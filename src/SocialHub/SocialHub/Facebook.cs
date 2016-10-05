@@ -45,9 +45,9 @@ static class FacebookHelpers
     /// </summary>
 	public static void Test()
 	{
-		string url = "https://www.facebook.com/v2.7/dialog/oauth?client_id=739835922850732&redirect_uri=https://www.facebook.com/connect/login_success.html";
+        string permissions = "public_profile, user_friends, email, user_about_me, user_birthday, user_events, user_likes, user_location, user_photos, user_posts, user_relationships, user_relationship_details, rsvp_event, user_tagged_places, pages_show_list, ";
 
-        uri = GenerateLoginUrl("739835922850732", null);
+        uri = GenerateLoginUrl("739835922850732", permissions);
 
         //Console.WriteLine(uri.ToString());
         //MyWebRequest myRequest = new MyWebRequest(url);
