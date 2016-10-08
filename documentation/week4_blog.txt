@@ -1,0 +1,80 @@
+Week of Sunday 10/2/16 - Saturday 10/8/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+Figured out method for scraping facebook feed.
+Determined potential solutions for lack of API access.
+
+In Progress:
+Actual facebook scraper implementation
+
+Challenges: 
+API access is very limited.
+
+Total hours: 4H 0M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours: 
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+
+Total hours: 
+
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns:
