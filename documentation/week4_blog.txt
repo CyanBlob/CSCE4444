@@ -74,12 +74,19 @@ Total hours:
 Paul G.
 
 Completed: 
+Weekly Meeting
 
-In Progress: 
+
+In Progress: Rearching Google + API to if features planned for project are easier to use as opposed to writing from scratch
 
 Challenges: 
+	Figure out pulling youtube comments via Google+ API
+	Look into implementing Google + functionality into project potentially (Calendar, Email from contacts, Youtube comments)
 
-Total hours: 
+Comments: I have had difficulty this week getting to work due to other classes and stomach issues this weekend.
+		I will look into making up the lack of hours next week.
+	
+Total hours: 3.5 hrs
 
 
 ---------------
