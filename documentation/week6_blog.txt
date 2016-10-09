@@ -5,6 +5,7 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Team Meeting
 Made successful API calls to Facebook, improved handling of external web browser
 
 In Progress:
@@ -14,19 +15,23 @@ Challenges:
 Facebook locked down its API more than expected, so we can't retrieve the News Feed with an API call. Will need to scrape the data instead
 
 Total hours:
-4
+6
 
 
 Michael T.
 
 Completed: 
+Team Meeting
+Improved the functionality of our Facebook API code
 
 In Progress:
+Complete Facebook API, look into Youtube and Twitch APIs
 
 Challenges:
+Facebook has locked down a lot of the API functionality. Need to research alternative methods or consider dropping facebook
 
 Total hours:
-
+5
 
 Daniel M.
 
