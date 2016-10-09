@@ -68,12 +68,22 @@ Total hours: 4H 0M
 Narimon K.
 
 Completed:
+UI Mockup of main page (basic)
+Studying on C# as well as social media API
+Group Meeting
 
 In Progress:
+UI Mockup for the other 2 sections of the program, originally in Mac OS using new prototyping tool to put it into Windows UMP.
+Still studying C# as its a language I'm less familiar with.
+Looking into more social media API and incorporating it into the UI.
 
 Challenges:
+Transitioning from iOS and OSX UI and API to windows.
+Getting familiar with C# quickly enough to be able to contribute as needed.
+Getting away from iOS style MVC design.
 
-Total hours: 
+
+Total hours: 3.5
 
 
 Paul G.
@@ -97,6 +107,6 @@ Total hours: 3.5 hrs
 ---------------
 TEAM
 
-Total hours:
+Total hours:26
 
-Questions/concerns:
+Questions/concerns: N/A
