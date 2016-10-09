@@ -1,0 +1,90 @@
+Week of Sunday 10/2/16 - Saturday 10/8/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+Made successful API calls to Facebook, improved handling of external web browser
+
+In Progress:
+More API calls, web-scraping
+
+Challenges:
+Facebook locked down its API more than expected, so we can't retrieve the News Feed with an API call. Will need to scrape the data instead
+
+Total hours:
+4
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+Weekly meeting
+WPF Study and UI resources collection (icons etc)
+Created some text editing toolbar icons since I did not find any proper free resources available
+
+In Progress:
+setting up WPF UI template and working on text editing form controls/form
+Twitter API trials - might give up in favor of Youtube instead (more open API)
+
+Challenges:
+Twitter authent - haven't had a lot of time this week to work on it though
+
+Total hours:
+4
+
+Zac T.
+
+Completed:
+Figured out method for scraping facebook feed.
+Determined potential solutions for lack of API access.
+
+In Progress:
+Actual facebook scraper implementation
+
+Challenges: 
+API access is very limited.
+
+Total hours: 4H 0M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours: 
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+
+Total hours: 
+
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns:
