@@ -34,12 +34,17 @@ Total hours:
 Daniel M.
 
 Completed:
+Team Meeting
+WPF UI Study & Dev
+
 In Progress:
+More WPF/UI
+Design Doc
 
 Challenges:
 
 Total hours:
-
+4
 
 Zac T.
 
