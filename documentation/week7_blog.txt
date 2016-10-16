@@ -1,0 +1,90 @@
+Week of Sunday 10/9/16 - Saturday 10/15/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+
+Michael T.
+
+Completed: 
+Team Meeting
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+
+
+In Progress:
+
+
+Challenges: 
+
+
+Total hours: 
+
+Narimon K.
+
+Completed:
+Weekly Meeting
+
+In Progress:
+
+
+Challenges:
+
+
+
+Total hours: 
+
+
+Paul G.
+
+Completed: 
+Weekly Meeting
+
+
+
+In Progress: 	Rearching Google calendar, and .NET
+				Work on Design document
+Challenges: 
+	build calandar with Google Calendar API
+	Look into implementing Google + functionality into project potentially (Email from contacts, Youtube comments)
+	Work on Design document
+Comments: 
+	
+Total hours: 3 hrs
+
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A
