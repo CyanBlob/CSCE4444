@@ -67,16 +67,20 @@ Total hours: 5H 0M
 Narimon K.
 
 Completed:
+Team Meeting
+UI Prototype of main page.
+Bought an d browsed bokks for UWP and UI.
 Weekly Meeting
 
 In Progress:
-
+UI Prototype of secondary pages
+Studying social media API
 
 Challenges:
+Getting UI to interface with code in a meaningful way
+Translating MVC into the code.
 
-
-
-Total hours: 
+Total hours:4 
 
 
 Paul G.
