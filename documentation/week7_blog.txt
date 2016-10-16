@@ -39,15 +39,20 @@ Total hours:
 Zac T.
 
 Completed:
-
+Team Meetings
+Determined risks relevant to project (personal and technical)
+Helped determine some roles for who is meant to work on what. 
 
 In Progress:
-
+Prototype of Twitch API usage
+Note system backend design.
+Design doc
 
 Challenges: 
+Coming up with precise language to use when writing the design doc is somewhat difficult.
+Generally speaking, it's somewhat difficult to design certain parts of the project without the other parts being in working format. 
 
-
-Total hours: 
+Total hours: 5H 0M 
 
 Narimon K.
 
