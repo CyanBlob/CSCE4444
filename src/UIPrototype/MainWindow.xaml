@@ -54,7 +54,7 @@
             </Grid.RowDefinitions>
             
             <!-- BORDERING EFFECT -->
-            <Border Grid.Row="0" Grid.RowSpan="5" BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Height="850" Margin="0,-75,0,-75" VerticalAlignment="Center" Width="2"/>
+            <Border Grid.Row="0" Grid.RowSpan="5" BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Height="850" Margin="-2,-75,0,-75" VerticalAlignment="Center" Width="2"/>
             <Border Grid.Row="0" Grid.RowSpan="5"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Right" Height="850" Margin="0,-75,0,-75" VerticalAlignment="Center" Width="2"/>
             <Border Grid.Row="0" Grid.RowSpan="2"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-80,-5,-75" VerticalAlignment="Center" Width="2"/>
             
