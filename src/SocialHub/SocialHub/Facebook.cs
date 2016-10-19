@@ -67,8 +67,10 @@ static class FacebookHelpers
         Console.WriteLine("Access token is: " + accessToken);
 
         // API call to read friend count of user
-        string friendCountRequestURL = "https://graph.facebook.com/659547687/friends?access_token=";
+        string friendCountRequestURL = "https://graph.facebook.com/v2.8/me?fields=friends&access_token=";
         WebRequest friendCountRequest = WebRequest.Create(friendCountRequestURL + accessToken);
+
+        Console.WriteLine("\nFriend query:\n" + friendCountRequestURL + accessToken);
         friendCountRequest.ContentType = "application/json; charset=utf-8";
 
         HttpWebResponse friendCountResponse = (HttpWebResponse)friendCountRequest.GetResponse();
@@ -84,7 +86,7 @@ static class FacebookHelpers
                 response = sr.ReadToEnd();
             }
 
-            Console.WriteLine(response);
+            Console.WriteLine("FRIEND RESPONSE:\n" + response);
         }
    
         else
