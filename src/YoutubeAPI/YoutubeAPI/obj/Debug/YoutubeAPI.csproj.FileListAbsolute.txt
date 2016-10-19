@@ -30,3 +30,35 @@ d:\documents\visual studio 2013\Projects\YoutubeAPI\YoutubeAPI\bin\Debug\Newtons
 d:\documents\visual studio 2013\Projects\YoutubeAPI\YoutubeAPI\bin\Debug\Zlib.Portable.xml
 d:\documents\visual studio 2013\Projects\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.exe
 d:\documents\visual studio 2013\Projects\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\YoutubeAPI.exe.config
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.exe
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\YoutubeAPI.exe
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\YoutubeAPI.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Core.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.YouTube.v3.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\log4net.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Zlib.Portable.dll
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\BouncyCastle.Crypto.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.PlatformServices.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Auth.PlatformServices.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Core.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.Core.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.PlatformServices.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.PlatformServices.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.YouTube.v3.pdb
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Google.Apis.YouTube.v3.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\log4net.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Zlib.Portable.xml
+C:\Users\mthomas\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.csprojResolveAssemblyReference.cache
