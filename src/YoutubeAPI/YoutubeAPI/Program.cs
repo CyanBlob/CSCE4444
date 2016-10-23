@@ -13,6 +13,8 @@ using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
 
+
+
 namespace Google.Apis.YouTube.Samples
 {
     /// <summary>
@@ -59,7 +61,7 @@ namespace Google.Apis.YouTube.Samples
             var searchListRequest = youtubeService.Search.List("snippet");
             searchListRequest.Q = Console.ReadLine();
             //searchListRequest.Q = "Google"; // Replace with your search term.
-            searchListRequest.MaxResults = 50;
+            searchListRequest.MaxResults = 20;
 
             // Call the search.list method to retrieve results matching the specified query term.
             var searchListResponse = await searchListRequest.ExecuteAsync();
@@ -67,6 +69,8 @@ namespace Google.Apis.YouTube.Samples
             List<string> videos = new List<string>();
             List<string> channels = new List<string>();
             List<string> playlists = new List<string>();
+            string[] IDs = new string[20];
+            int counter = 0;
 
             // Add each result to the appropriate list, and then display the lists of
             // matching videos, channels, and playlists.
@@ -76,6 +80,12 @@ namespace Google.Apis.YouTube.Samples
                 {
                     case "youtube#video":
                         videos.Add(String.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.VideoId));
+                        IDs[counter] = searchResult.Id.VideoId;
+                        Console.WriteLine(String.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.VideoId));
+                        Console.WriteLine("http://img.youtube.com/vi/" + IDs[counter] + "/0.jpg");
+                        Console.WriteLine("https://www.youtube.com/embed/" + IDs[counter]);
+                        Console.WriteLine();
+                        counter++;
                         break;
 
                     case "youtube#channel":
@@ -88,9 +98,15 @@ namespace Google.Apis.YouTube.Samples
                 }
             }
 
-            Console.WriteLine(String.Format("Videos:\n{0}\n", string.Join("\n", videos)));
+            /*Console.WriteLine(String.Format("Videos:\n{0}\n", string.Join("\n", videos)));
             Console.WriteLine(String.Format("Channels:\n{0}\n", string.Join("\n", channels)));
             Console.WriteLine(String.Format("Playlists:\n{0}\n", string.Join("\n", playlists)));
+            for(int x = 0; x < 20; x++)
+            {
+                Console.WriteLine("http://img.youtube.com/vi/" +IDs[x] + "/0.jpg");
+                Console.WriteLine("https://www.youtube.com/embed/" + IDs[x]);
+            
+            }*/
         }
     }
 }
