@@ -68,15 +68,15 @@ Total hours:4
 
 Paul G.
 
-Completed: 
+Completed: Google Auth token working and linking of an accout and pulling list of upcoming events
 
-In Progress: 	
+In Progress: Google Calendar CRUD (Create Remove Update Destroyed) and UI	
 
-Challenges: 
+Challenges: Complete Calendar then find a new task to complete.
 
 Comments: 
 	
-Total hours:
+Total hours: 4.5 hrs
 
 ---------------
 TEAM

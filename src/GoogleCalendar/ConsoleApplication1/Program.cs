@@ -17,7 +17,7 @@ namespace CalendarQuickstart
     {
         // If modifying these scopes, delete your previously saved credentials
         // at ~/.credentials/calendar-dotnet-quickstart.json
-        static string[] Scopes = { CalendarService.Scope.CalendarReadonly };
+        static string[] Scopes = { CalendarService.Scope.Calendar }; //Auth scope
         static string ApplicationName = "Google Calendar API .NET Quickstart";
 
         static void Main(string[] args)
