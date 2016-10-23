@@ -44,12 +44,16 @@ Total hours:
 Zac T.
 
 Completed:
+Semi working prototype of notification system. Supports images.
+Team meetings
 
 In Progress:
+Note system backend
 
 Challenges:  
+There are different versions of notifications on windows 10 that I'll have to work with. Not sure which one offers everything we need, at this point. Looks like there are tradeoffs for each method of creating notifications. 
 
-Total hours:
+Total hours: 6H 20M
 
 Narimon K.
 
