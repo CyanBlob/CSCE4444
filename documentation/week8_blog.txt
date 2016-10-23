@@ -5,25 +5,31 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Fixed bug in Facebook API, team meeting
 
 In Progress:
+Chromium backend
 
 Challenges:
+Web scraping
 
 Total hours:
-
-
+2
 
 
 Michael T.
 
 Completed: 
+Started YouTube API
+Team meeting
 
 In Progress:
+Complete YouTube API
 
 Challenges:
 
 Total hours:
+5
 
 
 Daniel M.
