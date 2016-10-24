@@ -63,13 +63,20 @@ Total hours: 6H 20M
 
 Narimon K.
 
-Completed:
+Late Add, github down saturday night.
 
+Completed:
+Team Meeting
+Class Meeting
+Studying C#
 In Progress:
+Still studying C#
+Working on UI inside of VisStudio
 
 Challenges:
-
-Total hours:4 
+Alternate UI for night mode/
+Still learning C# and translating what I know to C#
+Total hours:4.5
 
 
 Paul G.
