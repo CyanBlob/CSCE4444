@@ -1,0 +1,81 @@
+Week of Sunday 10/23/16 - Saturday 10/29/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+Team Meeting
+Able to get live twitch channels
+Able to post notifications in Windows with like 5 lines of code now (way simpler than previous method)
+
+In Progress:
+Make notifications even easier, and add some functionality on top of it. 
+Twitch app should show notifications soon after a user's followed channel goes live
+
+Challenges:  
+Making sure everything is as simple as possible. 
+
+Total hours: 5H 30M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+	
+Total hours: 
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A
