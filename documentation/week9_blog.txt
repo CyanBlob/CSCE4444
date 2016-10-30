@@ -16,13 +16,16 @@ Total hours:
 Michael T.
 
 Completed: 
+Team Meeting
+Code Review
 
 In Progress:
+Complete Youtube API and Integrate
 
 Challenges:
 
 Total hours:
-
+7
 
 Daniel M.
 
