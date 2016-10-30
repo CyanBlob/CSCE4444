@@ -5,12 +5,16 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Team meeting
+Code review
 
 In Progress:
+Facebook scraping
 
 Challenges:
 
 Total hours:
+4
 
 
 Michael T.
