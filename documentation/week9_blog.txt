@@ -64,12 +64,15 @@ Total hours: 5H 30M
 Narimon K.
 
 Completed:
+Made mock up of Night mode UI
+Finished chapters of C# book
 
-In Progress:
+In progress:
+Implementation of night UI
+Still studying C#
 
-Challenges:
-
-Total hours:
+Total time:
+About 4 hours
 
 
 Paul G.
