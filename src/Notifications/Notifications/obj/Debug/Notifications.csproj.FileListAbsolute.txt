@@ -1,0 +1,22 @@
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.exe.config
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.exe
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.pdb
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\Windows.winmd
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\Windows.xml
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\Notifications.csprojResolveAssemblyReference.cache
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\MainWindow.g.cs
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\App.g.cs
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester_MarkupCompile.cache
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester_MarkupCompile.lref
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\MainWindow.baml
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.g.resources
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.Properties.Resources.resources
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\Notifications.csproj.GenerateResource.Cache
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.exe
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.pdb
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\Notifications\Notifications\obj\Debug\TwitchTester.exe
+C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\Notifications\Notifications\obj\Debug\TwitchTester.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.exe
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.pdb

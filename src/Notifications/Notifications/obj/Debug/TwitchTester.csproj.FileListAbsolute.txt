@@ -1,0 +1,16 @@
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.exe.config
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.exe
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\TwitchTester.pdb
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\Windows.winmd
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\bin\Debug\Windows.xml
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.csprojResolveAssemblyReference.cache
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\MainWindow.g.cs
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\App.g.cs
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester_MarkupCompile.cache
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester_MarkupCompile.lref
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\MainWindow.baml
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.g.resources
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.Properties.Resources.resources
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.csproj.GenerateResource.Cache
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.exe
+c:\users\tidus1112\documents\visual studio 2015\Projects\TwitchTester\TwitchTester\obj\Debug\TwitchTester.pdb
