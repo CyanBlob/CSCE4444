@@ -1,0 +1,6 @@
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/bin/Debug/Reminders.exe.config
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/bin/Debug/Reminders.exe.mdb
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/bin/Debug/Reminders.exe
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/obj/Debug/Reminders.exe
+/home/andrew/Development/CSCE4444/src/Reminders/Reminders/obj/Debug/Reminders.exe.mdb

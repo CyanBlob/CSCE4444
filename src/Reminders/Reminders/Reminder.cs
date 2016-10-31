@@ -1,21 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Reminders
 {
     public class Reminder
     {
-        public Reminder(DateTime date)
+        private DateTime reminderDate;
+        private Timer timer;
+        private string reminderText;
+
+        public Reminder(DateTime date, string text)
         {
-            Console.WriteLine("Creating reminder!");
-            Console.WriteLine("The date is: " + date.ToString());
+            reminderDate = date;
 
-            while(DateTime.Now < date){};
+            if (text == null)
+            {
+                text = "";
+            }
 
-            Console.WriteLine("REMINDER!");
+            reminderText = text;
+
+            Console.WriteLine("Creating reminder for: " + date.ToString());
+
+            TimerCallback callback = new TimerCallback(datePassed);
+            timer = new Timer(callback, null, 0, 1000);
+        }
+
+        private void datePassed(Object o)
+        {
+            if (DateTime.Now > reminderDate)
+            {
+                Console.WriteLine(DateTime.Now.ToString() + " " + reminderText);
+                timer.Dispose();
+            }
+            else
+            {
+            }
         }
 
     }
