@@ -43,7 +43,7 @@ static class FacebookHelpers
     /// tests authenticating a user with FaceBook by opening a WebBrowser
     /// prints an access token and a JSON response with the user's friend count
     /// </summary>
-	public static void Test()
+	public static void FacebookTest()
 	{
         string permissions = "public_profile, user_friends, email, user_about_me, user_birthday, user_events, user_likes, user_location, user_photos, user_posts, user_relationships, user_relationship_details, rsvp_event, user_tagged_places, pages_show_list, ";
 

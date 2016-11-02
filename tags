@@ -3,26 +3,131 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-Authenticate	src\SocialHub\SocialHub\Facebook.cs	/^    public static void Authenticate()$/;"	m	class:FacebookHelpers
-ConvertJTokenToDictionary	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        private static object ConvertJTokenToDictionary(JToken token)$/;"	m	class:Facebook.Serializers.JsonNetSerializer	file:
-DeserializeObject	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        public T DeserializeObject<T>(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
-DeserializeObject	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        public object DeserializeObject(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
-DeserializeObject	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        public object DeserializeObject(string json, Type type)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
-Facebook.Serializers	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^namespace Facebook.Serializers$/;"	n
-FacebookHelpers	src\SocialHub\SocialHub\Facebook.cs	/^static class FacebookHelpers$/;"	c
-GenerateLoginUrl	src\SocialHub\SocialHub\Facebook.cs	/^    private static Uri GenerateLoginUrl(string appId, string extendedPermissions)$/;"	m	class:FacebookHelpers	file:
-GetFacebookUserData	src\SocialHub\SocialHub\Facebook.cs	/^        static void GetFacebookUserData(string code)$/;"	m	class:FacebookHelpers	file:
-GrtUrl	src\SocialHub\SocialHub\Facebook.cs	/^    public static void GrtUrl(string url)$/;"	m	class:FacebookHelpers
-JsonNetSerializer	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        public JsonNetSerializer()$/;"	m	class:Facebook.Serializers.JsonNetSerializer
-JsonNetSerializer	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^    public class JsonNetSerializer$/;"	c	namespace:Facebook.Serializers
-Main	.\src\SocialHub\SocialHub\Program.cs	/^		public static void Main (string[] args)$/;"	m	class:SocialHub.MainClass
-MainClass	.\src\SocialHub\SocialHub\Program.cs	/^	class MainClass$/;"	c	namespace:SocialHub
-RedirectPath	src\SocialHub\SocialHub\Facebook.cs	/^    public static string RedirectPath(string url)$/;"	m	class:FacebookHelpers
-SerializeObject	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        public string SerializeObject(object obj)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
-SocialHub	.\src\SocialHub\SocialHub\Program.cs	/^namespace SocialHub$/;"	n
-Test	src\SocialHub\SocialHub\Facebook.cs	/^	public static void Test()$/;"	m	class:FacebookHelpers
-_serializerSettings	.\src\SocialHub\packages\Facebook.7.0.6\serializers\JsonNetSerializer.cs	/^        private JsonSerializerSettings _serializerSettings;$/;"	f	class:Facebook.Serializers.JsonNetSerializer	file:
-browser_DocumentCompleted	src\SocialHub\SocialHub\Facebook.cs	/^    private static void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)$/;"	m	class:FacebookHelpers	file:
-browser_Navigated	src\SocialHub\SocialHub\Facebook.cs	/^    private static void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)$/;"	m	class:FacebookHelpers	file:
-uri	src\SocialHub\SocialHub\Facebook.cs	/^    static Uri uri;$/;"	f	class:FacebookHelpers	file:
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+App	src/Notifications/Notifications/App.xaml.cs	/^    public partial class App : Application$/;"	c	namespace:Notifications
+App	src/Notifications/Notifications/obj/Debug/App.g.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:Notifications
+App	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:Notifications
+App	src/UIPrototype/App.xaml.cs	/^    public partial class App : Application$/;"	c	namespace:UIPrototype
+App	src/UIPrototype/obj/Debug/App.g.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:UIPrototype
+App	src/UIPrototype/obj/Debug/App.g.i.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:UIPrototype
+ApplicationName	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static string ApplicationName = "Google Calendar API .NET Quickstart";$/;"	f	class:CalendarQuickstart.Program	file:
+Application_Startup	src/UIPrototype/App.xaml.cs	/^        private void Application_Startup(object sender, StartupEventArgs e)$/;"	m	class:UIPrototype.App	file:
+Authenticate	src/SocialHub/SocialHub/Facebook.cs	/^    public static void Authenticate(Uri uri)$/;"	m	class:FacebookHelpers
+Blip	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^    public partial class Blip : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
+Button_Click	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private void Button_Click(object sender, RoutedEventArgs e)$/;"	m	class:Notifications.MainWindow	file:
+CalendarQuickstart	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^namespace CalendarQuickstart$/;"	n
+ConvertJTokenToDictionary	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private static object ConvertJTokenToDictionary(JToken token)$/;"	m	class:Facebook.Serializers.JsonNetSerializer	file:
+Culture	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:Notifications.Properties.Resources
+Culture	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:UIPrototype.Properties.Resources
+Default	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:Notifications.Properties.Settings
+Default	src/UIPrototype/Properties/Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:UIPrototype.Properties.Settings
+DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public T DeserializeObject<T>(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json, Type type)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+Facebook.Serializers	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^namespace Facebook.Serializers$/;"	n
+FacebookHelpers	src/SocialHub/SocialHub/Facebook.cs	/^static class FacebookHelpers$/;"	c
+FacebookTest	src/SocialHub/SocialHub/Facebook.cs	/^	public static void FacebookTest()$/;"	m	class:FacebookHelpers
+GenerateLoginUrl	src/SocialHub/SocialHub/Facebook.cs	/^    private static Uri GenerateLoginUrl(string appId, string extendedPermissions)$/;"	m	class:FacebookHelpers	file:
+Google.Apis.YouTube.Samples	src/YoutubeAPI/YoutubeAPI/Program.cs	/^namespace Google.Apis.YouTube.Samples$/;"	n
+InitializeComponent	src/Notifications/Notifications/obj/Debug/App.g.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.App
+InitializeComponent	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.App
+InitializeComponent	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.MainWindow
+InitializeComponent	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.MainWindow
+InitializeComponent	src/UIPrototype/obj/Debug/App.g.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.App
+InitializeComponent	src/UIPrototype/obj/Debug/App.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.App
+InitializeComponent	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.Blip
+InitializeComponent	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.MainWindow
+InitializeComponent	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.MainWindow
+JsonNetSerializer	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public JsonNetSerializer()$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+JsonNetSerializer	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^    public class JsonNetSerializer$/;"	c	namespace:Facebook.Serializers
+Main	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static void Main(string[] args)$/;"	m	class:CalendarQuickstart.Program	file:
+Main	src/Notifications/Notifications/obj/Debug/App.g.cs	/^        public static void Main() {$/;"	m	class:Notifications.App
+Main	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^        public static void Main() {$/;"	m	class:Notifications.App
+Main	src/Reminders/Reminders/Program.cs	/^        static void Main()$/;"	m	class:Reminders.Program	file:
+Main	src/SocialHub/SocialHub/Program.cs	/^		public static void Main (string[] args)$/;"	m	class:SocialHub.MainClass
+Main	src/UIPrototype/obj/Debug/App.g.cs	/^        public static void Main() {$/;"	m	class:UIPrototype.App
+Main	src/UIPrototype/obj/Debug/App.g.i.cs	/^        public static void Main() {$/;"	m	class:UIPrototype.App
+Main	src/YoutubeAPI/YoutubeAPI/Program.cs	/^        static void Main(string[] args)$/;"	m	class:Google.Apis.YouTube.Samples.Search	file:
+MainClass	src/SocialHub/SocialHub/Program.cs	/^	class MainClass$/;"	c	namespace:SocialHub
+MainWindow	src/Notifications/Notifications/MainWindow.xaml.cs	/^        public MainWindow()$/;"	m	class:Notifications.MainWindow
+MainWindow	src/Notifications/Notifications/MainWindow.xaml.cs	/^    public partial class MainWindow : Window$/;"	c	namespace:Notifications
+MainWindow	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:Notifications
+MainWindow	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:Notifications
+MainWindow	src/UIPrototype/MainWindow.xaml.cs	/^        public MainWindow()$/;"	m	class:UIPrototype.MainWindow
+MainWindow	src/UIPrototype/MainWindow.xaml.cs	/^    public partial class MainWindow : Window$/;"	c	namespace:UIPrototype
+MainWindow	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
+MainWindow	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
+Notifications	src/Notifications/Notifications/App.xaml.cs	/^namespace Notifications$/;"	n
+Notifications	src/Notifications/Notifications/MainWindow.xaml.cs	/^namespace Notifications$/;"	n
+Notifications	src/Notifications/Notifications/obj/Debug/App.g.cs	/^namespace Notifications {$/;"	n
+Notifications	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^namespace Notifications {$/;"	n
+Notifications	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^namespace Notifications {$/;"	n
+Notifications	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^namespace Notifications {$/;"	n
+Notifications.Properties	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^namespace Notifications.Properties$/;"	n
+Notifications.Properties	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^namespace Notifications.Properties$/;"	n
+Program	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^    class Program$/;"	c	namespace:CalendarQuickstart
+Program	src/Reminders/Reminders/Program.cs	/^    class Program$/;"	c	namespace:Reminders
+Reminder	src/Reminders/Reminders/Reminder.cs	/^        public Reminder(DateTime date, string text)$/;"	m	class:Reminders.Reminder
+Reminder	src/Reminders/Reminders/Reminder.cs	/^    public class Reminder$/;"	c	namespace:Reminders
+Reminders	src/Reminders/Reminders/Program.cs	/^namespace Reminders$/;"	n
+Reminders	src/Reminders/Reminders/Reminder.cs	/^namespace Reminders$/;"	n
+ResourceManager	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:Notifications.Properties.Resources
+ResourceManager	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:UIPrototype.Properties.Resources
+Resources	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal Resources()$/;"	m	class:Notifications.Properties.Resources	file:
+Resources	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:Notifications.Properties
+Resources	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal Resources()$/;"	m	class:UIPrototype.Properties.Resources	file:
+Resources	src/UIPrototype/Properties/Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:UIPrototype.Properties
+Run	src/YoutubeAPI/YoutubeAPI/Program.cs	/^        private async Task Run()$/;"	m	class:Google.Apis.YouTube.Samples.Search	file:
+Scopes	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static string[] Scopes = { CalendarService.Scope.Calendar }; \/\/Auth scope$/;"	f	class:CalendarQuickstart.Program	file:
+Search	src/YoutubeAPI/YoutubeAPI/Program.cs	/^    internal class Search$/;"	c	namespace:Google.Apis.YouTube.Samples
+SerializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public string SerializeObject(object obj)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+Settings	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:Notifications.Properties
+Settings	src/UIPrototype/Properties/Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:UIPrototype.Properties
+SocialHub	src/SocialHub/SocialHub/Program.cs	/^namespace SocialHub$/;"	n
+System.Windows.Markup.IComponentConnector.Connect	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:Notifications.MainWindow	file:
+System.Windows.Markup.IComponentConnector.Connect	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:Notifications.MainWindow	file:
+System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.Blip	file:
+System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.MainWindow	file:
+System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.MainWindow	file:
+UIPrototype	src/UIPrototype/App.xaml.cs	/^namespace UIPrototype$/;"	n
+UIPrototype	src/UIPrototype/MainWindow.xaml.cs	/^namespace UIPrototype$/;"	n
+UIPrototype	src/UIPrototype/obj/Debug/App.g.cs	/^namespace UIPrototype {$/;"	n
+UIPrototype	src/UIPrototype/obj/Debug/App.g.i.cs	/^namespace UIPrototype {$/;"	n
+UIPrototype	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^namespace UIPrototype {$/;"	n
+UIPrototype	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^namespace UIPrototype {$/;"	n
+UIPrototype	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^namespace UIPrototype {$/;"	n
+UIPrototype.Properties	src/UIPrototype/Properties/Resources.Designer.cs	/^namespace UIPrototype.Properties$/;"	n
+UIPrototype.Properties	src/UIPrototype/Properties/Settings.Designer.cs	/^namespace UIPrototype.Properties$/;"	n
+_contentLoaded	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        private bool _contentLoaded;$/;"	f	class:Notifications.MainWindow	file:
+_contentLoaded	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:Notifications.MainWindow	file:
+_contentLoaded	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.Blip	file:
+_contentLoaded	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.MainWindow	file:
+_contentLoaded	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.MainWindow	file:
+_serializerSettings	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private JsonSerializerSettings _serializerSettings;$/;"	f	class:Facebook.Serializers.JsonNetSerializer	file:
+accessToken	src/SocialHub/SocialHub/Facebook.cs	/^    private static string accessToken;$/;"	f	class:FacebookHelpers	file:
+browser_DocumentCompleted	src/SocialHub/SocialHub/Facebook.cs	/^    private static void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)$/;"	m	class:FacebookHelpers	file:
+browser_Navigated	src/SocialHub/SocialHub/Facebook.cs	/^    private static void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)$/;"	m	class:FacebookHelpers	file:
+combi_SelectionChanged	src/UIPrototype/MainWindow.xaml.cs	/^        private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)$/;"	m	class:UIPrototype.MainWindow	file:
+content_wrap	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid content_wrap;$/;"	f	class:UIPrototype.MainWindow	file:
+content_wrap	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid content_wrap;$/;"	f	class:UIPrototype.MainWindow	file:
+datePassed	src/Reminders/Reminders/Reminder.cs	/^        private void datePassed(Object o)$/;"	m	class:Reminders.Reminder	file:
+defaultInstance	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:Notifications.Properties.Settings	file:
+defaultInstance	src/UIPrototype/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:UIPrototype.Properties.Settings	file:
+feed	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.StackPanel feed;$/;"	f	class:UIPrototype.MainWindow	file:
+feed	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.StackPanel feed;$/;"	f	class:UIPrototype.MainWindow	file:
+feed_stats	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.StackPanel feed_stats;$/;"	f	class:UIPrototype.MainWindow	file:
+feed_stats	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.StackPanel feed_stats;$/;"	f	class:UIPrototype.MainWindow	file:
+nav	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.DockPanel nav;$/;"	f	class:UIPrototype.MainWindow	file:
+nav	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.DockPanel nav;$/;"	f	class:UIPrototype.MainWindow	file:
+quickpanel	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid quickpanel;$/;"	f	class:UIPrototype.MainWindow	file:
+quickpanel	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid quickpanel;$/;"	f	class:UIPrototype.MainWindow	file:
+reminderDate	src/Reminders/Reminders/Reminder.cs	/^        private DateTime reminderDate;$/;"	f	class:Reminders.Reminder	file:
+reminderText	src/Reminders/Reminders/Reminder.cs	/^        private string reminderText;$/;"	f	class:Reminders.Reminder	file:
+resourceCulture	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:Notifications.Properties.Resources	file:
+resourceCulture	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:UIPrototype.Properties.Resources	file:
+resourceMan	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:Notifications.Properties.Resources	file:
+resourceMan	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:UIPrototype.Properties.Resources	file:
+streams	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
+streams	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
+timer	src/Reminders/Reminders/Reminder.cs	/^        private Timer timer;$/;"	f	class:Reminders.Reminder	file:
+uri	src/SocialHub/SocialHub/Facebook.cs	/^    static Uri uri;$/;"	f	class:FacebookHelpers	file:

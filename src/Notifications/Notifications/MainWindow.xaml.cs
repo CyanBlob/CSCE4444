@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
+using Reminders;
+using System.Collections.Generic;
+using System;
 
 namespace Notifications
 {
@@ -25,6 +28,15 @@ namespace Notifications
         public MainWindow()
         {
             InitializeComponent();
+
+            // schedule example notifications
+            DateTime date = DateTime.Now;
+            List<Reminder> reminderList = new List<Reminder>();
+
+            reminderList.Add(new Reminder(date.AddSeconds(1), "First notification"));
+
+            // don't necessarily need to store reminders
+            new Reminder(date.AddSeconds(10), "Second notification");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

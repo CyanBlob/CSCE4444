@@ -6,7 +6,7 @@ namespace SocialHub
 	{
 		public static void Main (string[] args)
 		{
-			FacebookHelpers.Test();
+			FacebookHelpers.FacebookTest();
 		}
 	}
 }
