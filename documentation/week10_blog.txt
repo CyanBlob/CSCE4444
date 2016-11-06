@@ -27,13 +27,19 @@ Total hours:
 Daniel M.
 
 Completed:
+Weekly Meeting
+Contribution to Test Plan Tracker
 
 In Progress:
+Create note window functionality
+Note class and NoteList class
+Youtube quick search side panel (w/ quick note commenting...is posting youtube comment is possible)
+
 
 Challenges:
+Choosing between rtf or xaml to store formatted notes & data storage strategy
 
-Total hours:
-
+Total hours: 4
 
 Zac T.
 
