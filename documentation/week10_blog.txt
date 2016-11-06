@@ -1,0 +1,82 @@
+Week of Sunday 10/30/16 - Saturday 11/05/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+Test Plan
+Twitch Notifications now display images (Twitch Channel Logo)
+Notifications moved to .dll 
+
+In Progress:
+Still need to simplify notifications.
+Need to simplify basically everything related to Twitch
+Need to automate checking if streams are online.
+
+Challenges:  
+Making sure everything is as simple as possible. (still)
+
+Total hours: 6H 30M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+	
+Total hours: 
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A
