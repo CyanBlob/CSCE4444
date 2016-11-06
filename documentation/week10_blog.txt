@@ -72,13 +72,13 @@ Total hours:
 
 Paul G.
 
-Completed: 
+Completed: N/A 
 
-In Progress: 
+In Progress: Still debugging google calendar will merge after completed.
 
-Challenges: 
+Challenges: debugging current code and uploading
 	
-Total hours: 
+Total hours: 5hrs
 
 ---------------
 TEAM
