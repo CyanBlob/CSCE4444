@@ -5,12 +5,15 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Created basic schedulable reminders
 
 In Progress:
+Improving reminder reliability (storing on disk)
 
 Challenges:
 
 Total hours:
+4
 
 
 Michael T.
