@@ -1,31 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
-using System.Threading;
 using System.Threading.Tasks;
-
-using Google.Apis;
-using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
-using Google.Apis.Upload;
-using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
-using Google.Apis.YouTube.v3.Data;
+
+//907747046009-b516vr064rad16tme955tijk588gmhik.apps.googleusercontent.com
 
 
+//API Call to get subscribers. Format Below it
+//https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=UCT3IDkrEU07il99Vcf15YYw&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE
+
+//Format
+//https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=<ChannelID>&key=<APIKey>
+
+//Actually, use this one. It doesn't require the youtube channel ID
+//https://www.googleapis.com/youtube/v3/subscriptions?part=snippet&mine=true&key={YOUR_API_KEY}
+
+//Return videos from channel by date
+//https://www.googleapis.com/youtube/v3/search?key=<APIKey>&channelId=<channelID>&part=snippet,id&order=date&maxResults=20
 
 namespace Google.Apis.YouTube.Samples
 {
-    /// <summary>
-    /// YouTube Data API v3 sample: search by keyword.
-    /// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
-    /// See https://code.google.com/p/google-api-dotnet-client/wiki/GettingStarted
-    ///
-    /// Set ApiKey to the API key value from the APIs & auth > Registered apps tab of
-    ///   https://cloud.google.com/console
-    /// Please ensure that you have enabled the YouTube Data API for your project.
-    /// </summary>
     internal class Search
     {
         [STAThread]
