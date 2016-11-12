@@ -5,22 +5,103 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notifications"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="auto" Width="800">
+    
     <Grid>
-        <Label Content="Click the button to make notification happen"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+
+        <Label Content="Click the button to make notification happen instantly"
                HorizontalAlignment="Center"
                FontSize="20"
                Margin="0,40,0,0"
-               >
-            
-        </Label>
+               Grid.Column="1"
+                Grid.Row="0"
+               />
+        <Label Content="Or, press CTRL+ALT+T to schedule notification with the given time options"
+               HorizontalAlignment="Center"
+               FontSize="20"
+               Margin="0,40,0,0"
+               Grid.Column="1"
+                Grid.Row="1"
+               />
+
+        <TextBlock 
+            x:Name="tblock"
+            HorizontalAlignment="Center"
+            Grid.Column="1"
+            Grid.Row="2"
+        />
+
+        <Label 
+            Name="Hours"
+            Content="Hours"
+            Grid.Column="0"
+            Grid.Row="3" />
+        <TextBox 
+            Name="HoursText"
+            Text="0"
+            InputScope="Number"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AcceptsReturn="True"
+            Width="100"
+            Grid.Column="1"
+            Grid.Row="3"/>
+        <Label 
+            Name="Minutes"
+            Content="Minutes"
+            Grid.Column="0"
+            Grid.Row="4" />
+        <TextBox 
+            Name="MinutesText"
+            Text="0"
+            InputScope="Number"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AcceptsReturn="True"
+            Width="100"
+            Grid.Column="1"
+            Grid.Row="4"/>
+        <Label 
+            Name="Seconds"
+            Content="Seconds"
+            Grid.Column="0"
+            Grid.Row="5" />
+        <TextBox 
+            Name="SecondsText"
+            Text="0"
+            InputScope="Number"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AcceptsReturn="True"
+            Width="100"
+            Grid.Column="1"
+            Grid.Row="5"/>
+
         <Button Content="Button"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 Margin="10,10,10,20"
                 Width="450"
                 Height="100"
-                Click="Button_Click">
+                Click="Button_Click"
+                Grid.Column="1"
+                Grid.Row="6"
+                Grid.ColumnSpan="2">
         </Button>
     </Grid>
 </Window>
+    

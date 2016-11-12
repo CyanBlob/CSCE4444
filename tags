@@ -67,8 +67,11 @@ Notifications.Properties	src/Notifications/Notifications/Properties/Resources.De
 Notifications.Properties	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^namespace Notifications.Properties$/;"	n
 Program	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^    class Program$/;"	c	namespace:CalendarQuickstart
 Program	src/Reminders/Reminders/Program.cs	/^    class Program$/;"	c	namespace:Reminders
+Reminder	src/Notifications/Notifications/Reminder.cs	/^        public Reminder(DateTime date, string text)$/;"	m	class:Reminders.Reminder
+Reminder	src/Notifications/Notifications/Reminder.cs	/^    public class Reminder$/;"	c	namespace:Reminders
 Reminder	src/Reminders/Reminders/Reminder.cs	/^        public Reminder(DateTime date, string text)$/;"	m	class:Reminders.Reminder
 Reminder	src/Reminders/Reminders/Reminder.cs	/^    public class Reminder$/;"	c	namespace:Reminders
+Reminders	src/Notifications/Notifications/Reminder.cs	/^namespace Reminders$/;"	n
 Reminders	src/Reminders/Reminders/Program.cs	/^namespace Reminders$/;"	n
 Reminders	src/Reminders/Reminders/Reminder.cs	/^namespace Reminders$/;"	n
 ResourceManager	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:Notifications.Properties.Resources
@@ -110,6 +113,7 @@ browser_Navigated	src/SocialHub/SocialHub/Facebook.cs	/^    private static void 
 combi_SelectionChanged	src/UIPrototype/MainWindow.xaml.cs	/^        private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)$/;"	m	class:UIPrototype.MainWindow	file:
 content_wrap	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid content_wrap;$/;"	f	class:UIPrototype.MainWindow	file:
 content_wrap	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid content_wrap;$/;"	f	class:UIPrototype.MainWindow	file:
+datePassed	src/Notifications/Notifications/Reminder.cs	/^        private void datePassed(Object o)$/;"	m	class:Reminders.Reminder	file:
 datePassed	src/Reminders/Reminders/Reminder.cs	/^        private void datePassed(Object o)$/;"	m	class:Reminders.Reminder	file:
 defaultInstance	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:Notifications.Properties.Settings	file:
 defaultInstance	src/UIPrototype/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:UIPrototype.Properties.Settings	file:
@@ -121,7 +125,9 @@ nav	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.
 nav	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.DockPanel nav;$/;"	f	class:UIPrototype.MainWindow	file:
 quickpanel	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid quickpanel;$/;"	f	class:UIPrototype.MainWindow	file:
 quickpanel	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid quickpanel;$/;"	f	class:UIPrototype.MainWindow	file:
+reminderDate	src/Notifications/Notifications/Reminder.cs	/^        private DateTime reminderDate;$/;"	f	class:Reminders.Reminder	file:
 reminderDate	src/Reminders/Reminders/Reminder.cs	/^        private DateTime reminderDate;$/;"	f	class:Reminders.Reminder	file:
+reminderText	src/Notifications/Notifications/Reminder.cs	/^        private string reminderText;$/;"	f	class:Reminders.Reminder	file:
 reminderText	src/Reminders/Reminders/Reminder.cs	/^        private string reminderText;$/;"	f	class:Reminders.Reminder	file:
 resourceCulture	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:Notifications.Properties.Resources	file:
 resourceCulture	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:UIPrototype.Properties.Resources	file:
@@ -129,5 +135,6 @@ resourceMan	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^ 
 resourceMan	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:UIPrototype.Properties.Resources	file:
 streams	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
 streams	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
+timer	src/Notifications/Notifications/Reminder.cs	/^        private Timer timer;$/;"	f	class:Reminders.Reminder	file:
 timer	src/Reminders/Reminders/Reminder.cs	/^        private Timer timer;$/;"	f	class:Reminders.Reminder	file:
 uri	src/SocialHub/SocialHub/Facebook.cs	/^    static Uri uri;$/;"	f	class:FacebookHelpers	file:

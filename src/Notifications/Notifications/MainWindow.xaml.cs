@@ -17,6 +17,8 @@ using Windows.UI.Notifications;
 using Reminders;
 using System.Collections.Generic;
 using System;
+using System.Windows.Interop;
+using TwitchTester;
 
 namespace Notifications
 {
@@ -25,6 +27,64 @@ namespace Notifications
     /// </summary>
     public partial class MainWindow : Window
     {
+        // being global hotkey code
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+        private const int HOTKEY_ID = 9000;
+
+        private IntPtr _windowHandle;
+        private HwndSource _source;
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+
+            _windowHandle = new WindowInteropHelper(this).Handle;
+            _source = HwndSource.FromHwnd(_windowHandle);
+            _source.AddHook(HwndHook);
+
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.T); //CTRL + ALT + T
+        }
+
+        private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            const int WM_HOTKEY = 0x0312;
+            switch (msg)
+            {
+                case WM_HOTKEY:
+                    switch (wParam.ToInt32())
+                    {
+                        case HOTKEY_ID:
+                            int vkey = (((int)lParam >> 16) & 0xFFFF);
+                            if (vkey == KeyCodes.T)
+                            {
+                                double seconds = (
+                                    Double.Parse(HoursText.GetLineText(0)) * 3600 +
+                                    Double.Parse(MinutesText.GetLineText(0)) * 60 +
+                                    Double.Parse(SecondsText.GetLineText(0)));
+
+                                new Reminder(DateTime.Now.AddSeconds(seconds), "HotKey notification");
+                                tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
+                            }
+                            handled = true;
+                            break;
+                    }
+                    break;
+            }
+            return IntPtr.Zero;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            _source.RemoveHook(HwndHook);
+            UnregisterHotKey(_windowHandle, HOTKEY_ID);
+            base.OnClosed(e);
+        }
+        //end global hotkey code
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,10 +93,10 @@ namespace Notifications
             DateTime date = DateTime.Now;
             List<Reminder> reminderList = new List<Reminder>();
 
-            reminderList.Add(new Reminder(date.AddSeconds(1), "First notification"));
+            //reminderList.Add(new Reminder(date.AddSeconds(1), "First notification"));
 
             // don't necessarily need to store reminders
-            new Reminder(date.AddSeconds(10), "Second notification");
+            //new Reminder(date.AddSeconds(10), "Second notification");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

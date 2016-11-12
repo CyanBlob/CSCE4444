@@ -13,8 +13,10 @@ namespace Reminders
         private Timer timer;
         private string reminderText;
 
+
         public Reminder(DateTime date, string text)
         {
+        
             reminderDate = date;
 
             if (text == null)
