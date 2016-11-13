@@ -3,32 +3,105 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.8	//
+A	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint A = 0x41;$/;"	f	class:TwitchTester.KeyCodes
+ACCEPT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ACCEPT = 0x1E;$/;"	f	class:TwitchTester.KeyCodes
+ADD	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ADD = 0x6B;$/;"	f	class:TwitchTester.KeyCodes
+ALT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ALT = 0x0001;$/;"	f	class:TwitchTester.KeyCodes
+APPS	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint APPS = 0x5D;$/;"	f	class:TwitchTester.KeyCodes
+ATTN	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ATTN = 0xF6;$/;"	f	class:TwitchTester.KeyCodes
 App	src/Notifications/Notifications/App.xaml.cs	/^    public partial class App : Application$/;"	c	namespace:Notifications
 App	src/Notifications/Notifications/obj/Debug/App.g.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:Notifications
 App	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:Notifications
 App	src/UIPrototype/App.xaml.cs	/^    public partial class App : Application$/;"	c	namespace:UIPrototype
 App	src/UIPrototype/obj/Debug/App.g.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:UIPrototype
 App	src/UIPrototype/obj/Debug/App.g.i.cs	/^    public partial class App : System.Windows.Application {$/;"	c	namespace:UIPrototype
+App	src/WpfApplication1/WpfApplication1/App.xaml.cs	/^    public partial class App : Application$/;"	c	namespace:WpfApplication1
 ApplicationName	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static string ApplicationName = "Google Calendar API .NET Quickstart";$/;"	f	class:CalendarQuickstart.Program	file:
 Application_Startup	src/UIPrototype/App.xaml.cs	/^        private void Application_Startup(object sender, StartupEventArgs e)$/;"	m	class:UIPrototype.App	file:
 Authenticate	src/SocialHub/SocialHub/Facebook.cs	/^    public static void Authenticate(Uri uri)$/;"	m	class:FacebookHelpers
+B	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint B = 0x42;$/;"	f	class:TwitchTester.KeyCodes
+BACK	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BACK = 0x8;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_BACK	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_BACK = 0xA6;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_FAVORITES	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_FAVORITES = 0xAB;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_FORWARD	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_FORWARD = 0xA7;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_HOME	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_HOME = 0xAC;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_REFRESH	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_REFRESH = 0xA8;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_SEARCH	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_SEARCH = 0xAA;$/;"	f	class:TwitchTester.KeyCodes
+BROWSER_STOP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint BROWSER_STOP = 0xA9;$/;"	f	class:TwitchTester.KeyCodes
 Blip	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^    public partial class Blip : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
 Button_Click	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private void Button_Click(object sender, RoutedEventArgs e)$/;"	m	class:Notifications.MainWindow	file:
+C	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint C = 0x43;$/;"	f	class:TwitchTester.KeyCodes
+CANCEL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CANCEL = 0x3;$/;"	f	class:TwitchTester.KeyCodes
+CAPITAL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CAPITAL = 0x14;$/;"	f	class:TwitchTester.KeyCodes
+CLEAR	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CLEAR = 0x0C;$/;"	f	class:TwitchTester.KeyCodes
+CONTROL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CONTROL = 0x0002;$/;"	f	class:TwitchTester.KeyCodes
+CONVERT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CONVERT = 0x1C;$/;"	f	class:TwitchTester.KeyCodes
+CRSEL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint CRSEL = 0xF7;$/;"	f	class:TwitchTester.KeyCodes
 CalendarQuickstart	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^namespace CalendarQuickstart$/;"	n
 ConvertJTokenToDictionary	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private static object ConvertJTokenToDictionary(JToken token)$/;"	m	class:Facebook.Serializers.JsonNetSerializer	file:
 Culture	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:Notifications.Properties.Resources
 Culture	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:UIPrototype.Properties.Resources
+Culture	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:WpfApplication1.Properties.Resources
+D	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint D = 0x44;$/;"	f	class:TwitchTester.KeyCodes
+DECIMAL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint DECIMAL = 0x6E;$/;"	f	class:TwitchTester.KeyCodes
+DELETE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint DELETE = 0x2E;$/;"	f	class:TwitchTester.KeyCodes
+DIVIDE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint DIVIDE = 0x6F;$/;"	f	class:TwitchTester.KeyCodes
+DOWN	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint DOWN = 0x28;$/;"	f	class:TwitchTester.KeyCodes
 Default	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:Notifications.Properties.Settings
 Default	src/UIPrototype/Properties/Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:UIPrototype.Properties.Settings
+Default	src/WpfApplication1/WpfApplication1/Properties/Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:WpfApplication1.Properties.Settings
 DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public T DeserializeObject<T>(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
 DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
 DeserializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public object DeserializeObject(string json, Type type)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
+E	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint E = 0x45;$/;"	f	class:TwitchTester.KeyCodes
+END	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint END = 0x23;$/;"	f	class:TwitchTester.KeyCodes
+EREOF	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint EREOF = 0xF9;$/;"	f	class:TwitchTester.KeyCodes
+ESCAPE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ESCAPE = 0x1B;$/;"	f	class:TwitchTester.KeyCodes
+EXECUTE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint EXECUTE = 0x2B;$/;"	f	class:TwitchTester.KeyCodes
+EXSEL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint EXSEL = 0xF8;$/;"	f	class:TwitchTester.KeyCodes
+F	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F = 0x46;$/;"	f	class:TwitchTester.KeyCodes
+F1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F1 = 0x70;$/;"	f	class:TwitchTester.KeyCodes
+F10	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F10 = 0x79;$/;"	f	class:TwitchTester.KeyCodes
+F11	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F11 = 0x7A;$/;"	f	class:TwitchTester.KeyCodes
+F12	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F12 = 0x7B;$/;"	f	class:TwitchTester.KeyCodes
+F13	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F13 = 0x7C;$/;"	f	class:TwitchTester.KeyCodes
+F14	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F14 = 0x7D;$/;"	f	class:TwitchTester.KeyCodes
+F15	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F15 = 0x7E;$/;"	f	class:TwitchTester.KeyCodes
+F16	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F16 = 0x7F;$/;"	f	class:TwitchTester.KeyCodes
+F2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F2 = 0x71;$/;"	f	class:TwitchTester.KeyCodes
+F3	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F3 = 0x72;$/;"	f	class:TwitchTester.KeyCodes
+F4	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F4 = 0x73;$/;"	f	class:TwitchTester.KeyCodes
+F5	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F5 = 0x74;$/;"	f	class:TwitchTester.KeyCodes
+F6	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F6 = 0x75;$/;"	f	class:TwitchTester.KeyCodes
+F7	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F7 = 0x76;$/;"	f	class:TwitchTester.KeyCodes
+F8	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F8 = 0x77;$/;"	f	class:TwitchTester.KeyCodes
+F9	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint F9 = 0x78;$/;"	f	class:TwitchTester.KeyCodes
+FINAL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint FINAL = 0x18;$/;"	f	class:TwitchTester.KeyCodes
 Facebook.Serializers	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^namespace Facebook.Serializers$/;"	n
 FacebookHelpers	src/SocialHub/SocialHub/Facebook.cs	/^static class FacebookHelpers$/;"	c
 FacebookTest	src/SocialHub/SocialHub/Facebook.cs	/^	public static void FacebookTest()$/;"	m	class:FacebookHelpers
+Form1	src/WpfApplication1/WpfApplication1/MainWindow.xaml.cs	/^        public Form1()$/;"	m	class:WindowsFormsApplicationHotKey.Form1
+Form1	src/WpfApplication1/WpfApplication1/MainWindow.xaml.cs	/^    public partial class Form1 : Form$/;"	c	namespace:WindowsFormsApplicationHotKey
+G	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint G = 0x47;$/;"	f	class:TwitchTester.KeyCodes
 GenerateLoginUrl	src/SocialHub/SocialHub/Facebook.cs	/^    private static Uri GenerateLoginUrl(string appId, string extendedPermissions)$/;"	m	class:FacebookHelpers	file:
 Google.Apis.YouTube.Samples	src/YoutubeAPI/YoutubeAPI/Program.cs	/^namespace Google.Apis.YouTube.Samples$/;"	n
+H	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint H = 0x48;$/;"	f	class:TwitchTester.KeyCodes
+HANGUEL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint HANGUEL = 0x15;$/;"	f	class:TwitchTester.KeyCodes
+HANGUL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint HANGUL = 0x15;$/;"	f	class:TwitchTester.KeyCodes
+HANJA	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint HANJA = 0x19;$/;"	f	class:TwitchTester.KeyCodes
+HELP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint HELP = 0x2F;$/;"	f	class:TwitchTester.KeyCodes
+HOME	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint HOME = 0x24;$/;"	f	class:TwitchTester.KeyCodes
+HOTKEY_ID	src/Notifications/Notifications/HotKey.cs	/^        private const int HOTKEY_ID = 9000;$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+HOTKEY_ID	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private const int HOTKEY_ID = 9000;$/;"	f	class:Notifications.MainWindow	file:
+Hours	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Label Hours;$/;"	f	class:Notifications.MainWindow	file:
+Hours	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Label Hours;$/;"	f	class:Notifications.MainWindow	file:
+HoursText	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.TextBox HoursText;$/;"	f	class:Notifications.MainWindow	file:
+HoursText	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.TextBox HoursText;$/;"	f	class:Notifications.MainWindow	file:
+HwndHook	src/Notifications/Notifications/HotKey.cs	/^        private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+HwndHook	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)$/;"	m	class:Notifications.MainWindow	file:
+I	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint I = 0x49;$/;"	f	class:TwitchTester.KeyCodes
+INSERT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint INSERT = 0x2D;$/;"	f	class:TwitchTester.KeyCodes
 InitializeComponent	src/Notifications/Notifications/obj/Debug/App.g.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.App
 InitializeComponent	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.App
 InitializeComponent	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        public void InitializeComponent() {$/;"	m	class:Notifications.MainWindow
@@ -38,8 +111,35 @@ InitializeComponent	src/UIPrototype/obj/Debug/App.g.i.cs	/^        public void I
 InitializeComponent	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.Blip
 InitializeComponent	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.MainWindow
 InitializeComponent	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        public void InitializeComponent() {$/;"	m	class:UIPrototype.MainWindow
+J	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint J = 0x4A;$/;"	f	class:TwitchTester.KeyCodes
+JUNJA	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint JUNJA = 0x17;$/;"	f	class:TwitchTester.KeyCodes
 JsonNetSerializer	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public JsonNetSerializer()$/;"	m	class:Facebook.Serializers.JsonNetSerializer
 JsonNetSerializer	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^    public class JsonNetSerializer$/;"	c	namespace:Facebook.Serializers
+K	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint K = 0x4B;$/;"	f	class:TwitchTester.KeyCodes
+KANA	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint KANA = 0x15;$/;"	f	class:TwitchTester.KeyCodes
+KANJI	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint KANJI = 0x19;$/;"	f	class:TwitchTester.KeyCodes
+KeyCodes	src/Notifications/Notifications/KeyCodes.cs	/^    public static class KeyCodes$/;"	c	namespace:TwitchTester
+L	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint L = 0x4C;$/;"	f	class:TwitchTester.KeyCodes
+LAUNCH_APP1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LAUNCH_APP1 = 0xB6;$/;"	f	class:TwitchTester.KeyCodes
+LAUNCH_APP2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LAUNCH_APP2 = 0xB7;$/;"	f	class:TwitchTester.KeyCodes
+LAUNCH_MAIL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LAUNCH_MAIL = 0xB4;$/;"	f	class:TwitchTester.KeyCodes
+LAUNCH_MEDIA_SELECT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LAUNCH_MEDIA_SELECT = 0xB5;$/;"	f	class:TwitchTester.KeyCodes
+LBUTTON	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LBUTTON = 0x1;$/;"	f	class:TwitchTester.KeyCodes
+LEFT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint LEFT = 0x25;$/;"	f	class:TwitchTester.KeyCodes
+M	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint M = 0x4D;$/;"	f	class:TwitchTester.KeyCodes
+MBUTTON	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MBUTTON = 0x4;$/;"	f	class:TwitchTester.KeyCodes
+MEDIA_NEXT_TRACK	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MEDIA_NEXT_TRACK = 0xB0;$/;"	f	class:TwitchTester.KeyCodes
+MEDIA_PLAY_PAUSE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MEDIA_PLAY_PAUSE = 0xB3;$/;"	f	class:TwitchTester.KeyCodes
+MEDIA_PREV_TRACK	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MEDIA_PREV_TRACK = 0xB1;$/;"	f	class:TwitchTester.KeyCodes
+MEDIA_STOP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MEDIA_STOP = 0xB2;$/;"	f	class:TwitchTester.KeyCodes
+MENU	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MENU = 0x12;$/;"	f	class:TwitchTester.KeyCodes
+MODECHANGE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MODECHANGE = 0x1F;$/;"	f	class:TwitchTester.KeyCodes
+MOD_ALT	src/Notifications/Notifications/HotKey.cs	/^        private const uint MOD_ALT = 0x0001; \/\/ALT$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+MOD_CONTROL	src/Notifications/Notifications/HotKey.cs	/^        private const uint MOD_CONTROL = 0x0002; \/\/CTRL$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+MOD_NONE	src/Notifications/Notifications/HotKey.cs	/^        private const uint MOD_NONE = 0x0000; \/\/(none)$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+MOD_SHIFT	src/Notifications/Notifications/HotKey.cs	/^        private const uint MOD_SHIFT = 0x0004; \/\/SHIFT$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+MOD_WIN	src/Notifications/Notifications/HotKey.cs	/^        private const uint MOD_WIN = 0x0008; \/\/WINDOWS$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+MULTIPLY	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint MULTIPLY = 0x6A;$/;"	f	class:TwitchTester.KeyCodes
 Main	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static void Main(string[] args)$/;"	m	class:CalendarQuickstart.Program	file:
 Main	src/Notifications/Notifications/obj/Debug/App.g.cs	/^        public static void Main() {$/;"	m	class:Notifications.App
 Main	src/Notifications/Notifications/obj/Debug/App.g.i.cs	/^        public static void Main() {$/;"	m	class:Notifications.App
@@ -49,6 +149,8 @@ Main	src/UIPrototype/obj/Debug/App.g.cs	/^        public static void Main() {$/;
 Main	src/UIPrototype/obj/Debug/App.g.i.cs	/^        public static void Main() {$/;"	m	class:UIPrototype.App
 Main	src/YoutubeAPI/YoutubeAPI/Program.cs	/^        static void Main(string[] args)$/;"	m	class:Google.Apis.YouTube.Samples.Search	file:
 MainClass	src/SocialHub/SocialHub/Program.cs	/^	class MainClass$/;"	c	namespace:SocialHub
+MainWindow	src/Notifications/Notifications/HotKey.cs	/^        public MainWindow()$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow
+MainWindow	src/Notifications/Notifications/HotKey.cs	/^    public partial class MainWindow : Window$/;"	c	namespace:Mm.Wpf.GlobalHotKeys
 MainWindow	src/Notifications/Notifications/MainWindow.xaml.cs	/^        public MainWindow()$/;"	m	class:Notifications.MainWindow
 MainWindow	src/Notifications/Notifications/MainWindow.xaml.cs	/^    public partial class MainWindow : Window$/;"	c	namespace:Notifications
 MainWindow	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:Notifications
@@ -57,6 +159,37 @@ MainWindow	src/UIPrototype/MainWindow.xaml.cs	/^        public MainWindow()$/;"	
 MainWindow	src/UIPrototype/MainWindow.xaml.cs	/^    public partial class MainWindow : Window$/;"	c	namespace:UIPrototype
 MainWindow	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
 MainWindow	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {$/;"	c	namespace:UIPrototype
+Minutes	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Label Minutes;$/;"	f	class:Notifications.MainWindow	file:
+Minutes	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Label Minutes;$/;"	f	class:Notifications.MainWindow	file:
+MinutesText	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.TextBox MinutesText;$/;"	f	class:Notifications.MainWindow	file:
+MinutesText	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.TextBox MinutesText;$/;"	f	class:Notifications.MainWindow	file:
+Mm.Wpf.GlobalHotKeys	src/Notifications/Notifications/HotKey.cs	/^namespace Mm.Wpf.GlobalHotKeys$/;"	n
+N	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint N = 0x4E;$/;"	f	class:TwitchTester.KeyCodes
+NEXT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NEXT = 0x22;$/;"	f	class:TwitchTester.KeyCodes
+NONAME	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NONAME = 0xFC;$/;"	f	class:TwitchTester.KeyCodes
+NONCONVERT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NONCONVERT = 0x1D;$/;"	f	class:TwitchTester.KeyCodes
+NONE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NONE = 0x0000;$/;"	f	class:TwitchTester.KeyCodes
+NUMLOCK	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMLOCK = 0x90;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD0	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD0 = 0x60;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD1 = 0x61;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD2 = 0x62;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD3	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD3 = 0x63;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD4	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD4 = 0x64;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD5	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD5 = 0x65;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD6	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD6 = 0x66;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD7	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD7 = 0x67;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD8	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD8 = 0x68;$/;"	f	class:TwitchTester.KeyCodes
+NUMPAD9	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMPAD9 = 0x69;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW0	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW0 = 0x30;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW1 = 0x31;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW2 = 0x32;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW3	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW3 = 0x33;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW4	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW4 = 0x34;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW5	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW5 = 0x35;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW6	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW6 = 0x36;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW7	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW7 = 0x37;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW8	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW8 = 0x38;$/;"	f	class:TwitchTester.KeyCodes
+NUMROW9	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint NUMROW9 = 0x39;$/;"	f	class:TwitchTester.KeyCodes
 Notifications	src/Notifications/Notifications/App.xaml.cs	/^namespace Notifications$/;"	n
 Notifications	src/Notifications/Notifications/MainWindow.xaml.cs	/^namespace Notifications$/;"	n
 Notifications	src/Notifications/Notifications/obj/Debug/App.g.cs	/^namespace Notifications {$/;"	n
@@ -65,8 +198,43 @@ Notifications	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^namesp
 Notifications	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^namespace Notifications {$/;"	n
 Notifications.Properties	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^namespace Notifications.Properties$/;"	n
 Notifications.Properties	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^namespace Notifications.Properties$/;"	n
+O	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint O = 0x4F;$/;"	f	class:TwitchTester.KeyCodes
+OEM_1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_1 = 0xBA;$/;"	f	class:TwitchTester.KeyCodes
+OEM_102	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_102 = 0xE2;$/;"	f	class:TwitchTester.KeyCodes
+OEM_2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_2 = 0xBF;$/;"	f	class:TwitchTester.KeyCodes
+OEM_3	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_3 = 0xC0;$/;"	f	class:TwitchTester.KeyCodes
+OEM_4	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_4 = 0xDB;$/;"	f	class:TwitchTester.KeyCodes
+OEM_5	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_5 = 0xDC;$/;"	f	class:TwitchTester.KeyCodes
+OEM_6	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_6 = 0xDD;$/;"	f	class:TwitchTester.KeyCodes
+OEM_7	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_7 = 0xDE;$/;"	f	class:TwitchTester.KeyCodes
+OEM_8	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_8 = 0xDF;$/;"	f	class:TwitchTester.KeyCodes
+OEM_CLEAR	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_CLEAR = 0xFE;$/;"	f	class:TwitchTester.KeyCodes
+OEM_COMMA	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_COMMA = 0xBC;$/;"	f	class:TwitchTester.KeyCodes
+OEM_MINUS	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_MINUS = 0xBD;$/;"	f	class:TwitchTester.KeyCodes
+OEM_PERIOD	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_PERIOD = 0xBE;$/;"	f	class:TwitchTester.KeyCodes
+OEM_PLUS	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint OEM_PLUS = 0xBB;$/;"	f	class:TwitchTester.KeyCodes
+OnClosed	src/Notifications/Notifications/HotKey.cs	/^        protected override void OnClosed(EventArgs e)$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow
+OnClosed	src/Notifications/Notifications/MainWindow.xaml.cs	/^        protected override void OnClosed(EventArgs e)$/;"	m	class:Notifications.MainWindow
+OnSourceInitialized	src/Notifications/Notifications/HotKey.cs	/^        protected override void OnSourceInitialized(EventArgs e)$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow
+OnSourceInitialized	src/Notifications/Notifications/MainWindow.xaml.cs	/^        protected override void OnSourceInitialized(EventArgs e)$/;"	m	class:Notifications.MainWindow
+P	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint P = 0x50;$/;"	f	class:TwitchTester.KeyCodes
+PA1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PA1 = 0xFD;$/;"	f	class:TwitchTester.KeyCodes
+PACKET	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PACKET = 0xE7;$/;"	f	class:TwitchTester.KeyCodes
+PAUSE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PAUSE = 0x13;$/;"	f	class:TwitchTester.KeyCodes
+PLAY	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PLAY = 0xFA;$/;"	f	class:TwitchTester.KeyCodes
+PRINT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PRINT = 0x2A;$/;"	f	class:TwitchTester.KeyCodes
+PRIOR	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PRIOR = 0x21;$/;"	f	class:TwitchTester.KeyCodes
+PROCESSKEY	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint PROCESSKEY = 0xE5;$/;"	f	class:TwitchTester.KeyCodes
 Program	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^    class Program$/;"	c	namespace:CalendarQuickstart
 Program	src/Reminders/Reminders/Program.cs	/^    class Program$/;"	c	namespace:Reminders
+Q	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint Q = 0x51;$/;"	f	class:TwitchTester.KeyCodes
+R	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint R = 0x52;$/;"	f	class:TwitchTester.KeyCodes
+RBUTTON	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint RBUTTON = 0x2;$/;"	f	class:TwitchTester.KeyCodes
+RETURN	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint RETURN = 0x0D;$/;"	f	class:TwitchTester.KeyCodes
+RIGHT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint RIGHT = 0x27;$/;"	f	class:TwitchTester.KeyCodes
+RegisterHotKey	src/Notifications/Notifications/HotKey.cs	/^        private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+RegisterHotKey	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);$/;"	m	class:Notifications.MainWindow	file:
+RegisterHotKey	src/WpfApplication1/WpfApplication1/MainWindow.xaml.cs	/^        public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);$/;"	m	class:WindowsFormsApplicationHotKey.Form1	file:
 Reminder	src/Notifications/Notifications/Reminder.cs	/^        public Reminder(DateTime date, string text)$/;"	m	class:Reminders.Reminder
 Reminder	src/Notifications/Notifications/Reminder.cs	/^    public class Reminder$/;"	c	namespace:Reminders
 Reminder	src/Reminders/Reminders/Reminder.cs	/^        public Reminder(DateTime date, string text)$/;"	m	class:Reminders.Reminder
@@ -76,22 +244,43 @@ Reminders	src/Reminders/Reminders/Program.cs	/^namespace Reminders$/;"	n
 Reminders	src/Reminders/Reminders/Reminder.cs	/^namespace Reminders$/;"	n
 ResourceManager	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:Notifications.Properties.Resources
 ResourceManager	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:UIPrototype.Properties.Resources
+ResourceManager	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:WpfApplication1.Properties.Resources
 Resources	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        internal Resources()$/;"	m	class:Notifications.Properties.Resources	file:
 Resources	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:Notifications.Properties
 Resources	src/UIPrototype/Properties/Resources.Designer.cs	/^        internal Resources()$/;"	m	class:UIPrototype.Properties.Resources	file:
 Resources	src/UIPrototype/Properties/Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:UIPrototype.Properties
+Resources	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^        internal Resources()$/;"	m	class:WpfApplication1.Properties.Resources	file:
+Resources	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:WpfApplication1.Properties
 Run	src/YoutubeAPI/YoutubeAPI/Program.cs	/^        private async Task Run()$/;"	m	class:Google.Apis.YouTube.Samples.Search	file:
+S	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint S = 0x53;$/;"	f	class:TwitchTester.KeyCodes
+SCROLL	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SCROLL = 0x91;$/;"	f	class:TwitchTester.KeyCodes
+SELECT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SELECT = 0x29;$/;"	f	class:TwitchTester.KeyCodes
+SEPARATOR	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SEPARATOR = 0x6C;$/;"	f	class:TwitchTester.KeyCodes
+SHIFT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SHIFT = 0x0004;$/;"	f	class:TwitchTester.KeyCodes
+SLEEP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SLEEP = 0x5F;$/;"	f	class:TwitchTester.KeyCodes
+SNAPSHOT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SNAPSHOT = 0x2C;$/;"	f	class:TwitchTester.KeyCodes
+SPACE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SPACE = 0x20;$/;"	f	class:TwitchTester.KeyCodes
+SUBTRACT	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint SUBTRACT = 0x6D;$/;"	f	class:TwitchTester.KeyCodes
 Scopes	src/GoogleCalendar/ConsoleApplication1/Program.cs	/^        static string[] Scopes = { CalendarService.Scope.Calendar }; \/\/Auth scope$/;"	f	class:CalendarQuickstart.Program	file:
 Search	src/YoutubeAPI/YoutubeAPI/Program.cs	/^    internal class Search$/;"	c	namespace:Google.Apis.YouTube.Samples
+Seconds	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Label Seconds;$/;"	f	class:Notifications.MainWindow	file:
+Seconds	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Label Seconds;$/;"	f	class:Notifications.MainWindow	file:
+SecondsText	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.TextBox SecondsText;$/;"	f	class:Notifications.MainWindow	file:
+SecondsText	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.TextBox SecondsText;$/;"	f	class:Notifications.MainWindow	file:
 SerializeObject	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        public string SerializeObject(object obj)$/;"	m	class:Facebook.Serializers.JsonNetSerializer
 Settings	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:Notifications.Properties
 Settings	src/UIPrototype/Properties/Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:UIPrototype.Properties
+Settings	src/WpfApplication1/WpfApplication1/Properties/Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:WpfApplication1.Properties
 SocialHub	src/SocialHub/SocialHub/Program.cs	/^namespace SocialHub$/;"	n
 System.Windows.Markup.IComponentConnector.Connect	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:Notifications.MainWindow	file:
 System.Windows.Markup.IComponentConnector.Connect	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:Notifications.MainWindow	file:
 System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.Blip	file:
 System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.MainWindow	file:
 System.Windows.Markup.IComponentConnector.Connect	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {$/;"	m	class:UIPrototype.MainWindow	file:
+T	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint T = 0x54;$/;"	f	class:TwitchTester.KeyCodes
+TAB	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint TAB = 0x9;$/;"	f	class:TwitchTester.KeyCodes
+TwitchTester	src/Notifications/Notifications/KeyCodes.cs	/^namespace TwitchTester$/;"	n
+U	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint U = 0x55;$/;"	f	class:TwitchTester.KeyCodes
 UIPrototype	src/UIPrototype/App.xaml.cs	/^namespace UIPrototype$/;"	n
 UIPrototype	src/UIPrototype/MainWindow.xaml.cs	/^namespace UIPrototype$/;"	n
 UIPrototype	src/UIPrototype/obj/Debug/App.g.cs	/^namespace UIPrototype {$/;"	n
@@ -101,12 +290,36 @@ UIPrototype	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^namespace UIPrototype {$
 UIPrototype	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^namespace UIPrototype {$/;"	n
 UIPrototype.Properties	src/UIPrototype/Properties/Resources.Designer.cs	/^namespace UIPrototype.Properties$/;"	n
 UIPrototype.Properties	src/UIPrototype/Properties/Settings.Designer.cs	/^namespace UIPrototype.Properties$/;"	n
+UP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint UP = 0x26;$/;"	f	class:TwitchTester.KeyCodes
+UnregisterHotKey	src/Notifications/Notifications/HotKey.cs	/^        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);$/;"	m	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+UnregisterHotKey	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);$/;"	m	class:Notifications.MainWindow	file:
+V	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint V = 0x56;$/;"	f	class:TwitchTester.KeyCodes
+VK_CAPITAL	src/Notifications/Notifications/HotKey.cs	/^        private const uint VK_CAPITAL = 0x14;$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+VOLUME_DOWN	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint VOLUME_DOWN = 0xAE;$/;"	f	class:TwitchTester.KeyCodes
+VOLUME_MUTE	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint VOLUME_MUTE = 0xAD;$/;"	f	class:TwitchTester.KeyCodes
+VOLUME_UP	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint VOLUME_UP = 0xAF;$/;"	f	class:TwitchTester.KeyCodes
+W	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint W = 0x57;$/;"	f	class:TwitchTester.KeyCodes
+WindowsFormsApplicationHotKey	src/WpfApplication1/WpfApplication1/MainWindow.xaml.cs	/^namespace WindowsFormsApplicationHotKey$/;"	n
+WndProc	src/WpfApplication1/WpfApplication1/MainWindow.xaml.cs	/^        protected override void WndProc(ref Message m)$/;"	m	class:WindowsFormsApplicationHotKey.Form1
+WpfApplication1	src/WpfApplication1/WpfApplication1/App.xaml.cs	/^namespace WpfApplication1$/;"	n
+WpfApplication1.Properties	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^namespace WpfApplication1.Properties$/;"	n
+WpfApplication1.Properties	src/WpfApplication1/WpfApplication1/Properties/Settings.Designer.cs	/^namespace WpfApplication1.Properties$/;"	n
+X	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint X = 0x58;$/;"	f	class:TwitchTester.KeyCodes
+XBUTTON1	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint XBUTTON1 = 0x5;$/;"	f	class:TwitchTester.KeyCodes
+XBUTTON2	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint XBUTTON2 = 0x6;$/;"	f	class:TwitchTester.KeyCodes
+Y	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint Y = 0x59;$/;"	f	class:TwitchTester.KeyCodes
+Z	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint Z = 0x5A;$/;"	f	class:TwitchTester.KeyCodes
+ZOOM	src/Notifications/Notifications/KeyCodes.cs	/^        public const uint ZOOM = 0xFB;$/;"	f	class:TwitchTester.KeyCodes
 _contentLoaded	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        private bool _contentLoaded;$/;"	f	class:Notifications.MainWindow	file:
 _contentLoaded	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:Notifications.MainWindow	file:
 _contentLoaded	src/UIPrototype/obj/Debug/Blip.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.Blip	file:
 _contentLoaded	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.MainWindow	file:
 _contentLoaded	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        private bool _contentLoaded;$/;"	f	class:UIPrototype.MainWindow	file:
 _serializerSettings	src/SocialHub/packages/Facebook.7.0.6/serializers/JsonNetSerializer.cs	/^        private JsonSerializerSettings _serializerSettings;$/;"	f	class:Facebook.Serializers.JsonNetSerializer	file:
+_source	src/Notifications/Notifications/HotKey.cs	/^        private HwndSource _source;$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+_source	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private HwndSource _source;$/;"	f	class:Notifications.MainWindow	file:
+_windowHandle	src/Notifications/Notifications/HotKey.cs	/^        private IntPtr _windowHandle;$/;"	f	class:Mm.Wpf.GlobalHotKeys.MainWindow	file:
+_windowHandle	src/Notifications/Notifications/MainWindow.xaml.cs	/^        private IntPtr _windowHandle;$/;"	f	class:Notifications.MainWindow	file:
 accessToken	src/SocialHub/SocialHub/Facebook.cs	/^    private static string accessToken;$/;"	f	class:FacebookHelpers	file:
 browser_DocumentCompleted	src/SocialHub/SocialHub/Facebook.cs	/^    private static void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)$/;"	m	class:FacebookHelpers	file:
 browser_Navigated	src/SocialHub/SocialHub/Facebook.cs	/^    private static void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)$/;"	m	class:FacebookHelpers	file:
@@ -117,6 +330,7 @@ datePassed	src/Notifications/Notifications/Reminder.cs	/^        private void da
 datePassed	src/Reminders/Reminders/Reminder.cs	/^        private void datePassed(Object o)$/;"	m	class:Reminders.Reminder	file:
 defaultInstance	src/Notifications/Notifications/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:Notifications.Properties.Settings	file:
 defaultInstance	src/UIPrototype/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:UIPrototype.Properties.Settings	file:
+defaultInstance	src/WpfApplication1/WpfApplication1/Properties/Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:WpfApplication1.Properties.Settings	file:
 feed	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.StackPanel feed;$/;"	f	class:UIPrototype.MainWindow	file:
 feed	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.StackPanel feed;$/;"	f	class:UIPrototype.MainWindow	file:
 feed_stats	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.StackPanel feed_stats;$/;"	f	class:UIPrototype.MainWindow	file:
@@ -131,10 +345,14 @@ reminderText	src/Notifications/Notifications/Reminder.cs	/^        private strin
 reminderText	src/Reminders/Reminders/Reminder.cs	/^        private string reminderText;$/;"	f	class:Reminders.Reminder	file:
 resourceCulture	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:Notifications.Properties.Resources	file:
 resourceCulture	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:UIPrototype.Properties.Resources	file:
+resourceCulture	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:WpfApplication1.Properties.Resources	file:
 resourceMan	src/Notifications/Notifications/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:Notifications.Properties.Resources	file:
 resourceMan	src/UIPrototype/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:UIPrototype.Properties.Resources	file:
+resourceMan	src/WpfApplication1/WpfApplication1/Properties/Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:WpfApplication1.Properties.Resources	file:
 streams	src/UIPrototype/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
 streams	src/UIPrototype/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.Grid streams;$/;"	f	class:UIPrototype.MainWindow	file:
+tblock	src/Notifications/Notifications/obj/Debug/MainWindow.g.cs	/^        internal System.Windows.Controls.TextBlock tblock;$/;"	f	class:Notifications.MainWindow	file:
+tblock	src/Notifications/Notifications/obj/Debug/MainWindow.g.i.cs	/^        internal System.Windows.Controls.TextBlock tblock;$/;"	f	class:Notifications.MainWindow	file:
 timer	src/Notifications/Notifications/Reminder.cs	/^        private Timer timer;$/;"	f	class:Reminders.Reminder	file:
 timer	src/Reminders/Reminders/Reminder.cs	/^        private Timer timer;$/;"	f	class:Reminders.Reminder	file:
 uri	src/SocialHub/SocialHub/Facebook.cs	/^    static Uri uri;$/;"	f	class:FacebookHelpers	file:

@@ -5,12 +5,17 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Implemented global hotkey
 
 In Progress:
+Clean up global hotkey code, make code more flexible
+Integration into main application
 
 Challenges:
+Registering global hotkeys in WPFs is a huge pain
 
 Total hours:
+4.5
 
 
 Michael T.
