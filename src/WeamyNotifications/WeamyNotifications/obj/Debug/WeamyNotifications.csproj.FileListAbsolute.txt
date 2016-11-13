@@ -1,0 +1,10 @@
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.csprojResolveAssemblyReference.cache
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.dll
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.pdb
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\Windows.winmd
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\Windows.xml
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.dll
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.pdb
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\NotificationsExtensions.Win10.dll
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\NotificationsExtensions.Win10.pdb
+c:\users\tidus1112\documents\visual studio 2015\Projects\WeamyNotifications\WeamyNotifications\bin\Debug\NotificationsExtensions.Win10.xml
