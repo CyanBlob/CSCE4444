@@ -21,13 +21,16 @@ Total hours:
 Michael T.
 
 Completed: 
+More YouTube API
+Meeting
 
 In Progress:
+Integrate YouTube API
 
 Challenges:
 
 Total hours:
-
+4.5
 
 Daniel M.
 
