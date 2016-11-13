@@ -66,13 +66,16 @@ Total hours: 5H 30M
 Narimon K.
 
 Completed:
-
+UI Work on windows version
 In Progress:
-
+UI Night Mode
+Mac OSX version of the program
 Challenges:
-
+translating things from windows to mac
+getting familiar with the swift language
+getting familiar with the swift API's
 Total hours:
-
+4
 
 Paul G.
 
