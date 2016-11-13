@@ -1,0 +1,80 @@
+Week of Sunday 11/06/16 - Saturday 11/12/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+Test Plan
+Simplified Notifications significantly (Essentially finished and working)
+Verified that timer works properly for twitch watcher
+
+In Progress:
+Integrate everything into main application
+
+Challenges:  
+Making sure everything is as simple as possible. (still)
+
+Total hours: 5H 30M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+	
+Total hours: 
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A
