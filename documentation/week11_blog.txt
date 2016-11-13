@@ -27,13 +27,17 @@ Total hours:
 Daniel M.
 
 Completed:
+Meeting
+UI Tweaks
 
 In Progress:
+Notes and rich text saving/loading
 
 Challenges:
+Eventually being able to switch formats for whatever api platform
 
 Total hours:
-
+3.5
 
 Zac T.
 
