@@ -7,8 +7,11 @@
 
     <Color x:Key="color_shade">#CFCFCF</Color>
     <SolidColorBrush x:Key="brush_shade" Color="{StaticResource color_shade}"></SolidColorBrush>
-    
+
     <Color x:Key="color_offwhite">#FEFEFE</Color>
     <SolidColorBrush x:Key="brush_offwhite" Color="{StaticResource color_offwhite}"></SolidColorBrush>
+
+    <Color x:Key="color_border">#a2a2a2</Color>
+    <SolidColorBrush x:Key="brush_border" Color="{StaticResource color_border}"></SolidColorBrush>
     
 </ResourceDictionary>

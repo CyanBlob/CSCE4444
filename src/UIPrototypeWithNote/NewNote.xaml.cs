@@ -26,12 +26,10 @@ namespace UIPrototype
             InitializeComponent();
         }
 
-        private void Button_save_Click(object sender, RoutedEventArgs e)
+        private void save_Click(object sender, RoutedEventArgs e)
         {
-            // Save note
-            // UPDATE WITH DATA STORE FUNCTIONALITY
-            Application.Current.MainWindow.Show();
             Close();
+
         }
     }
 }

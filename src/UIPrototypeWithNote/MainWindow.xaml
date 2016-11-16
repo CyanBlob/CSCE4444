@@ -37,6 +37,7 @@
             </Button>
             <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="icons/Alarm.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
+                
             </Button>
             <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="icons/Calendar.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
@@ -55,9 +56,9 @@
             </Grid.RowDefinitions>
 
             <!-- BORDERING EFFECT -->
-            <Border Grid.Row="0" Grid.RowSpan="3" BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Left" Height="850" Margin="-2,-80,0,-79.6" VerticalAlignment="Center" Width="2"/>
-            <Border Grid.Row="0" Grid.RowSpan="3"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-80,-0.2,-79.6" VerticalAlignment="Center" Width="2"/>
-            <Border Grid.Row="0" Grid.RowSpan="3"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-82,-5.2,-77.6" VerticalAlignment="Center" Width="2"/>
+            <Border Grid.Row="0" Grid.RowSpan="3" BorderBrush="{StaticResource brush_border}" BorderThickness="2,0,0,0" HorizontalAlignment="Left" Height="850" Margin="-2,-80,0,-79.6" VerticalAlignment="Center" Width="2"/>
+            <Border Grid.Row="0" Grid.RowSpan="3"  BorderBrush="{StaticResource brush_border}" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-80,-0.2,-79.6" VerticalAlignment="Center" Width="2"/>
+            <Border Grid.Row="0" Grid.RowSpan="3"  BorderBrush="{StaticResource brush_border}" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-82,-5.2,-77.6" VerticalAlignment="Center" Width="2"/>
 
             <!-- 
                 TOPMOST FEED PANEL
@@ -66,12 +67,12 @@
             -->
             <StackPanel x:Name="feed_stats" Grid.Row="0" Orientation="Horizontal" Background="{x:Null}" Margin="0,0,-0.2,640.4" Grid.RowSpan="3">
                 <Label>Posts:</Label>
-                <Label>Posts:</Label>
-                <Label>Posts:</Label>
+                <Label>Friends:</Label>
+                <Label>Reminders:</Label>
             </StackPanel>
 
             <StackPanel x:Name="feed" Grid.Row="2" Orientation="Vertical" Background="{x:Null}" Margin="0,0.4,-0.2,0.4">
-                <Label>Blah</Label>
+                <Label>Stream content - Placeholder</Label>
             </StackPanel>
         </Grid>
 
@@ -82,8 +83,22 @@
             UPDATE WITH QUICK TASKS, TO DO, QUICK REMINDER, ETC
         
         -->
-        <Grid x:Name="quickpanel" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="5px,0,0,0">
-
+        <Grid x:Name="quickpanel" Height="690px" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="0,0,0,0">
+            <DockPanel LastChildFill="True">
+                <TextBox DockPanel.Dock="Top" Height="30px" Width="Auto" Margin="20,10,20,0" Background="{StaticResource brush_shade}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16">
+                YouTube Search
+                </TextBox>
+                <Border BorderThickness="1px" Margin="20px" Height="320px" VerticalAlignment="Top" DockPanel.Dock="Top"  BorderBrush="{StaticResource brush_border}">
+                    <ScrollViewer Margin="0">
+                        <Grid Background="{StaticResource brush_offwhite}" Height="2000px">
+                            <Label>Search results will appear here...</Label>
+                        </Grid>
+                    </ScrollViewer>
+                </Border>
+                <Grid DockPanel.Dock="Bottom" Background="{StaticResource brush_shade}" Margin="20px, 0, 20px, 20px">
+                    <Label>Quick Notes - Placeholder</Label>
+                </Grid>
+            </DockPanel>
         </Grid>
     </Grid>
 </Window>

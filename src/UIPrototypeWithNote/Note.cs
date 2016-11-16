@@ -52,6 +52,7 @@ using System.Windows;
                     _body = "";
                     _title = "";
                     _src = Sources.None;
+                    _srcUri = new System.Uri("http://www.google.com");
                 }
 
                 /// <summary>

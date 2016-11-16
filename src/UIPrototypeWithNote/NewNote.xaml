@@ -18,20 +18,20 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid Height="500" Width="720">
-        <StackPanel Grid.Column="0" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" Background="{StaticResource brush_offwhite}" Grid.ColumnSpan="1" Margin="0,0,-0.4,127.2" Grid.RowSpan="1">
-            <Label FontSize="18px" FontWeight="ExtraBlack" Margin="10px, 0px, 10px, 0px" Target="{Binding ElementName=txtA}">
+    <Grid Height="Auto" Width="Auto" Background="red" Margin="0px">
+        <DockPanel Grid.Column="0" LastChildFill="False" Width="Auto" Height="Auto" Margin="0px" Background="{StaticResource brush_offwhite}" Grid.RowSpan="1">
+            <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10px, 0px, 10px, 0px" Target="{Binding ElementName=txtA}">
                 <StackPanel Width="Auto">
                     <AccessText Text="_subject:" FontSize="12"></AccessText>
                 </StackPanel>
             </Label>
-            <TextBox x:Name="txtA" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="Blah" FontFamily="Times New Roman" FontSize="16"/>
-            <Label FontSize="18px" FontWeight="ExtraBlack" Margin="10,2,10,2" Target="{Binding ElementName=txtB}">
+            <TextBox DockPanel.Dock="Top" x:Name="txtA" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="Blah" FontFamily="Times New Roman" FontSize="16"/>
+            <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10,2,10,2" Target="{Binding ElementName=txtB}">
                 <StackPanel Width="Auto">
                     <AccessText  Text="_message:" FontSize="12"></AccessText>
                 </StackPanel>
             </Label>
-            <DockPanel>
+            <DockPanel DockPanel.Dock="Top" x:Name="StatusDock">
                 <ToolBarTray IsLocked="True" Height="Auto" Margin="10px, 0px, 10px, 5px">
                     <ToolBar Background="#CCCCCC" Height="40px" Width="Auto">
                         <Button FontSize="20px" Width="26px">
@@ -43,7 +43,6 @@
                         <Button FontSize="20px" Width="26px">
                             <Image Source="icons/texteditor/underline.png"></Image>
                         </Button>
-                        <Separator/>
                         <Button FontSize="20px" Width="26px">
                             <Image Source="icons/texteditor/justify_left.png"></Image>
                         </Button>
@@ -53,7 +52,6 @@
                         <Button FontSize="20px" Width="26px">
                             <Image Source="icons/texteditor/justify_right.png"></Image>
                         </Button>
-                        <Separator/>
                         <Button FontSize="20px" Width="26px">
                             <Image Source="icons/texteditor/italic.png"></Image>
                         </Button>
@@ -63,11 +61,11 @@
                     </ToolBar>
                 </ToolBarTray>
             </DockPanel>
-            <TextBox x:Name="txtMsg" AutoWordSelection="False" SpellCheck.IsEnabled="True" Language="en-US" AcceptsReturn="True" AcceptsTab="True" Height="200px" Margin="10,0,10,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" FontFamily="Times New Roman" FontSize="16">
+            <TextBox DockPanel.Dock="Top" x:Name="txtMsg" Height="290px" AutoWordSelection="False" SpellCheck.IsEnabled="True" Language="en-US" AcceptsReturn="True" AcceptsTab="True" Margin="10,0,10,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" FontFamily="Times New Roman" FontSize="16">
                 Blah
                 Blip
             </TextBox>
-            <StatusBar Margin="10px">
+            <StatusBar DockPanel.Dock="Top" Height="30px" Margin="10px">
                 <StatusBar.ItemsPanel>
                     <ItemsPanelTemplate>
                         <Grid>
@@ -79,13 +77,12 @@
                     </ItemsPanelTemplate>
                 </StatusBar.ItemsPanel>
                 <StatusBarItem Grid.Column="0">
-                    <Button x:Name="save" Width="60px" Click="Button_save_Click">Save</Button>
+                    <Button x:Name="save" Width="60px" Click="save_Click">Save</Button>
                 </StatusBarItem>
-                <StatusBarItem Grid.Column="1">
+                <StatusBarItem Grid.Column="1" HorizontalAlignment="Right">
                     <ProgressBar Width="100px" Height="20px" Value="60"></ProgressBar>
                 </StatusBarItem>
             </StatusBar>
-        </StackPanel>
-
+        </DockPanel>
     </Grid>
 </Window>
