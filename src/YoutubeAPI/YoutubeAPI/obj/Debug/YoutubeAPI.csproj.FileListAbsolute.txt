@@ -94,3 +94,6 @@ C:\Users\Michael\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\l
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\Zlib.Portable.xml
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.csprojResolveAssemblyReference.cache
+C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\YoutubeAPI\YoutubeAPI\bin\Debug\YoutubeAPI.exe.config
+C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.exe
+C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\YoutubeAPI\YoutubeAPI\obj\Debug\YoutubeAPI.pdb

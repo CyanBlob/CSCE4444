@@ -32,8 +32,8 @@
                 THESE ARE JUST DUPLICATE BUTTON ICONS FOR NOW
                 WILL UPDATE WITH PROBABLE TEMPLATED BUTTON CONTROL
             -->
-            <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
-                <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
+            <Button Click="btnTwitch_Click" DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Twitch.tv"></Image>
             </Button>
             <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
@@ -78,6 +78,8 @@
                 APPENDED, REMOVED & RE-ORDERED AS NEEDED WITHIN THE STACK PANEL AS FEEDS ARE READ, NAVIGATED & UPDATED
             -->
             <StackPanel x:Name="feed" Grid.Row="1" Orientation="Vertical" Background="{x:Null}">
+                <!--<TextBlock Text="Enter your Twitch.tv username!" Width="300px" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" />
+                <TextBox Name="txtTwitchUsername" Width="300px" TextChanged="txtTwitchUsername_TextChanged"/>-->
                 <!--<Grid> --><!-- SOON TO BE FEED "NODE" CONTROL--><!--
                     
                 </Grid>-->
@@ -92,7 +94,20 @@
         
         -->
         <Grid x:Name="quickpanel" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="5px,0,0,0">
-            
+            <ListBox Name="lstContent" Margin="2" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="lstContent_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding imageUrl}" Margin="2" Width="60px" Height="60px" />
+                            <StackPanel Orientation="Vertical" Width="260px">
+                                <TextBlock Text="{Binding displayName}" Margin="2" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding game}" Margin="2"/>
+                                <TextBlock Text="{Binding streamTitle}" Margin="2" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
     </Grid>
 </Window>

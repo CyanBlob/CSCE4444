@@ -46,6 +46,13 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="TwitchCSharp">
+      <HintPath>..\TwitchCSharp-master\TwitchCSharp\bin\Release\TwitchCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WeamyNotifications, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -55,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="weamyTwitchChannel.cs" />
     <Page Include="WeamyTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -50,3 +50,4 @@ C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\obj\D
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.pdb
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config

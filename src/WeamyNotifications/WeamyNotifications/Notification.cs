@@ -38,7 +38,7 @@ namespace WeamyNotifications
                     {
                         imageId = imageUrl.Substring(start, length);
                     }
-                    string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + imageId + ".jpeg";   // set image path for file
+                    string imageFilePath = System.IO.Path.GetTempPath() + "Weamy_" + imageId + ".jpeg";   // set image path for file
 
                     int curLine = 0;
                     XmlDocument toastXml;
