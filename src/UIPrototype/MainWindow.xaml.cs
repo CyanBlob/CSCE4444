@@ -46,9 +46,7 @@ namespace UIPrototype
                 return userLiveChannels;
             }
         }
-
-        enum GridContent { Feed, Twitch };
-        private GridContent gridContent = GridContent.Feed;
+        
         private List<weamyTwitchChannel> userChannels = new List<weamyTwitchChannel>();
         private const int tickTimer = 10;
         private string twitchUsername = "Monatrox";
@@ -152,10 +150,6 @@ namespace UIPrototype
                 lstContent.ItemsSource = null;
                 lstContent.ItemsSource = UserLiveChannels;
             }));
-
-
-            //lstContent.ItemsSource = null;
-            //lstContent.ItemsSource = UserLiveChannels;
         }
 
         private void updateGridContent()
@@ -190,11 +184,6 @@ namespace UIPrototype
         private void lstContent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             openInBrowser(lstContent.SelectedItem.ToString());
-        }
-
-        private void txtTwitchUsername_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            twitchUsername = txtTwitchUsername.Text;
         }
     }
 }
