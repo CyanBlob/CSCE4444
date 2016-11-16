@@ -83,21 +83,36 @@
             UPDATE WITH QUICK TASKS, TO DO, QUICK REMINDER, ETC
         
         -->
-        <Grid x:Name="quickpanel" Height="690px" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="0,0,0,0">
-            <DockPanel LastChildFill="True">
-                <TextBox DockPanel.Dock="Top" Height="30px" Width="Auto" Margin="20,10,20,0" Background="{StaticResource brush_shade}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16">
-                YouTube Search
-                </TextBox>
-                <Border BorderThickness="1px" Margin="20px" Height="320px" VerticalAlignment="Top" DockPanel.Dock="Top"  BorderBrush="{StaticResource brush_border}">
-                    <ScrollViewer Margin="0">
-                        <Grid Background="{StaticResource brush_offwhite}" Height="2000px">
-                            <Label>Search results will appear here...</Label>
-                        </Grid>
-                    </ScrollViewer>
-                </Border>
-                <Grid DockPanel.Dock="Bottom" Background="{StaticResource brush_shade}" Margin="20px, 0, 20px, 20px">
-                    <Label>Quick Notes - Placeholder</Label>
-                </Grid>
+    <Grid x:Name="quickpanel" Height="690px" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="0,0,0,0">
+        <DockPanel LastChildFill="True">
+            <TextBox DockPanel.Dock="Top" Height="30px" Width="Auto" Margin="20,10,20,0" Background="{StaticResource brush_shade}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16">
+            YouTube Search
+            </TextBox>
+            <Border BorderThickness="1px" Margin="20px" Height="320px" VerticalAlignment="Top" DockPanel.Dock="Top"  BorderBrush="{StaticResource brush_border}">
+                <ScrollViewer Margin="0">
+                    <Grid Background="{StaticResource brush_offwhite}" Height="2000px">
+                        <Label>Search results will appear here...</Label>
+                    </Grid>
+                </ScrollViewer>
+            </Border>
+            <DockPanel DockPanel.Dock="Bottom" Background="{StaticResource brush_shade}" Margin="20px, 0, 20px, 20px">
+                    <Grid VerticalAlignment="Stretch" DockPanel.Dock="Top" Height="200px" Margin="10px">
+                        <Label>
+                        Quick Notes - Placeholder
+                        </Label>
+                    </Grid>
+                    <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+                        <Button DockPanel.Dock="Left" Width="32px" Height="32px" Margin="10px" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Width="26" Height="26" Source="icons/Note_Create.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"/>
+                        </Button>
+                        <Button DockPanel.Dock="Left" Width="32px" Height="32px" Margin="10px" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Width="26" Height="26" Source="icons/Note_Create.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"/>
+                        </Button>
+                        <Button DockPanel.Dock="Left" Width="32px" Height="32px" Margin="10px" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Width="26" Height="26" Source="icons/Note_Create.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"/>
+                        </Button>
+                    </DockPanel>
+                </DockPanel>
             </DockPanel>
         </Grid>
     </Grid>
