@@ -15,10 +15,10 @@ using System.Windows.Shapes;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 using Reminders;
-using System.Collections.Generic;
-using System;
+using YouTubeAPI;
 using System.Windows.Interop;
 using TwitchTester;
+using System.Diagnostics;
 
 namespace Notifications
 {
@@ -66,7 +66,15 @@ namespace Notifications
                                     Double.Parse(MinutesText.GetLineText(0)) * 60 +
                                     Double.Parse(SecondsText.GetLineText(0)));
 
-                                new Reminder(DateTime.Now.AddSeconds(seconds), "HotKey notification");
+                                string reminderText = "";
+                                int i;
+
+                                for (i = 0; i < NotificationText.LineCount; i++)
+                                {
+                                    reminderText += NotificationText.GetLineText(i);
+                                }
+
+                                new Reminder(DateTime.Now.AddSeconds(seconds), NotificationText.GetLineText(0).ToString());
                                 tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
                             }
                             handled = true;
@@ -97,6 +105,15 @@ namespace Notifications
 
             // don't necessarily need to store reminders
             //new Reminder(date.AddSeconds(10), "Second notification");
+
+            string[,] subs = YouTubeAPICall.GetSubs();
+            string[,] vids = YouTubeAPICall.GetVids(subs);
+            Debug.WriteLine("-------------------------------------------");
+            for (int x = 0; x < subs.Length / 2 * 3; x++)
+            {
+                YouTubeBlock.Text += vids[x, 0] + " - " + vids[x, 1] + " - " + vids[x, 2] + "\n";
+                //Console.WriteLine(vids[x, 0] + " " + vids[x, 1] + " " + vids[x, 2]);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
