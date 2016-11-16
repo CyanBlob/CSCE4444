@@ -16,6 +16,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -44,12 +45,27 @@
             Grid.Column="1"
             Grid.Row="2"
         />
-
+        
+        <Label 
+            Name="Notification"
+            Content="Notification Text"
+            Grid.Column="0"
+            Grid.Row="3" />
+        <TextBox 
+            Name="NotificationText"
+            Text="This is a notification"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AcceptsReturn="False"
+            Width="300"
+            Grid.Column="1"
+            Grid.Row="3"/>
+        
         <Label 
             Name="Hours"
             Content="Hours"
             Grid.Column="0"
-            Grid.Row="3" />
+            Grid.Row="4" />
         <TextBox 
             Name="HoursText"
             Text="0"
@@ -59,12 +75,12 @@
             AcceptsReturn="True"
             Width="100"
             Grid.Column="1"
-            Grid.Row="3"/>
+            Grid.Row="4"/>
         <Label 
             Name="Minutes"
             Content="Minutes"
             Grid.Column="0"
-            Grid.Row="4" />
+            Grid.Row="5" />
         <TextBox 
             Name="MinutesText"
             Text="0"
@@ -74,12 +90,12 @@
             AcceptsReturn="True"
             Width="100"
             Grid.Column="1"
-            Grid.Row="4"/>
+            Grid.Row="5"/>
         <Label 
             Name="Seconds"
             Content="Seconds"
             Grid.Column="0"
-            Grid.Row="5" />
+            Grid.Row="6" />
         <TextBox 
             Name="SecondsText"
             Text="0"
@@ -89,7 +105,7 @@
             AcceptsReturn="True"
             Width="100"
             Grid.Column="1"
-            Grid.Row="5"/>
+            Grid.Row="6"/>
 
         <Button Content="Button"
                 HorizontalAlignment="Center"
@@ -99,7 +115,7 @@
                 Height="100"
                 Click="Button_Click"
                 Grid.Column="1"
-                Grid.Row="6"
+                Grid.Row="7"
                 Grid.ColumnSpan="2">
         </Button>
     </Grid>

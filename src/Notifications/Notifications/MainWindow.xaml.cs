@@ -66,7 +66,15 @@ namespace Notifications
                                     Double.Parse(MinutesText.GetLineText(0)) * 60 +
                                     Double.Parse(SecondsText.GetLineText(0)));
 
-                                new Reminder(DateTime.Now.AddSeconds(seconds), "HotKey notification");
+                                string reminderText = "";
+                                int i;
+
+                                for (i = 0; i < NotificationText.LineCount; i++)
+                                {
+                                    reminderText += NotificationText.GetLineText(i);
+                                }
+
+                                new Reminder(DateTime.Now.AddSeconds(seconds), NotificationText.GetLineText(0).ToString());
                                 tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
                             }
                             handled = true;
