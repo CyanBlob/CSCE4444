@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notifications"
         mc:Ignorable="d"
-        Title="MainWindow" Height="auto" Width="800">
+        Title="MainWindow" Height="auto" Width="1600">
     
     <Grid>
         <Grid.RowDefinitions>
@@ -19,6 +19,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
@@ -45,7 +46,14 @@
             Grid.Column="1"
             Grid.Row="2"
         />
-        
+
+        <TextBlock 
+            x:Name="YouTubeBlock"
+            HorizontalAlignment="Right"
+            Grid.Column="2"
+            Grid.Row="2"
+        />
+
         <Label 
             Name="Notification"
             Content="Notification Text"
@@ -115,8 +123,7 @@
                 Height="100"
                 Click="Button_Click"
                 Grid.Column="1"
-                Grid.Row="7"
-                Grid.ColumnSpan="2">
+                Grid.Row="7">
         </Button>
     </Grid>
 </Window>

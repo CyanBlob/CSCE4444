@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 
 namespace YouTubeAPI
 {
-    public static class YouTubeAPICall
+    public class YouTubeAPICall
     {
         public static string[,] GetSubs()
         {
@@ -43,7 +43,7 @@ namespace YouTubeAPI
                 {
                     subs[x, 0] = jsonResponse.SelectToken("items")[x].SelectToken("snippet").SelectToken("title").ToString();
                     subs[x, 1] = jsonResponse.SelectToken("items")[x].SelectToken("snippet").SelectToken("resourceId").SelectToken("channelId").ToString();
-                    Console.WriteLine(subs[x, 0] + " " + subs[x, 1]);
+                    //Console.WriteLine(subs[x, 0] + " " + subs[x, 1]);
                 }
 
                 return (subs);
@@ -51,8 +51,7 @@ namespace YouTubeAPI
 
             else
             {
-                Console.WriteLine("Something when wrong when reading the response description: {0}",
-                                subsResponse.StatusDescription);
+                //Console.WriteLine("Something when wrong when reading the response description: {0}", subsResponse.StatusDescription);
             }
             //Console.ReadKey();
             return null;
@@ -62,13 +61,13 @@ namespace YouTubeAPI
         {
             HttpClient client = new HttpClient();
             string[,] vids = new string[subs.Length / 2 * 3, 3];
+            int count = 3;
 
-            
             for (int i = 0; i < subs.Length / 2; i++)
-            {              
-                string getSubsWithID = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE&channelId=" + subs[i, 1] + "&part=snippet,id&order=date&maxResults=3";
-               // Console.WriteLine(getSubsWithID);
-               // Console.ReadKey();
+            {
+                string getSubsWithID = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE&channelId=" + subs[i, 1] + "&part=snippet,id&order=date&maxResults=" + count;
+                // Console.WriteLine(getSubsWithID);
+                // Console.ReadKey();
                 WebRequest subsRequest = WebRequest.Create(getSubsWithID);
                 subsRequest.ContentType = "application/json; charset=utf-8";
 
@@ -87,15 +86,16 @@ namespace YouTubeAPI
 
                     JObject jsonResponse = JObject.Parse(response);
                     JArray items = (JArray)jsonResponse.SelectToken("items");
-                    int count = items.Count;
+                    //int count = items.Count;
 
                     for (int x = 0; x < count; x++)
                     {
-                        vids[x, 0] = subs[i, 0];
-                        vids[x, 1] = jsonResponse.SelectToken("items")[x].SelectToken("snippet").SelectToken("title").ToString();
-                        vids[x, 2] = jsonResponse.SelectToken("items")[x].SelectToken("id").SelectToken("videoId").ToString();
-                        Console.WriteLine(vids[x, 0] + " " + vids[x, 1] + " " + vids[x, 2]);
+                        vids[x + i * count, 0] = subs[i, 0];
+                        vids[x + i * count, 1] = jsonResponse.SelectToken("items")[x].SelectToken("snippet").SelectToken("title").ToString();
+                        vids[x + i * count, 2] = jsonResponse.SelectToken("items")[x].SelectToken("id").SelectToken("videoId").ToString();
+                        //Console.WriteLine(vids[x + i * count, 0] + " " + vids[x + i * count, 1] + " " + vids[x + i * count, 2]);
                     }
+
                     Console.WriteLine();
 
                     //return (subs);
@@ -103,20 +103,23 @@ namespace YouTubeAPI
 
                 else
                 {
-                    Console.WriteLine("Something when wrong when reading the response description: {0}",
-                                    subsResponse.StatusDescription);
+                    //Console.WriteLine("Something when wrong when reading the response description: {0}", subsResponse.StatusDescription);
                 }
                 //Console.ReadKey();
                 //return null;
             }
-            Console.ReadKey();
+            for (int x = 0; x < subs.Length / 2 * 3; x++)
+            {
+                //Console.WriteLine(vids[x, 0] + " " + vids[x, 1] + " " + vids[x, 2]);
+            }
+            //Console.ReadKey();
             return (vids);
         }
 
         /*static void Main(string[] args)
         {
             string[,] subs = GetSubs();
-            GetVids(subs);          
+            GetVids(subs);
         }*/
     }
 }
