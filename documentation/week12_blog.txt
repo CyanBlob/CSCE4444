@@ -1,0 +1,78 @@
+Week of Sunday 11/13/16 - Saturday 11/19/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Zac T.
+
+Completed:
+Created initial UI for Twitch portion of project.
+
+In Progress:
+Need to add some customization options/settings for twitch watcher
+
+Challenges:  
+I didn't know wpf very well before I started this project. 
+
+Total hours: 6H 0M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+	
+Total hours: 
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A
