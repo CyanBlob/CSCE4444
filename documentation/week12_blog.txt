@@ -89,6 +89,6 @@ Total hours: 1 hrs
 ---------------
 TEAM
 
-Total hours:
+Total hours: 25
 
 Questions/concerns: N/A
