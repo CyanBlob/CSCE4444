@@ -79,13 +79,14 @@ Total hours:
 
 Paul G.
 
-Completed: 
+Completed: Implemented Create, Print, and Remove event for Google Calandar
+			Group Meeting
 
-In Progress: 
+In Progress: Merge solution with Git folders
 
-Challenges: 
+Challenges: Injured my arm on Thursday and have not gotten much done after.
 	
-Total hours: 
+Total hours: 3 hrs
 
 ---------------
 TEAM
