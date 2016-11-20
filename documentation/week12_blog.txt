@@ -5,24 +5,30 @@ Link to repo: https://github.com/CyanBlob/CSCE4444
 Andrew T.
 
 Completed:
+Meeting
+Global Hotkeys
+Integration
 
 In Progress:
 
 Challenges:
 
 Total hours:
-
+6
 
 Michael T.
 
 Completed: 
+Meeting
+Advanced and integrated Youtube API
 
 In Progress:
+Fully integrate everything
 
 Challenges:
 
 Total hours:
-
+6
 
 Daniel M.
 
