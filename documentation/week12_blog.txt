@@ -27,13 +27,23 @@ Total hours:
 Daniel M.
 
 Completed:
+Weekly Meeting & Heuri Eval
+UI Work & updated UI prototype w/ rough create note window
+Began basic skeleton of YouTube quick search & quick panel
 
 In Progress:
+Notes logic & serialization
+YouTube quick search with results panel
+Create note UI/Rich text formatting
+Main stream feed
+Quick panel, notes
+Resizable & Collapsable panels
 
 Challenges:
+Time. Also, learning what I can accomplish with WPF, specifially custom rich text document elements. Things like custom bullet lists and check lists in the note rich text.
 
 Total hours:
-
+6
 
 Zac T.
 
