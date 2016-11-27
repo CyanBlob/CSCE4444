@@ -3,6 +3,7 @@ Week of Sunday 11/20/16 - Saturday 11/26/16
 Link to repo: https://github.com/CyanBlob/CSCE4444
 
 Andrew T.
+Team Meeting
 
 Completed:
 
@@ -11,7 +12,7 @@ In Progress:
 Challenges:
 
 Total hours:
-
+2
 
 Michael T.
 
@@ -58,6 +59,7 @@ Total hours: 3H 0M
 
 
 Narimon K.
+Team Meeting
 
 Completed:
 
@@ -66,21 +68,22 @@ In Progress:
 Challenges:
 
 Total hours:
-
+2
 
 Paul G.
 
 Completed: 
+Team Meeting
 
 In Progress: 
 
 Challenges: 
 	
 Total hours: 
-
+2
 ---------------
 TEAM
 
-Total hours:
+Total hours: 17
 
 Questions/concerns: N/A
