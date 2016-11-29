@@ -34,21 +34,22 @@ namespace UIPrototype
         private const string AUTH_ID = "y8rv59wxnof94ocjbx09z6bbuageue";
         // ----------------------------------------------------------------- //
 
-        private ObservableCollection<weamyTwitchChannel> userLiveChannels;
-        public ObservableCollection<weamyTwitchChannel> UserLiveChannels
+        private ObservableCollection<WeamyDataBoundObject> userLiveChannels;
+        public ObservableCollection<WeamyDataBoundObject> UserLiveChannels
         {
             get
             {
                 if (userLiveChannels == null)
                 {
-                    userLiveChannels = new ObservableCollection<weamyTwitchChannel>();
+                    userLiveChannels = new ObservableCollection<WeamyDataBoundObject>();
                 }
                 return userLiveChannels;
             }
         }
         
-        private List<weamyTwitchChannel> userChannels = new List<weamyTwitchChannel>();
-        private const int tickTimer = 10;
+        private List<WeamyDataBoundObject> userChannels = new List<WeamyDataBoundObject>();
+        System.Timers.Timer twitchTimer;
+        private const int tickTimer = 120;
         private string twitchUsername = "Monatrox";
 
         public MainWindow()
@@ -56,17 +57,17 @@ namespace UIPrototype
             this.DataContext = this;
             InitializeComponent();
             string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + "404_user_50x50.png" + ".jpeg";   // set image path for file
-            
-            UserLiveChannels.Add(new weamyTwitchChannel
+
+            UserLiveChannels.Add(new WeamyDataBoundObject
             {
-                displayName = "DisplayName",
-                streamTitle = "Title that is really long and should probably end up wrapping for funzies",
-                game = "Game",
-                imageUrl = imageFilePath,
-                url = "https://www.google.com"
+                title = "Updating Live Twitch Streams",
+                textLine1 = "It takes a while",
+                textLine2 = "The list will update automatically when it's finished",
+                imagePath = imageFilePath,
+                callbackUrl = "https://www.google.com"
             });
 
-            System.Timers.Timer twitchTimer = new System.Timers.Timer(tickTimer * 1000);
+            twitchTimer = new System.Timers.Timer(1000); // initally run after 1 second. Still takes time to make the web request in the first place (a lot of time :< )
             twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Enabled = true;
         }
@@ -85,7 +86,9 @@ namespace UIPrototype
         private void checkLiveChannels(object source, System.Timers.ElapsedEventArgs e)
         {
             TwitchAuthenticatedClient client = new TwitchAuthenticatedClient(CLIENT_ID, AUTH_ID);
-            
+            twitchTimer.Interval = tickTimer * 1000;        // milliseconds -- also this is the simple way to do this using System.Timers.Timer 
+            twitchTimer.Enabled = false;                    // disable until updated first time
+
             if (string.IsNullOrEmpty(twitchUsername) || client.GetChannel(twitchUsername) == null)
             {
                 twitchUsername = "Monatrox";
@@ -110,7 +113,7 @@ namespace UIPrototype
             }
             foreach (Channel c in newLiveChannels)
             {
-                if (!userChannels.Any(channel => channel.displayName == c.DisplayName))
+                if (!userChannels.Any(channel => channel.textLine2 == c.DisplayName))
                 {
                     new WeamyNotifications.Notification
                     {
@@ -124,23 +127,23 @@ namespace UIPrototype
                     }.makeToast();
                 }
             }
-            userChannels = new List<weamyTwitchChannel>();
-            userLiveChannels = new ObservableCollection<weamyTwitchChannel>();
+            userChannels = new List<WeamyDataBoundObject>();
+            userLiveChannels = new ObservableCollection<WeamyDataBoundObject>();
             foreach (Channel c in newLiveChannels)
             {
-                string image = c.Logo;
+                string image = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png";
                 int start = image.LastIndexOf("/") + 1;
                 int length = image.LastIndexOf(".") - start;
                 image = image.Substring(start, length);
                 string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + image + ".jpeg";   // set image path for file
 
-                weamyTwitchChannel newChannel = new weamyTwitchChannel
+                WeamyDataBoundObject newChannel = new WeamyDataBoundObject
                 {
-                    displayName = c.DisplayName,
-                    streamTitle = c.Status,
-                    game = c.Game,
-                    imageUrl = imageFilePath,
-                    url = c.Url
+                    title = c.DisplayName,
+                    textLine1 = c.Game,
+                    textLine2 = c.Status,
+                    imagePath = imageFilePath,
+                    callbackUrl = c.Url
                 };
                 userChannels.Add(newChannel);
                 UserLiveChannels.Add(newChannel);
@@ -149,7 +152,12 @@ namespace UIPrototype
             {
                 lstContent.ItemsSource = null;
                 lstContent.ItemsSource = UserLiveChannels;
+                if (!twitchTimer.Enabled)
+                {
+                    twitchTimer.Enabled = true;
+                }
             }));
+            
         }
 
         private void updateGridContent()
@@ -183,7 +191,15 @@ namespace UIPrototype
 
         private void lstContent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            openInBrowser(lstContent.SelectedItem.ToString());
+            try
+            {
+                openInBrowser(lstContent.SelectedItem.ToString());
+                lstContent.SelectedItem = null;
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
     }
 }

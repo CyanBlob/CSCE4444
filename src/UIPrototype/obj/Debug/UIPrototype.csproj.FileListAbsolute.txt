@@ -1,70 +1,50 @@
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\bin\Debug\UIPrototype.exe.config
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\bin\Debug\UIPrototype.exe
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\bin\Debug\UIPrototype.pdb
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\MainWindow.g.cs
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\App.g.cs
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\MainWindow.baml
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.g.resources
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.exe
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\UIPrototype.pdb
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\ui\UIPrototype\obj\Debug\WeamyTemplate.baml
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.g.cs
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\App.g.cs
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\WeamyTemplate.baml
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.baml
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.g.resources
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
-D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.g.cs
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\App.g.cs
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\WeamyTemplate.baml
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.baml
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.g.resources
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
-E:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.g.cs
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\App.g.cs
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\WeamyTemplate.baml
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.baml
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.g.resources
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\WeamyNotifications.dll
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\TwitchCSharp.dll
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\RestSharp.dll
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\Windows.winmd
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\TwitchCSharp.pdb
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\WeamyNotifications.pdb
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\RestSharp.xml
-C:\Users\Mon\Documents\SoftwareEngineering\CSCE4444\src\UIPrototype\bin\Debug\Windows.xml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\UIPrototype.exe.config
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\UIPrototype.exe
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\UIPrototype.pdb
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\TwitchCSharp.dll
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\WeamyNotifications.dll
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\RestSharp.dll
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\Windows.winmd
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\TwitchCSharp.pdb
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\WeamyNotifications.pdb
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\RestSharp.xml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\bin\Debug\Windows.xml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\App.g.cs
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\WeamyTemplate.baml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\MainWindow.baml
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.g.resources
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.exe
+C:\Users\tidus1112\Documents\SoftEng\CSCE4444-master\src\UIPrototype\obj\Debug\UIPrototype.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\TwitchCSharp.dll
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\WeamyNotifications.dll
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\RestSharp.dll
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\Windows.winmd
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\TwitchCSharp.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\WeamyNotifications.pdb
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\RestSharp.xml
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\bin\Debug\Windows.xml
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\App.g.cs
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.cache
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype_MarkupCompile.lref
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\WeamyTemplate.baml
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.baml
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.g.resources
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
+C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
