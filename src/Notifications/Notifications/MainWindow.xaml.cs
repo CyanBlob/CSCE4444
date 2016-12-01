@@ -19,6 +19,7 @@ using YouTubeAPI;
 using System.Windows.Interop;
 using TwitchTester;
 using System.Diagnostics;
+using System.Threading;
 
 namespace Notifications
 {
@@ -36,16 +37,20 @@ namespace Notifications
 
         private const int HOTKEY_ID = 9000;
 
-        private IntPtr _windowHandle;
-        private HwndSource _source;
+        private static IntPtr _windowHandle;
+        private static HwndSource _source;
+
         protected override void OnSourceInitialized(EventArgs e)
         {
-            base.OnSourceInitialized(e);
+            //base.OnSourceInitialized(e);
 
             _windowHandle = new WindowInteropHelper(this).Handle;
             _source = HwndSource.FromHwnd(_windowHandle);
             _source.AddHook(HwndHook);
 
+            // for now, just register addition hotkeys here
+            // be sure to add a statement for each hotkey in HwndHook ( if (vkey == KeyCodes.x) {...} )
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.S); //CTRL + ALT + T
             RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.T); //CTRL + ALT + T
         }
 
@@ -61,22 +66,34 @@ namespace Notifications
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
                             if (vkey == KeyCodes.T)
                             {
-                                double seconds = (
-                                    Double.Parse(HoursText.GetLineText(0)) * 3600 +
-                                    Double.Parse(MinutesText.GetLineText(0)) * 60 +
-                                    Double.Parse(SecondsText.GetLineText(0)));
+                                bool reminderPopUpResult;
+                                ReminderPopUp reminderPopUp = new ReminderPopUp();
+                                reminderPopUpResult = (bool) reminderPopUp.ShowDialog();
 
-                                string reminderText = "";
-                                int i;
-
-                                for (i = 0; i < NotificationText.LineCount; i++)
+                                if (reminderPopUpResult == true)
                                 {
-                                    reminderText += NotificationText.GetLineText(i);
-                                }
 
-                                new Reminder(DateTime.Now.AddSeconds(seconds), NotificationText.GetLineText(0).ToString());
-                                tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
+                                    double seconds = (
+                                        Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
+                                        Double.Parse(reminderPopUp.MinutesText.GetLineText(0)) * 60 +
+                                        Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));
+
+                                    string reminderText = "";
+                                    int i;
+
+                                    for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
+                                    {
+                                        reminderText += reminderPopUp.NotificationText.GetLineText(i);
+                                    }
+
+                                    new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
+                                    tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
+
+                                    tblock.Text += reminderPopUp.NotificationText.GetLineText(0);
+                                }
+                                               
                             }
+
                             handled = true;
                             break;
                     }

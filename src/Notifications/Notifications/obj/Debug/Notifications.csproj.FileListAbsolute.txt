@@ -20,20 +20,6 @@ C:\Users\tidus1112\Documents\Visual Studio 2015\Projects\Notifications\Notificat
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.exe
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.pdb
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.pdb
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\MainWindow.g.cs
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\App.g.cs
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.cache
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.lref
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\MainWindow.baml
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.g.resources
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.Properties.Resources.resources
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\Notifications.csproj.GenerateResource.Cache
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.exe
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.pdb
-C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\Notifications.csprojResolveAssemblyReference.cache
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.pdb
@@ -56,3 +42,21 @@ C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Not
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\App.g.cs
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.cache
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.lref
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\Notifications.csprojResolveAssemblyReference.cache
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\MainWindow.g.cs
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\ReminderPopUp.g.cs
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\App.g.cs
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.cache
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester_MarkupCompile.lref
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe.config
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.exe
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\TwitchTester.pdb
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\MainWindow.baml
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\ReminderPopUp.baml
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.g.resources
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.Properties.Resources.resources
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\Notifications.csproj.GenerateResource.Cache
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.exe
+C:\Users\Andre\Development\CSCE4444\src\Notifications\Notifications\obj\Debug\TwitchTester.pdb
