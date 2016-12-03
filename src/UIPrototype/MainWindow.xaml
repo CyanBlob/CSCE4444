@@ -19,7 +19,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    
+
     <Grid x:Name="content_wrap" Background="{StaticResource brush_shade}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50px"></ColumnDefinition>
@@ -45,19 +45,19 @@
                 <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
             </Button>
         </DockPanel>
-        
+
         <!-- MAIN CONTENT/STREAMS COLUMN -->
-        <Grid x:Name="streams" Background="{StaticResource brush_offwhite}" Grid.Column="1" Margin="5,0,0,0">
+        <Grid x:Name="streams" Background="{StaticResource brush_offwhite}" Grid.Column="1" Margin="5,0,368,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50px"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
-            
+
             <!-- BORDERING EFFECT -->
             <Border Grid.Row="0" Grid.RowSpan="5" BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Height="850" Margin="-2,-75,0,-75" VerticalAlignment="Center" Width="2"/>
             <Border Grid.Row="0" Grid.RowSpan="5"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Right" Height="850" Margin="0,-75,0,-75" VerticalAlignment="Center" Width="2"/>
             <Border Grid.Row="0" Grid.RowSpan="2"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-80,-5,-75" VerticalAlignment="Center" Width="2"/>
-            
+
             <!-- 
                 TOPMOST FEED PANEL
                 DISPLAYS QUICKSTATS
@@ -68,7 +68,7 @@
                 <Label>Posts:</Label>
                 <Label>Posts:</Label>-->
             </StackPanel>
-            
+
             <!--
                 MAIN SOCIAL MEDIA FEED CONTENT
                 POSTS AND SUCH
@@ -80,12 +80,14 @@
             <StackPanel x:Name="feed" Grid.Row="1" Orientation="Vertical" Background="{x:Null}">
                 <!--<TextBlock Text="Enter your Twitch.tv username!" Width="300px" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" />
                 <TextBox Name="txtTwitchUsername" Width="300px" TextChanged="txtTwitchUsername_TextChanged"/>-->
-                <!--<Grid> --><!-- SOON TO BE FEED "NODE" CONTROL--><!--
+                <!--<Grid> -->
+                <!-- SOON TO BE FEED "NODE" CONTROL-->
+                <!--
                     
                 </Grid>-->
             </StackPanel>
         </Grid>
-        
+
         <!--
         
             QUICK PANEL (RIGHT-MOST COLUMN)
@@ -93,8 +95,8 @@
             UPDATE WITH QUICK TASKS, TO DO, QUICK REMINDER, ETC
         
         -->
-        <Grid x:Name="quickpanel" Grid.Column="2" Background="{StaticResource brush_offwhite}" Margin="5px,0,0,0">
-            <ListBox Name="lstContent" Margin="2" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="lstContent_SelectionChanged">
+        <Grid x:Name="quickpanel" Grid.Column="1" Background="{StaticResource brush_offwhite}" Height="691" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="734" Grid.ColumnSpan="2">
+            <ListBox Name="lstContent" Margin="0,4,5,0" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="lstContent_SelectionChanged" HorizontalAlignment="Right" Width="362">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -102,6 +104,20 @@
                             <StackPanel Orientation="Vertical" Width="260px">
                                 <TextBlock Text="{Binding title}" Margin="2" FontWeight="Bold"/>
                                 <TextBlock Text="{Binding textLine1}" Margin="2"/>
+                                <TextBlock Text="{Binding textLine2}" Margin="2" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ListBox x:Name="YouTubeContent" Margin="0,4,372,0" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="YouTubeContent_SelectionChanged" HorizontalAlignment="Right" Width="362">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding imagePath}" Margin="2" Width="60px" Height="60px" />
+                            <StackPanel Orientation="Vertical" Width="260px">
+                                <TextBlock Text="{Binding title}" Margin="2" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding textLine1}" Margin="2" TextWrapping="Wrap"/>
                                 <TextBlock Text="{Binding textLine2}" Margin="2" TextWrapping="Wrap" />
                             </StackPanel>
                         </StackPanel>

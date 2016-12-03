@@ -17,6 +17,7 @@ using TwitchCSharp.Clients;
 using TwitchCSharp.Enums;
 using TwitchCSharp.Helpers;
 using TwitchCSharp.Models;
+using YouTubeAPI;
 
 using System.Diagnostics;
 using System.Collections.ObjectModel;
@@ -28,12 +29,13 @@ namespace UIPrototype
     /// </summary>
     public partial class MainWindow : Window
     {
+        
 
-        // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
-        private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
+    // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
+    private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
         private const string AUTH_ID = "y8rv59wxnof94ocjbx09z6bbuageue";
         // ----------------------------------------------------------------- //
-
+        //Twitch
         private ObservableCollection<WeamyDataBoundObject> userLiveChannels;
         public ObservableCollection<WeamyDataBoundObject> UserLiveChannels
         {
@@ -48,8 +50,25 @@ namespace UIPrototype
         }
         
         private List<WeamyDataBoundObject> userChannels = new List<WeamyDataBoundObject>();
+
+        //YouTube
+        private ObservableCollection<WeamyDataBoundObject> youTubeVids;
+        public ObservableCollection<WeamyDataBoundObject> YouTubeVids
+        {
+            get
+            {
+                if (youTubeVids == null)
+                {
+                    youTubeVids = new ObservableCollection<WeamyDataBoundObject>();
+                }
+                return youTubeVids;
+            }
+        }
+
+        private List<WeamyDataBoundObject> YTVids = new List<WeamyDataBoundObject>();
+
         System.Timers.Timer twitchTimer;
-        private const int tickTimer = 120;
+        private const int tickTimer = 30;
         private string twitchUsername = "Monatrox";
 
         public MainWindow()
@@ -69,7 +88,9 @@ namespace UIPrototype
 
             twitchTimer = new System.Timers.Timer(1000); // initally run after 1 second. Still takes time to make the web request in the first place (a lot of time :< )
             twitchTimer.Elapsed += checkLiveChannels;
+            twitchTimer.Elapsed += updateYouTube;
             twitchTimer.Enabled = true;
+
         }
 
         private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -81,6 +102,8 @@ namespace UIPrototype
         {
             lstContent.ItemsSource = null;
             lstContent.ItemsSource = UserLiveChannels;
+            YouTubeContent.ItemsSource = null;
+            YouTubeContent.ItemsSource = YouTubeVids;
         }
 
         private void checkLiveChannels(object source, System.Timers.ElapsedEventArgs e)
@@ -111,6 +134,7 @@ namespace UIPrototype
                     }
                 }
             }
+
             foreach (Channel c in newLiveChannels)
             {
                 if (!userChannels.Any(channel => channel.textLine2 == c.DisplayName))
@@ -127,6 +151,7 @@ namespace UIPrototype
                     }.makeToast();
                 }
             }
+            
             userChannels = new List<WeamyDataBoundObject>();
             userLiveChannels = new ObservableCollection<WeamyDataBoundObject>();
             foreach (Channel c in newLiveChannels)
@@ -158,6 +183,42 @@ namespace UIPrototype
                 }
             }));
             
+        }
+
+        private void updateYouTube(object source, System.Timers.ElapsedEventArgs e)
+        {
+            //YouTubeVids.Clear();
+            string[,] subs = YouTubeAPICall.GetSubs();
+            string[,] vids = YouTubeAPICall.GetVids(subs);
+            Debug.WriteLine("-------------------------------------------");
+            for (int x = 0; x < subs.Length / 2 * 3; x++)
+            {
+                //YouTubeContent. += vids[x, 0] + " - " + vids[x, 1] + " - " + vids[x, 2] + "\n";
+                Console.WriteLine(vids[x, 0] + " " + vids[x, 1] + " " + vids[x, 2]);
+            
+                string imageFilePath = "http://img.youtube.com/vi/" + vids[x,2] + "/0.jpg";
+                string URL = "https://www.youtube.com/watch?v=" + vids[x,2];
+                WeamyDataBoundObject newVid = new WeamyDataBoundObject
+                {
+                    title = vids[x, 0],
+                    textLine1 = vids[x, 1],
+                    textLine2 = "",
+                    imagePath = imageFilePath,
+                    callbackUrl = URL
+                };
+                YTVids.Add(newVid);
+                YouTubeVids.Add(newVid);
+            }
+
+            YouTubeContent.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, new Action(delegate ()
+            {
+                YouTubeContent.ItemsSource = null;
+                YouTubeContent.ItemsSource = YouTubeVids;
+                if (!twitchTimer.Enabled)
+                {
+                    twitchTimer.Enabled = true;
+                }
+            }));
         }
 
         private void updateGridContent()
@@ -197,6 +258,18 @@ namespace UIPrototype
                 lstContent.SelectedItem = null;
             }
             catch(Exception ex)
+            {
+
+            }
+        }
+        private void YouTubeContent_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                openInBrowser(YouTubeContent.SelectedItem.ToString());
+                YouTubeContent.SelectedItem = null;
+            }
+            catch (Exception ex)
             {
 
             }

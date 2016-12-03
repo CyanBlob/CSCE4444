@@ -116,10 +116,10 @@ namespace YouTubeAPI
             return (vids);
         }
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             string[,] subs = GetSubs();
             GetVids(subs);
-        }
+        }*/
     }
 }
