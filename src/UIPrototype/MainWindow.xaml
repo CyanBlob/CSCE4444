@@ -110,7 +110,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <ListBox x:Name="YouTubeContent" Margin="0,4,372,0" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="YouTubeContent_SelectionChanged" HorizontalAlignment="Right" Width="362">
+            <ListBox x:Name="YouTubeContent" Margin="0,4,372,0" ItemsSource="{Binding YouTubeVids}" SelectionChanged="YouTubeContent_SelectionChanged" HorizontalAlignment="Right" Width="362">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">

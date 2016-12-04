@@ -26,7 +26,7 @@ namespace UIPrototype
         // Comparing callbackUrl is probably the best way to test equality
         public static bool operator ==(WeamyDataBoundObject a, WeamyDataBoundObject b)
         {
-            if (a.callbackUrl == b.callbackUrl)
+            if (a.title == b.title)
             {
                 return true;
             }
@@ -36,7 +36,7 @@ namespace UIPrototype
         // Comparing callbackUrl is probably the best way to test equality
         public static bool operator !=(WeamyDataBoundObject a, WeamyDataBoundObject b)
         {
-            if (a.callbackUrl != b.callbackUrl)
+            if (a.title != b.title)
             {
                 return true;
             }

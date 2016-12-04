@@ -137,7 +137,7 @@ namespace UIPrototype
 
             foreach (Channel c in newLiveChannels)
             {
-                if (!userChannels.Any(channel => channel.textLine2 == c.DisplayName))
+                if (!userChannels.Any(channel => channel.callbackUrl == c.Url))
                 {
                     new WeamyNotifications.Notification
                     {
@@ -191,6 +191,9 @@ namespace UIPrototype
             string[,] subs = YouTubeAPICall.GetSubs();
             string[,] vids = YouTubeAPICall.GetVids(subs);
             Debug.WriteLine("-------------------------------------------");
+
+            YTVids = new List<WeamyDataBoundObject>();
+            youTubeVids = new ObservableCollection<WeamyDataBoundObject>();
             for (int x = 0; x < subs.Length / 2 * 3; x++)
             {
                 //YouTubeContent. += vids[x, 0] + " - " + vids[x, 1] + " - " + vids[x, 2] + "\n";
