@@ -125,3 +125,5 @@ C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Proper
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\ReminderPopUp.g.cs
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\ReminderPopUp.baml
+C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\ReminderPopUp.g.cs
+C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\ReminderPopUp.baml

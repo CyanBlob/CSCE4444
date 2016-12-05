@@ -172,8 +172,8 @@ namespace UIPrototype
             });
 
             twitchTimer = new System.Timers.Timer(1000); // initally run after 1 second. Still takes time to make the web request in the first place (a lot of time :< )
-            twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Elapsed += updateYouTube;
+            twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Enabled = true;
 
         }
