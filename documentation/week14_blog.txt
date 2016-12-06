@@ -1,0 +1,89 @@
+Week of Sunday 11/27/16 - Saturday 12/03/16
+
+Link to repo: https://github.com/CyanBlob/CSCE4444
+
+Andrew T.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Michael T.
+
+Completed: 
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Daniel M.
+
+Completed:
+Team meeting
+
+In Progress:
+Finish up
+
+Challenges:
+Fighting the flu
+
+Total hours: 4
+
+
+Zac T.
+
+Completed:
+Team Meeting
+Squashed some buggiez
+Turned twitch channel object into more generic data bound object
+
+In Progress:
+Make look nice!
+Not look nice, is bad
+look nice would be good, so do
+Also integrate some of the remaining stuff into the UI that isn't there yet (calendar, reminders, notes, settings)
+Make user documentation/help page and also customization options (or just settings in general)
+
+Challenges:  
+I don't like UI :<
+Difficult to integrate multiple different items in a way that isn't stupid (is intuitive, is maintainable, works, etc.)
+Making a professional blog post
+
+Total hours: 5H 30M
+
+
+Narimon K.
+
+Completed:
+
+In Progress:
+
+Challenges:
+
+Total hours:
+
+
+Paul G.
+
+Completed: 
+
+In Progress: 
+
+Challenges: 
+	
+Total hours: 
+
+---------------
+TEAM
+
+Total hours:
+
+Questions/concerns: N/A

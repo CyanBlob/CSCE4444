@@ -21,6 +21,10 @@ using YouTubeAPI;
 
 using System.Diagnostics;
 using System.Collections.ObjectModel;
+using System.Windows.Interop;
+using Reminders;
+using TwitchTester;
+using Notifications;
 
 namespace UIPrototype
 {
@@ -30,7 +34,88 @@ namespace UIPrototype
     public partial class MainWindow : Window
     {
         
+        // being global hotkey code
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
 
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+        private const int HOTKEY_ID = 9000;
+
+        private static IntPtr _windowHandle;
+        private static HwndSource _source;
+
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            //base.OnSourceInitialized(e);
+
+            _windowHandle = new WindowInteropHelper(this).Handle;
+            _source = HwndSource.FromHwnd(_windowHandle);
+            _source.AddHook(HwndHook);
+
+            // for now, just register addition hotkeys here
+            // be sure to add a statement for each hotkey in HwndHook ( if (vkey == KeyCodes.x) {...} )
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.S); //CTRL + ALT + S
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.T); //CTRL + ALT + T
+        }
+
+        private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            const int WM_HOTKEY = 0x0312;
+            switch (msg)
+            {
+                case WM_HOTKEY:
+                    switch (wParam.ToInt32())
+                    {
+                        case HOTKEY_ID:
+                            int vkey = (((int)lParam >> 16) & 0xFFFF);
+                            if (vkey == KeyCodes.T)
+                            {
+                                bool reminderPopUpResult;
+                                ReminderPopUp reminderPopUp = new ReminderPopUp();
+                                reminderPopUpResult = (bool)reminderPopUp.ShowDialog();
+
+                                if (reminderPopUpResult == true)
+                                {
+
+                                    double seconds = (
+                                        Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
+                                        Double.Parse(reminderPopUp.MinutesText.GetLineText(0)) * 60 +
+                                        Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));
+
+                                    string reminderText = "";
+                                    int i;
+
+                                    for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
+                                    {
+                                        reminderText += reminderPopUp.NotificationText.GetLineText(i);
+                                    }
+
+                                    new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
+                                    //tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
+
+                                    //tblock.Text += reminderPopUp.NotificationText.GetLineText(0);
+                                }
+
+                            }
+
+                            handled = true;
+                            break;
+                    }
+                    break;
+            }
+            return IntPtr.Zero;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            _source.RemoveHook(HwndHook);
+            UnregisterHotKey(_windowHandle, HOTKEY_ID);
+            base.OnClosed(e);
+        }
+        //end global hotkey code
+        
         // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
         private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
         private const string AUTH_ID = "y8rv59wxnof94ocjbx09z6bbuageue";
@@ -90,8 +175,8 @@ namespace UIPrototype
             });
 
             twitchTimer = new System.Timers.Timer(1000); // initally run after 1 second. Still takes time to make the web request in the first place (a lot of time :< )
-            twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Elapsed += updateYouTube;
+            twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Enabled = true;
 
         }

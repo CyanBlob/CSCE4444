@@ -20,3 +20,9 @@ C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\WeamyNotification
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.csprojResolveAssemblyReference.cache
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.dll
 C:\Users\tidus1112\Documents\Software Engineering\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.pdb
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.dll
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.pdb
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\Windows.xml
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.csprojResolveAssemblyReference.cache
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.dll
+C:\Users\Andre\Development\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.pdb

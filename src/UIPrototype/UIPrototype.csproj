@@ -66,8 +66,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="KeyCodes.cs" />
+    <Compile Include="Reminder.cs" />
+    <Compile Include="ReminderPopUp.xaml.cs">
+      <DependentUpon>ReminderPopUp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="youtube.cs" />
     <Compile Include="WeamyDataBoundObject.cs" />
+    <Page Include="ReminderPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WeamyTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
