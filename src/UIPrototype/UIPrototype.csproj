@@ -71,6 +71,7 @@
     <Compile Include="ReminderPopUp.xaml.cs">
       <DependentUpon>ReminderPopUp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WeamyDataBoundEnum.cs" />
     <Compile Include="youtube.cs" />
     <Compile Include="WeamyDataBoundObject.cs" />
     <Page Include="ReminderPopUp.xaml">

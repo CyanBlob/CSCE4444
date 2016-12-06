@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UIPrototype"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:note="clr-namespace:WeamyNotifications;assembly=WeamyNotifications"
         mc:Ignorable="d"
         Title="Weamy" Height="720" Width="1280" ResizeMode="CanMinimize">
     <!-- 
@@ -102,6 +103,14 @@
                     <Label Content="Update Rate:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <Slider x:Name="sldUpdateRate" Minimum="20" Maximum="300" Width="460" TickFrequency="1" IsSnapToTickEnabled="True" AutoToolTipPlacement="BottomRight" VerticalAlignment="Center"/>
                     <Label Content="{Binding Path=Value, ElementName=sldUpdateRate}" FontSize="16" Width="40" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
+                    <Label Content="Twitch Browser:" FontWeight="Bold" FontSize="18" Width="200"/>
+                    <ComboBox x:Name="cbxTwitchBrowser" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="220" Height="25" FontSize="16" VerticalContentAlignment="Center" ItemsSource="{Binding Source={local:WeamyDataBoundEnum {x:Type note:CallbackBrowser}}}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
+                    <Label Content="YouTube Browser:" FontWeight="Bold" FontSize="18" Width="200"/>
+                    <ComboBox x:Name="cbxYouTubeBrowser" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="220" Height="25" FontSize="16" VerticalContentAlignment="Center" ItemsSource="{Binding Source={local:WeamyDataBoundEnum {x:Type note:CallbackBrowser}}}"/>
                 </StackPanel>
 
                 <Button x:Name="btnSaveSettings" Click="btnSaveSettings_Click" Content="SAVE" FontWeight="Bold" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="200" Margin="0,50,120,0" HorizontalAlignment="Right"/>

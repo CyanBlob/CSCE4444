@@ -33,7 +33,7 @@ namespace UIPrototype
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
         // being global hotkey code
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
@@ -115,7 +115,7 @@ namespace UIPrototype
             base.OnClosed(e);
         }
         //end global hotkey code
-        
+
         // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
         private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
         private const string AUTH_ID = "y8rv59wxnof94ocjbx09z6bbuageue";
@@ -133,7 +133,7 @@ namespace UIPrototype
                 return userLiveChannels;
             }
         }
-        
+
         private List<WeamyDataBoundObject> userChannels = new List<WeamyDataBoundObject>();
 
         //YouTube
@@ -163,6 +163,8 @@ namespace UIPrototype
             this.DataContext = this;
             InitializeComponent();
             txtTwitchUsername.Text = twitchUsername;
+            cbxTwitchBrowser.SelectedIndex = 0;
+            cbxYouTubeBrowser.SelectedIndex = 0;
             string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + "404_user_50x50.png" + ".jpeg";   // set image path for file
 
             UserLiveChannels.Add(new WeamyDataBoundObject
@@ -170,8 +172,8 @@ namespace UIPrototype
                 title = "Updating Live Twitch Streams",
                 textLine1 = "It takes a while",
                 textLine2 = "The list will update automatically when it's finished",
-                imagePath = imageFilePath,
-                callbackUrl = "https://www.google.com"
+                imagePath = "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png",
+                callbackUrl = "https://twitch.tv"
             });
 
             twitchTimer = new System.Timers.Timer(1000); // initally run after 1 second. Still takes time to make the web request in the first place (a lot of time :< )
@@ -248,17 +250,13 @@ namespace UIPrototype
             foreach (Channel c in newLiveChannels)
             {
                 string image = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png";
-                int start = image.LastIndexOf("/") + 1;
-                int length = image.LastIndexOf(".") - start;
-                image = image.Substring(start, length);
-                string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + image + ".jpeg";   // set image path for file
-
+                
                 WeamyDataBoundObject newChannel = new WeamyDataBoundObject
                 {
                     title = c.DisplayName,
                     textLine1 = c.Game,
                     textLine2 = c.Status,
-                    imagePath = imageFilePath,
+                    imagePath = image,
                     callbackUrl = c.Url
                 };
                 userChannels.Add(newChannel);
@@ -353,7 +351,7 @@ namespace UIPrototype
         {
             try
             {
-                openInBrowser(lstContent.SelectedItem.ToString());
+                openInBrowser(lstContent.SelectedItem.ToString(), (CallbackBrowser)cbxTwitchBrowser.SelectedValue);
                 lstContent.SelectedItem = null;
             }
             catch(Exception ex)
@@ -361,11 +359,12 @@ namespace UIPrototype
 
             }
         }
+
         private void YouTubeContent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try
             {
-                openInBrowser(YouTubeContent.SelectedItem.ToString());
+                openInBrowser(YouTubeContent.SelectedItem.ToString(), (CallbackBrowser)cbxYouTubeBrowser.SelectedValue);
                 YouTubeContent.SelectedItem = null;
             }
             catch (Exception ex)
