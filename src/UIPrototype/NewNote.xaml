@@ -1,0 +1,56 @@
+﻿<Window x:Class="UIPrototype.NewNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UIPrototype"
+        mc:Ignorable="d"
+        Title="Weamy: Create Note" Height="500" Width="720" WindowStyle="SingleBorderWindow" ResizeMode="CanMinimize" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="Manual" WindowState="Normal">
+    <!-- 
+    
+    APP-WIDE SHARED RESOURCES 
+    
+    -->
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="resources\WeamyTemplate.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Height="Auto" Width="Auto" Background="red" Margin="0px">
+        <DockPanel Grid.Column="0" LastChildFill="False" Width="Auto" Height="Auto" Margin="0px" Background="{StaticResource brush_offwhite}" Grid.RowSpan="1">
+            <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10px, 0px, 10px, 0px" Target="{Binding ElementName=txtA}">
+                <StackPanel Width="Auto">
+                    <AccessText Text="_subject:" FontSize="12"></AccessText>
+                </StackPanel>
+            </Label>
+            <TextBox DockPanel.Dock="Top" x:Name="txtA" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="Blah" FontFamily="Times New Roman" FontSize="16"/>
+            <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10,2,10,2" Target="{Binding ElementName=txtB}">
+                <StackPanel Width="Auto">
+                    <AccessText  Text="_message:" FontSize="12"></AccessText>
+                </StackPanel>
+            </Label>
+            <TextBox DockPanel.Dock="Top" x:Name="txtMsg" Height="290px" AutoWordSelection="False" SpellCheck.IsEnabled="True" Language="en-US" AcceptsReturn="True" AcceptsTab="True" Margin="10,0,10,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" FontFamily="Times New Roman" FontSize="16">
+                Blah
+                Blip
+            </TextBox>
+            <StatusBar DockPanel.Dock="Top" Height="30px" Margin="10px">
+                <StatusBar.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ItemsPanelTemplate>
+                </StatusBar.ItemsPanel>
+                <StatusBarItem Grid.Column="0">
+                    <Button x:Name="save" Width="60px" Click="save_Click">Save</Button>
+                </StatusBarItem>
+                <StatusBarItem Grid.Column="1" HorizontalAlignment="Right"/>
+            </StatusBar>
+        </DockPanel>
+    </Grid>
+</Window>
