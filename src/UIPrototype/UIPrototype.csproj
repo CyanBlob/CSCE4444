@@ -67,6 +67,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="KeyCodes.cs" />
+    <Compile Include="NewNote.xaml.cs">
+      <DependentUpon>NewNote.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Note.cs" />
+    <Compile Include="NoteList.cs" />
     <Compile Include="Reminder.cs" />
     <Compile Include="ReminderPopUp.xaml.cs">
       <DependentUpon>ReminderPopUp.xaml</DependentUpon>
@@ -74,7 +79,15 @@
     <Compile Include="WeamyDataBoundEnum.cs" />
     <Compile Include="youtube.cs" />
     <Compile Include="WeamyDataBoundObject.cs" />
+    <Page Include="NewNote.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ReminderPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="resources\WeamyTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -126,9 +139,7 @@
   <ItemGroup>
     <Resource Include="icons\create_new.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="icons\gear.png" />
   </ItemGroup>
