@@ -119,6 +119,15 @@
   <ItemGroup>
     <Folder Include="resources\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\twitch-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\YouTube_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

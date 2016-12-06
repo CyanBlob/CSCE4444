@@ -10,5 +10,7 @@
     
     <Color x:Key="color_offwhite">#FEFEFE</Color>
     <SolidColorBrush x:Key="brush_offwhite" Color="{StaticResource color_offwhite}"></SolidColorBrush>
+
     
+
 </ResourceDictionary>

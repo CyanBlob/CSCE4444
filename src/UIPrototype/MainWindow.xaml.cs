@@ -31,8 +31,8 @@ namespace UIPrototype
     {
         
 
-    // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
-    private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
+        // DO NOT CHANGE THESE, THEY ARE REQUIRED FOR THE TWITCH API TO WORK //
+        private const string CLIENT_ID = "s4fxyi0repqgclpqgnnd1siicn7qjxe;";
         private const string AUTH_ID = "y8rv59wxnof94ocjbx09z6bbuageue";
         // ----------------------------------------------------------------- //
         //Twitch
@@ -68,13 +68,16 @@ namespace UIPrototype
         private List<WeamyDataBoundObject> YTVids = new List<WeamyDataBoundObject>();
 
         System.Timers.Timer twitchTimer;
-        private const int tickTimer = 30;
+        private int tickTimer = 15;
         private string twitchUsername = "Monatrox";
+        private bool enableTwitchNotifications = false;
+        private bool enableYoutubeNotifications = false;
 
         public MainWindow()
         {
             this.DataContext = this;
             InitializeComponent();
+            txtTwitchUsername.Text = twitchUsername;
             string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + "404_user_50x50.png" + ".jpeg";   // set image path for file
 
             UserLiveChannels.Add(new WeamyDataBoundObject
@@ -118,13 +121,13 @@ namespace UIPrototype
             }
             
             PagingInfo pagingInfo = new PagingInfo { Page = 1 };
-            TwitchList<FollowedChannel> followedChannels = client.GetFollowedChannels("Monatrox");
+            TwitchList<FollowedChannel> followedChannels = client.GetFollowedChannels(twitchUsername);
             List<Channel> newLiveChannels = new List<Channel>();
             int page = 1;
             while (followedChannels.List.Count != 0)
             {
                 pagingInfo.Page = page++;
-                followedChannels = client.GetFollowedChannels("Monatrox", pagingInfo); // temporarily don't care about someone else defining the username. 
+                followedChannels = client.GetFollowedChannels(twitchUsername, pagingInfo); // temporarily don't care about someone else defining the username. 
 
                 foreach (FollowedChannel f in followedChannels.List)
                 {
@@ -135,20 +138,23 @@ namespace UIPrototype
                 }
             }
 
-            foreach (Channel c in newLiveChannels)
+            if (enableTwitchNotifications)
             {
-                if (!userChannels.Any(channel => channel.callbackUrl == c.Url))
+                foreach (Channel c in newLiveChannels)
                 {
-                    new WeamyNotifications.Notification
+                    if (!userChannels.Any(channel => channel.callbackUrl == c.Url))
                     {
-                        APP_ID = "Weamy",
-                        title = c.DisplayName,
-                        text = c.Game,
-                        text2 = c.Status,
-                        imageUrl = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png",    // null coalescing for when stream has no logo
-                        activatedCallbackFunction = openInBrowser,
-                        Url = c.Url,
-                    }.makeToast();
+                        new WeamyNotifications.Notification
+                        {
+                            APP_ID = "Weamy",
+                            title = c.DisplayName,
+                            text = c.Game,
+                            text2 = c.Status,
+                            imageUrl = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png",    // null coalescing for when stream has no logo
+                            activatedCallbackFunction = openInBrowser,
+                            Url = c.Url,
+                        }.makeToast();
+                    }
                 }
             }
             
@@ -213,6 +219,11 @@ namespace UIPrototype
                 YouTubeVids.Add(newVid);
             }
 
+            if (enableYoutubeNotifications)
+            {
+                //Handle Youtube Notification Logic Here
+            }
+
             YouTubeContent.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, new Action(delegate ()
             {
                 YouTubeContent.ItemsSource = null;
@@ -275,6 +286,66 @@ namespace UIPrototype
             catch (Exception ex)
             {
 
+            }
+        }
+
+        private void btnSettingsClick(object sender, RoutedEventArgs e)
+        {
+            if(pnlSettings.Visibility == Visibility.Collapsed)
+            {
+                YouTubeContent.Visibility = Visibility.Collapsed;
+                pnlSettings.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                pnlSettings.Visibility = Visibility.Collapsed;
+                YouTubeContent.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void btnSaveSettings_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtTwitchUsername.Text))
+            {
+                twitchUsername = txtTwitchUsername.Text;
+            }
+
+            tickTimer = (int)Math.Floor(sldUpdateRate.Value);
+        }
+
+        private void btnEnableYoutubeNotifications_Click(object sender, RoutedEventArgs e)
+        {
+            if (enableYoutubeNotifications == false)
+            {
+                btnEnableYoutubeNotifications.Foreground = Brushes.Black;
+                btnEnableYoutubeNotifications.Background = Brushes.LightGreen;
+                btnEnableYoutubeNotifications.Content = "Enabled";
+                enableYoutubeNotifications = true;
+            }
+            else
+            {
+                btnEnableYoutubeNotifications.Foreground = Brushes.DarkGray;
+                btnEnableYoutubeNotifications.Background = Brushes.Gray;
+                btnEnableYoutubeNotifications.Content = "Disabled";
+                enableYoutubeNotifications = false;
+            }
+        }
+
+        private void btnEnableTwitchNotifications_Click(object sender, RoutedEventArgs e)
+        {
+            if (enableTwitchNotifications == false)
+            {
+                btnEnableTwitchNotifications.Foreground = Brushes.Black;
+                btnEnableTwitchNotifications.Background = Brushes.LightGreen;
+                btnEnableTwitchNotifications.Content = "Enabled";
+                enableTwitchNotifications = true;
+            }
+            else
+            {
+                btnEnableTwitchNotifications.Foreground = Brushes.DarkGray;
+                btnEnableTwitchNotifications.Background = Brushes.Gray;
+                btnEnableTwitchNotifications.Content = "Disabled";
+                enableTwitchNotifications = false;
             }
         }
     }
