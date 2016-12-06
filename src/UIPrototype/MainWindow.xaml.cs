@@ -432,5 +432,11 @@ namespace UIPrototype
                 enableTwitchNotifications = false;
             }
         }
+
+        private void btnNote_Click(object sender, RoutedEventArgs e)
+        {
+            NewNote notewin = new NewNote();
+            notewin.Show();
+        }
     }
 }

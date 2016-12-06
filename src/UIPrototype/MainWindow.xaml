@@ -40,7 +40,7 @@
             <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="./icons/YouTube_Icon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="YouTube"></Image>
             </Button>
-            <Button DockPanel.Dock="Top" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Button DockPanel.Dock="Top" Click="btnNote_Click" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
             </Button>
             <Button Click="btnSettingsClick" DockPanel.Dock="Bottom" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,0,0,0">
