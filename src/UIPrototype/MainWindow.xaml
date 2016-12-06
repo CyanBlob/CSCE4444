@@ -86,15 +86,16 @@
                     <TextBox x:Name="txtTwitchUsername" Width="500" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
-                    <Label Content="Youtube Username:" FontWeight="Bold" FontSize="18" Width="200"/>
-                    <TextBox x:Name="txtYoutubeUsername" Width="500" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
+                    <Label Content="YouTube Channel ID:" FontWeight="Bold" FontSize="18" Width="200"/>
+                    <TextBox x:Name="txtYoutubeUsername" Width="470" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
+                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your channel's user ID and channel ID, sign in to YouTube and check your advanced account settings page."></Image>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="Twitch Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <Button x:Name="btnEnableTwitchNotifications" Click="btnEnableTwitchNotifications_Click" Content="Disabled" FontSize="16" Foreground="DarkGray" Background="Gray" VerticalContentAlignment="Center" HorizontalContentAlignment="center" Width="200" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
-                    <Label Content="Youtube Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
+                    <Label Content="YouTube Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <Button x:Name="btnEnableYoutubeNotifications" Click="btnEnableYoutubeNotifications_Click" Content="Disabled" FontSize="16" Foreground="DarkGray" Background="Gray" VerticalContentAlignment="Center" HorizontalContentAlignment="center" Width="200" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
