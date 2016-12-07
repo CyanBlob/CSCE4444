@@ -58,8 +58,6 @@ D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\sr
 D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
 D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
-C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
-C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\Newtonsoft.Json.dll
@@ -72,7 +70,6 @@ C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\TwitchCShar
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\WeamyNotifications.pdb
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\RestSharp.xml
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\bin\Debug\Windows.xml
-C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\NewNote.g.cs
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\ReminderPopUp.g.cs
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.g.cs
@@ -88,6 +85,7 @@ C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\MainWindow.
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.g.resources
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Properties.Resources.resources
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe.config
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.exe
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\bin\Debug\UIPrototype.pdb
@@ -119,3 +117,8 @@ C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.Proper
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csproj.GenerateResource.Cache
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
 C:\Users\Andre\Development\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
+=======
+C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.exe
+C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.pdb
+C:\Users\Michael\Documents\GitHub\CSCE4444\src\UIPrototype\obj\Debug\UIPrototype.csprojResolveAssemblyReference.cache
+>>>>>>> deac5d9d379c7ab2ae4355e273c3c88ab73b7641

@@ -139,7 +139,9 @@
   <ItemGroup>
     <Resource Include="icons\create_new.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="icons\reminder.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="icons\gear.png" />
   </ItemGroup>
