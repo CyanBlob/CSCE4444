@@ -44,7 +44,7 @@
                 <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
             </Button>
             <Button DockPanel.Dock="Top" Click="createReminder"  Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
-                <Image Width="26" Height="26" Source="./icons/reminder.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Set a reminder"></Image>
+                <Image Width="26" Height="26" Source="./icons/timer_icon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Set a reminder"></Image>
             </Button>
             <Button Click="btnSettingsClick" DockPanel.Dock="Bottom" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,0,0,0">
                 <Image Width="26" Height="26" Source="./icons/gear.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Settings"></Image>
@@ -92,7 +92,7 @@
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="YouTube Channel ID:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <TextBox x:Name="txtYoutubeUsername" Width="470" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
-                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your YouTube Channel ID, sign in to YouTube and check your advanced account settings page."></Image>
+                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your YouTube Channel ID, sign in to YouTube and &#x0a;check your advanced account settings page.&#x0a;&#x0a;Go to https://www.youtube.com/account_advanced"></Image>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="Twitch Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
@@ -128,7 +128,6 @@
                             <StackPanel Orientation="Vertical" Width="675">
                                 <TextBlock Text="{Binding title}" Margin="2" FontSize="26" FontWeight="Bold"/>
                                 <TextBlock Text="{Binding textLine1}" Margin="2" FontSize="18" TextWrapping="Wrap"/>
-                                <TextBlock Text="{Binding textLine2}" Margin="2" FontSize="18" TextWrapping="Wrap" />
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
@@ -159,7 +158,7 @@
                             <StackPanel Orientation="Vertical" Width="260px">
                                 <TextBlock Text="{Binding title}" Margin="2" FontWeight="Bold"/>
                                 <TextBlock Text="{Binding textLine1}" Margin="2"/>
-                                <TextBlock Text="{Binding textLine2}" Margin="2" TextWrapping="Wrap" />
+                                <TextBlock Text="{Binding textLine2}" Margin="2" TextWrapping="Wrap" MaxHeight="30"/>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>

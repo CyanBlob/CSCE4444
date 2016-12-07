@@ -34,10 +34,10 @@ namespace WeamyNotifications
             {
                 if (!string.IsNullOrEmpty(imageUrl))    // fairly different process required for toasts with images
                 {
-                    int start = imageUrl.LastIndexOf("/") + 1;
-                    int length = imageUrl.LastIndexOf(".") - start;
                     if (string.IsNullOrEmpty(imageId))  // make sure that imageId is not passed as override
                     {
+                        int start = imageUrl.LastIndexOf("/") + 1;
+                        int length = imageUrl.LastIndexOf(".") - start;
                         imageId = imageUrl.Substring(start, length);
                     }
                     string imageFilePath = System.IO.Path.GetTempPath() + "Weamy_" + imageId + ".jpeg";   // set image path for file

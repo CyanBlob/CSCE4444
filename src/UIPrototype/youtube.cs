@@ -14,7 +14,7 @@ namespace YouTubeAPI
         {
             HttpClient client = new HttpClient();
 
-            string getSubsWithID = "https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=" + userID + "&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE";
+            string getSubsWithID = "https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=" + userID + "&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE&maxResults=50";
             //string urlParameters = "?part=Snippet%2CcontentDetails&channelId=UCT3IDkrEU07il99Vcf15YYw&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE";
             WebRequest subsRequest = WebRequest.Create(getSubsWithID);
             subsRequest.ContentType = "application/json; charset=utf-8";
@@ -90,6 +90,8 @@ namespace YouTubeAPI
 
                     for (int x = 0; x < count; x++)
                     {
+                        if (jsonResponse.SelectToken("items")[x].SelectToken("id").SelectToken("kind").ToString() != "youtube#video") continue; // playlists break things
+
                         vids[x + i * count, 0] = subs[i, 0];
                         vids[x + i * count, 1] = jsonResponse.SelectToken("items")[x].SelectToken("snippet").SelectToken("title").ToString();
                         vids[x + i * count, 2] = jsonResponse.SelectToken("items")[x].SelectToken("id").SelectToken("videoId").ToString();

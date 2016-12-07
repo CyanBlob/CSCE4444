@@ -168,9 +168,13 @@ namespace UIPrototype
         System.Timers.Timer twitchTimer;
         private int tickTimer = 15;
         private string twitchUsername = "Monatrox";
+        //private string YouTubeUsername = "UCOZ6Q4QpkGZz5LYOUKs6g8A";
         private string YouTubeUsername = "UCT3IDkrEU07il99Vcf15YYw";
         private bool enableTwitchNotifications = false;
         private bool enableYoutubeNotifications = false;
+
+        private CallbackBrowser twitchBrowser = CallbackBrowser.Default;
+        private CallbackBrowser youtubeBrowser = CallbackBrowser.Default;
 
         public MainWindow()
         {
@@ -256,6 +260,7 @@ namespace UIPrototype
                             text2 = c.Status,
                             imageUrl = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png",    // null coalescing for when stream has no logo
                             activatedCallbackFunction = openInBrowser,
+                            callbackBrowser = twitchBrowser,
                             Url = c.Url,
                         }.makeToast();
                     }
@@ -293,45 +298,46 @@ namespace UIPrototype
 
         private void updateYouTube(object source, System.Timers.ElapsedEventArgs e)
         {
-            //YouTubeVids.Clear();
             string[,] subs = YouTubeAPICall.GetSubs(YouTubeUsername);
             string[,] vids = YouTubeAPICall.GetVids(subs);
-
-            YTVids = new List<WeamyDataBoundObject>();
-            youTubeVids = new ObservableCollection<WeamyDataBoundObject>();
+            List<WeamyDataBoundObject> newYTVids = new List<WeamyDataBoundObject>();
+            
             for (int x = 0; x < subs.Length / 2 * 3; x++)
             {
+                if (string.IsNullOrEmpty(vids[x, 2])) continue;
                 string imageFilePath = "http://img.youtube.com/vi/" + vids[x, 2] + "/0.jpg";
                 string URL = "https://www.youtube.com/watch?v=" + vids[x, 2];
+                
                 WeamyDataBoundObject newVid = new WeamyDataBoundObject
                 {
                     title = vids[x, 0],
                     textLine1 = vids[x, 1],
-                    textLine2 = "",
                     imagePath = imageFilePath,
                     callbackUrl = URL
                 };
-                YTVids.Add(newVid);
-                YouTubeVids.Add(newVid);
+                newYTVids.Add(newVid);
 
                 if (enableYoutubeNotifications)
                 {
-                    //Console.WriteLine(imageFilePath);
-                    //if (!userChannels.Any(channel => channel.callbackUrl == c.Url))
-                    //{
+                    if (!YTVids.Any(vid => vid.callbackUrl == URL))
+                    {
                         new WeamyNotifications.Notification
                         {
                             APP_ID = "Weamy",
                             title = vids[x, 0],
                             text = vids[x, 1],
-                            text2 = "",
+                            imageId = vids[x, 2],
                             imageUrl = imageFilePath,
                             activatedCallbackFunction = openInBrowser,
+                            callbackBrowser = youtubeBrowser,
                             Url = URL,
                         }.makeToast();
-                    //}
+                    }
                 }
             }
+
+            YTVids = new List<WeamyDataBoundObject>(newYTVids);
+            youTubeVids = new ObservableCollection<WeamyDataBoundObject>(YTVids);
 
             YouTubeContent.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, new Action(delegate ()
             {
@@ -423,8 +429,9 @@ namespace UIPrototype
             {
                 YouTubeUsername = txtYoutubeUsername.Text;
             }
-
-
+            twitchBrowser = (CallbackBrowser)cbxTwitchBrowser.SelectedValue;
+            youtubeBrowser = (CallbackBrowser)cbxYouTubeBrowser.SelectedValue;
+            
             tickTimer = (int)Math.Floor(sldUpdateRate.Value);
         }
 
