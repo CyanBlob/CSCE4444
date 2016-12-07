@@ -61,7 +61,7 @@
             AcceptsReturn="True"
             Width="25"
             Grid.Column="1"
-            Grid.Row="4" Margin="99,23,379.333,18" TextChanged="HoursText_TextChanged"/>
+            Grid.Row="4" Margin="99,23,379.333,18"/>
         <TextBox 
             Name="MinutesText"
             Text="0"
@@ -81,7 +81,7 @@
             AcceptsReturn="True"
             Width="25"
             Grid.Column="1"
-            Grid.Row="4" Margin="189.333,23.667,349,18.333" TextChanged="SecondsText_TextChanged"/>
+            Grid.Row="4" Margin="189.333,23.667,349,18.333"/>
 
         <Button x:Name="ScheduleButton" Content="Schedule Reminder"
                 HorizontalAlignment="Center"
