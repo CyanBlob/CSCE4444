@@ -198,6 +198,7 @@ namespace UIPrototype
 
             ((App)Application.Current).notes = new NoteList();
             ((App)Application.Current).notes.loadFromFile("notes.xml");
+            lstNotes.ItemsSource = ((App)Application.Current).notes.notes;
         }
 
         private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)
