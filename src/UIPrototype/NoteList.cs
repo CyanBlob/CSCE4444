@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Collections.ObjectModel;
 
 namespace Weamy
 {
@@ -17,6 +18,8 @@ namespace Weamy
         /// Ancillary methods such as adding/removing notes
         /// and loading data from file and moving to list
         /// </summary>
+        /// 
+        [Serializable]
         public class NoteList
         {
             /// <summary>
@@ -24,7 +27,7 @@ namespace Weamy
             /// </summary>
             public NoteList()
             {
-                notes = new List<Note> { };
+                notes = new ObservableCollection<Note> { };
             }
 
             //
@@ -38,21 +41,28 @@ namespace Weamy
                 Note newNote = new Note(title, body);
                 notes.Insert(0, newNote);
             }
-            
+
             /// <summary>
             /// Clear notes list
             /// And fill list with contents of local XML file
             /// </summary>
             /// <param name="fileName"></param>
-            public void loadFromFile(String fileName="notes.xml")
+            public void loadFromFile(String fileName = "notes.xml")
             {
                 if (File.Exists(fileName))
                 {
-                    notes.Clear();
-                    XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
-                    FileStream fileStream = new FileStream(fileName, FileMode.Open);
-                    notes = (List<Note>)cereal.Deserialize(fileStream);
-                    fileStream.Close();
+                    try
+                    {
+                        notes.Clear();
+                        XmlSerializer cereal = new XmlSerializer(typeof(ObservableCollection<Note>));
+                        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+                        notes = (ObservableCollection<Note>)cereal.Deserialize(fileStream);
+                        fileStream.Close();
+                    }
+                    catch
+                    {
+
+                    }
                 }
             }
 
@@ -62,15 +72,15 @@ namespace Weamy
             /// And fill list with contents of data file (XML???)
             /// </summary>
             /// <param name="fileName"></param>
-            public void saveToFile(String fileName="notes.xml")
+            public void saveToFile(String fileName = "notes.xml")
             {
-                XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
+                XmlSerializer cereal = new XmlSerializer(typeof(ObservableCollection<Note>));
                 TextWriter fileStream = new StreamWriter(fileName);
                 cereal.Serialize(fileStream, notes);
                 fileStream.Close();
             }
-
-            public List<Note> notes;
+            public List<Note> notesDeCereal;
+            public ObservableCollection<Note> notes;
         }
     }
 }
