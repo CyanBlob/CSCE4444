@@ -170,7 +170,7 @@ namespace UIPrototype
         private string twitchUsername = "Monatrox";
         private string YouTubeUsername = "UCT3IDkrEU07il99Vcf15YYw";
         private bool enableTwitchNotifications = false;
-        private bool enableYoutubeNotifications = true;
+        private bool enableYoutubeNotifications = false;
 
         public MainWindow()
         {
