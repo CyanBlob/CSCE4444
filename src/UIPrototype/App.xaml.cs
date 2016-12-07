@@ -14,6 +14,7 @@ namespace UIPrototype
     /// </summary>
     public partial class App : Application
     {
+        public Weamy.Notes.NoteList notes;
         private void Application_Startup(object sender, StartupEventArgs e)
         {
 

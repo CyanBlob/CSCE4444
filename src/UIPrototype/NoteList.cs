@@ -46,11 +46,14 @@ namespace Weamy
             /// <param name="fileName"></param>
             public void loadFromFile(String fileName="notes.xml")
             {
-                notes.Clear();
-                XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
-                FileStream fileStream = new FileStream(fileName, FileMode.Open);
-                notes = (List<Note>)cereal.Deserialize(fileStream);
-                fileStream.Close();
+                if (File.Exists(fileName))
+                {
+                    notes.Clear();
+                    XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
+                    FileStream fileStream = new FileStream(fileName, FileMode.Open);
+                    notes = (List<Note>)cereal.Deserialize(fileStream);
+                    fileStream.Close();
+                }
             }
 
 
