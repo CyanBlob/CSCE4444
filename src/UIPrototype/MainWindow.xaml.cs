@@ -492,6 +492,7 @@ namespace UIPrototype
         {
             var item = (sender as FrameworkElement).DataContext;
             int ind = lstNotes.Items.IndexOf(item);
+            ((App)Application.Current).notes.notes.RemoveAt(ind);
         }
 
     }
