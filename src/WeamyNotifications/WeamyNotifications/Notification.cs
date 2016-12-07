@@ -28,6 +28,8 @@ namespace WeamyNotifications
 
         public void makeToast()
         {
+            /*Console.WriteLine("----------------------------------");
+            Console.WriteLine(imageUrl);*/
             try
             {
                 if (!string.IsNullOrEmpty(imageUrl))    // fairly different process required for toasts with images

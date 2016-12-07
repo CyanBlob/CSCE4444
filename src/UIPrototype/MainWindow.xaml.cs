@@ -170,7 +170,7 @@ namespace UIPrototype
         private string twitchUsername = "Monatrox";
         private string YouTubeUsername = "UCT3IDkrEU07il99Vcf15YYw";
         private bool enableTwitchNotifications = false;
-        private bool enableYoutubeNotifications = false;
+        private bool enableYoutubeNotifications = true;
 
         public MainWindow()
         {
@@ -313,11 +313,24 @@ namespace UIPrototype
                 };
                 YTVids.Add(newVid);
                 YouTubeVids.Add(newVid);
-            }
 
-            if (enableYoutubeNotifications)
-            {
-                //Handle Youtube Notification Logic Here
+                if (enableYoutubeNotifications)
+                {
+                    //Console.WriteLine(imageFilePath);
+                    //if (!userChannels.Any(channel => channel.callbackUrl == c.Url))
+                    //{
+                        new WeamyNotifications.Notification
+                        {
+                            APP_ID = "Weamy",
+                            title = vids[x, 0],
+                            text = vids[x, 1],
+                            text2 = "",
+                            imageUrl = imageFilePath,
+                            activatedCallbackFunction = openInBrowser,
+                            Url = URL,
+                        }.makeToast();
+                    //}
+                }
             }
 
             YouTubeContent.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, new Action(delegate ()
