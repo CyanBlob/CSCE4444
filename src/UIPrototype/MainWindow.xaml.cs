@@ -479,5 +479,19 @@ namespace UIPrototype
         {
             ((App)Application.Current).notes.saveToFile("notes.xml");
         }
+
+
+        private void btnNoteEdit_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as FrameworkElement).DataContext;
+            int ind = lstNotes.Items.IndexOf(item);
+        }
+
+        private void btnNoteDelete_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as FrameworkElement).DataContext;
+            int ind = lstNotes.Items.IndexOf(item);
+        }
+
     }
 }

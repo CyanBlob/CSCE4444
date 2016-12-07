@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:UIPrototype"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:note="clr-namespace:WeamyNotifications;assembly=WeamyNotifications"
+        xmlns:src="clr-namespace:Weamy.Notes"
         mc:Ignorable="d"
         Title="Weamy" Height="720" Width="1280" ResizeMode="CanMinimize" Closing="Window_Closing">
     <!-- 
@@ -25,7 +26,8 @@
     <Grid x:Name="content_wrap" Background="{StaticResource brush_shade}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50px"></ColumnDefinition>
-            <ColumnDefinition Width="853*"></ColumnDefinition>
+            <ColumnDefinition Width="553*"></ColumnDefinition>
+            <ColumnDefinition Width="300*"/>
             <ColumnDefinition Width="371*"/>
         </Grid.ColumnDefinitions>
         <!-- LEFT NAV PANEL -->
@@ -54,36 +56,7 @@
         <!-- MAIN CONTENT/STREAMS COLUMN -->
         <Grid x:Name="streams" Background="{StaticResource brush_offwhite}" Grid.Column="1" Margin="5,0,0,0" Width="840">
 
-            
-            <!--<Grid.RowDefinitions>
-                <RowDefinition Height="50px"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
-            </Grid.RowDefinitions>-->
 
-            <!-- BORDERING EFFECT -->
-            <!--<Border Grid.Row="0" Grid.RowSpan="5" BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Height="850" Margin="-2,-75,0,-75" VerticalAlignment="Center" Width="2"/>
-            <Border Grid.Row="0" Grid.RowSpan="5"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" Grid.Column="1" HorizontalAlignment="Right" Height="850" Margin="0,-75,0,-75" VerticalAlignment="Center" Width="2"/>
-            <Border Grid.Row="0" Grid.RowSpan="2"  BorderBrush="#a2a2a2" BorderThickness="2,0,0,0" HorizontalAlignment="Right" Height="850" Margin="0,-80,-5,-75" VerticalAlignment="Center" Width="2"/>
-
-            --><!-- 
-                TOPMOST FEED PANEL
-                DISPLAYS QUICKSTATS
-                e.g:    friend count, post count, etc
-            -->
-            <!--<StackPanel x:Name="feed_stats" Grid.Row="0" Orientation="Horizontal" Background="{x:Null}">
-                --><!--<Label>Posts:</Label>
-                <Label>Posts:</Label>
-                <Label>Posts:</Label>--><!--
-            </StackPanel>-->
-
-            <!--
-                MAIN SOCIAL MEDIA FEED CONTENT
-                POSTS AND SUCH
-                WILL UPDATE TO INCLUDE CUSTOM FEED CONTROLS
-            
-                EACH INDIVIDUAL FEED "NODE" WILL BE DYNAMICALLY
-                APPENDED, REMOVED & RE-ORDERED AS NEEDED WITHIN THE STACK PANEL AS FEEDS ARE READ, NAVIGATED & UPDATED
-            -->
             <StackPanel x:Name="pnlSettings" Orientation="Vertical" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="Twitch Username:" FontWeight="Bold" FontSize="18" Width="200"/>
@@ -92,7 +65,7 @@
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="YouTube Channel ID:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <TextBox x:Name="txtYoutubeUsername" Width="470" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
-                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your YouTube Channel ID, sign in to YouTube and check your advanced account settings page."></Image>
+                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your channel's user ID and channel ID, sign in to YouTube and check your advanced account settings page."></Image>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="Twitch Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
@@ -119,7 +92,7 @@
                 <Button x:Name="btnSaveSettings" Click="btnSaveSettings_Click" Content="SAVE" FontWeight="Bold" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="200" Margin="0,50,120,0" HorizontalAlignment="Right"/>
 
             </StackPanel>
-            
+
             <ListBox x:Name="YouTubeContent" Margin="0,4,0,0" ItemsSource="{Binding YouTubeVids}" SelectionChanged="YouTubeContent_SelectionChanged" HorizontalAlignment="Left" BorderThickness="0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -134,23 +107,35 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <!--<StackPanel x:Name="feed" Grid.Row="1" Orientation="Vertical" Background="{x:Null}">
-                --><!--<TextBlock Text="Enter your Twitch.tv username!" Width="300px" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" />
-                <TextBox Name="txtTwitchUsername" Width="300px" TextChanged="txtTwitchUsername_TextChanged"/>-->
-                <!--<Grid> -->
-                <!-- SOON TO BE FEED "NODE" CONTROL-->
-                <!--
-                    
-                </Grid>--><!--
-            </StackPanel>-->
+
+        </Grid>
+
+        <!-- NOTES COLUMN -->
+        <Grid Grid.Column="2" Margin="2, 0, 0, 0" Background="{StaticResource brush_offwhite}" Height="691" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="367" Grid.ColumnSpan="1">
+            <ListBox Width="auto" Name="lstNotes" Margin="0,20,0,0" BorderThickness="0" ItemsSource="{Binding Path=notes}" HorizontalAlignment="Center">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0">
+                            <StackPanel Orientation="Vertical" Width="260px" Margin="0">
+                                <TextBlock Text="{Binding title}" Margin="2" FontSize="16px" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding body}" Margin="2" TextWrapping="Wrap" />
+                                <StackPanel Orientation="Horizontal" Width="auto">
+                                    <Button Click="btnNoteEdit_Click">Edit</Button>
+                                    <Button Click="btnNoteDelete_Click">Delete</Button>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
 
         <!--
         
-            YOUTUBE PANEL (RIGHT-MOST COLUMN)
+            Quick Twitch Panel (RIGHT-MOST COLUMN)
         
         -->
-        <Grid x:Name="quickpanel" Grid.Column="1" Background="{StaticResource brush_offwhite}" Height="691" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="367" Grid.ColumnSpan="2">
+        <Grid x:Name="quickpanel" Grid.Column="3" Background="{StaticResource brush_offwhite}" Height="691" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="367" Grid.ColumnSpan="1">
             <ListBox Name="lstContent" Margin="0,4,5,0" ItemsSource="{Binding UserLiveChannels}" SelectionChanged="lstContent_SelectionChanged" HorizontalAlignment="Right" Width="362">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
