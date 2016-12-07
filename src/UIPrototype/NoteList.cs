@@ -27,6 +27,7 @@ namespace Weamy
                 notes = new List<Note> { };
             }
 
+            //
             /// <summary>
             /// add note to list
             /// </summary>
@@ -45,11 +46,14 @@ namespace Weamy
             /// <param name="fileName"></param>
             public void loadFromFile(String fileName="notes.xml")
             {
-                notes.Clear();
-                XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
-                FileStream fileStream = new FileStream(fileName, FileMode.Open);
-                notes = (List<Note>)cereal.Deserialize(fileStream);
-                fileStream.Close();
+                if (File.Exists(fileName))
+                {
+                    notes.Clear();
+                    XmlSerializer cereal = new XmlSerializer(typeof(List<Note>));
+                    FileStream fileStream = new FileStream(fileName, FileMode.Open);
+                    notes = (List<Note>)cereal.Deserialize(fileStream);
+                    fileStream.Close();
+                }
             }
 
 
@@ -66,7 +70,7 @@ namespace Weamy
                 fileStream.Close();
             }
 
-            public static List<Note> notes;
+            public List<Note> notes;
         }
     }
 }

@@ -25,6 +25,7 @@ using System.Windows.Interop;
 using Reminders;
 using TwitchTester;
 using Notifications;
+using Weamy.Notes;
 
 namespace UIPrototype
 {
@@ -193,6 +194,8 @@ namespace UIPrototype
             twitchTimer.Elapsed += checkLiveChannels;
             twitchTimer.Enabled = true;
 
+            ((App)Application.Current).notes = new NoteList();
+            ((App)Application.Current).notes.loadFromFile("notes.xml");
         }
 
         private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -454,6 +457,11 @@ namespace UIPrototype
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            ((App)Application.Current).notes.saveToFile("notes.xml");
         }
     }
 }

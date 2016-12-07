@@ -7,7 +7,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:note="clr-namespace:WeamyNotifications;assembly=WeamyNotifications"
         mc:Ignorable="d"
-        Title="Weamy" Height="720" Width="1280" ResizeMode="CanMinimize">
+        Title="Weamy" Height="720" Width="1280" ResizeMode="CanMinimize" Closing="Window_Closing">
     <!-- 
     
     APP-WIDE SHARED RESOURCES 
