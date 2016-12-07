@@ -119,9 +119,13 @@
                             <StackPanel Orientation="Vertical" Width="260px" Margin="0">
                                 <TextBlock Text="{Binding title}" Margin="2" FontSize="16px" FontWeight="Bold"/>
                                 <TextBlock Text="{Binding body}" Margin="2" TextWrapping="Wrap" />
-                                <StackPanel Orientation="Horizontal" Width="auto">
-                                    <Button Click="btnNoteEdit_Click">Edit</Button>
-                                    <Button Click="btnNoteDelete_Click">Delete</Button>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,8" Width="auto">
+                                    <Button Click="btnNoteEdit_Click" Background="Transparent" BorderThickness="0" Height="26px" Width="26px">
+                                        <Image Source="icons/edit.png" Height="14px" Width="14px"></Image>
+                                    </Button>
+                                    <Button Click="btnNoteDelete_Click" Background="Transparent" BorderThickness="0" Height="26px" Width="26px">
+                                        <Image Source="icons/delete.png" Height="14px" Width="14px"></Image>
+                                    </Button>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>
