@@ -27,6 +27,7 @@ namespace Weamy
                 notes = new List<Note> { };
             }
 
+            //
             /// <summary>
             /// add note to list
             /// </summary>
@@ -66,7 +67,7 @@ namespace Weamy
                 fileStream.Close();
             }
 
-            public static List<Note> notes;
+            public List<Note> notes;
         }
     }
 }

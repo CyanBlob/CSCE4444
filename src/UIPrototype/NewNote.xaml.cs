@@ -28,7 +28,7 @@ namespace UIPrototype
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            Weamy.Notes.NoteList.notes.Add(new Weamy.Notes.Note("blah", "blippity blah"));
+            //Weamy.Notes.NoteList.notes.Add(new Weamy.Notes.Note("blah", "blippity blah"));
             Close();
         }
     }
