@@ -21,6 +21,7 @@ namespace UIPrototype
     
     public partial class NewNote : Window
     {
+        public int noteIndex = -1;
         public NewNote()
         {
             InitializeComponent();
@@ -28,7 +29,15 @@ namespace UIPrototype
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).notes.add(txtTitle.Text, txtBody.Text);
+            if (noteIndex == -1)
+            {
+                ((App)Application.Current).notes.add(txtTitle.Text, txtBody.Text);
+            }
+            else
+            {
+                ((App)Application.Current).notes.notes[noteIndex].title = txtTitle.Text;
+                ((App)Application.Current).notes.notes[noteIndex].body = txtBody.Text;
+            }
             Close();
         }
     }

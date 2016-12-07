@@ -486,6 +486,11 @@ namespace UIPrototype
         {
             var item = (sender as FrameworkElement).DataContext;
             int ind = lstNotes.Items.IndexOf(item);
+            NewNote notewin = new NewNote();
+            notewin.noteIndex = ind;
+            notewin.txtTitle.Text = ((App)Application.Current).notes.notes[ind].title;
+            notewin.txtBody.Text = ((App)Application.Current).notes.notes[ind].body;
+            notewin.Show();
         }
 
         private void btnNoteDelete_Click(object sender, RoutedEventArgs e)
