@@ -22,7 +22,7 @@
         <DockPanel Grid.Column="0" LastChildFill="False" Width="Auto" Height="Auto" Margin="0px" Background="{StaticResource brush_offwhite}" Grid.RowSpan="1">
             <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10px, 0px, 10px, 0px" Target="{Binding ElementName=txtA}">
                 <StackPanel Width="Auto">
-                    <AccessText Text="_subject:" FontSize="12"></AccessText>
+                    <AccessText Text="_title:" FontSize="12"></AccessText>
                 </StackPanel>
             </Label>
             <TextBox DockPanel.Dock="Top" x:Name="txtA" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="Blah" FontFamily="Times New Roman" FontSize="16"/>
