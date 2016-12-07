@@ -168,6 +168,7 @@ namespace UIPrototype
         System.Timers.Timer twitchTimer;
         private int tickTimer = 15;
         private string twitchUsername = "Monatrox";
+        private string YouTubeUsername = "UCT3IDkrEU07il99Vcf15YYw";
         private bool enableTwitchNotifications = false;
         private bool enableYoutubeNotifications = false;
 
@@ -176,6 +177,7 @@ namespace UIPrototype
             this.DataContext = this;
             InitializeComponent();
             txtTwitchUsername.Text = twitchUsername;
+            txtYoutubeUsername.Text = YouTubeUsername;
             cbxTwitchBrowser.SelectedIndex = 0;
             cbxYouTubeBrowser.SelectedIndex = 0;
             string imageFilePath = System.IO.Path.GetTempPath() + "\\Weamy_" + "404_user_50x50.png" + ".jpeg";   // set image path for file
@@ -221,7 +223,7 @@ namespace UIPrototype
             {
                 twitchUsername = "Monatrox";
             }
-            
+
             PagingInfo pagingInfo = new PagingInfo { Page = 1 };
             TwitchList<FollowedChannel> followedChannels = client.GetFollowedChannels(twitchUsername);
             List<Channel> newLiveChannels = new List<Channel>();
@@ -259,13 +261,13 @@ namespace UIPrototype
                     }
                 }
             }
-            
+
             userChannels = new List<WeamyDataBoundObject>();
             userLiveChannels = new ObservableCollection<WeamyDataBoundObject>();
             foreach (Channel c in newLiveChannels)
             {
                 string image = c.Logo ?? "http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png";
-                
+
                 WeamyDataBoundObject newChannel = new WeamyDataBoundObject
                 {
                     title = c.DisplayName,
@@ -286,25 +288,21 @@ namespace UIPrototype
                     twitchTimer.Enabled = true;
                 }
             }));
-            
+
         }
 
         private void updateYouTube(object source, System.Timers.ElapsedEventArgs e)
         {
             //YouTubeVids.Clear();
-            string[,] subs = YouTubeAPICall.GetSubs();
+            string[,] subs = YouTubeAPICall.GetSubs(YouTubeUsername);
             string[,] vids = YouTubeAPICall.GetVids(subs);
-            Debug.WriteLine("-------------------------------------------");
 
             YTVids = new List<WeamyDataBoundObject>();
             youTubeVids = new ObservableCollection<WeamyDataBoundObject>();
             for (int x = 0; x < subs.Length / 2 * 3; x++)
             {
-                //YouTubeContent. += vids[x, 0] + " - " + vids[x, 1] + " - " + vids[x, 2] + "\n";
-                Console.WriteLine(vids[x, 0] + " " + vids[x, 1] + " " + vids[x, 2]);
-            
-                string imageFilePath = "http://img.youtube.com/vi/" + vids[x,2] + "/0.jpg";
-                string URL = "https://www.youtube.com/watch?v=" + vids[x,2];
+                string imageFilePath = "http://img.youtube.com/vi/" + vids[x, 2] + "/0.jpg";
+                string URL = "https://www.youtube.com/watch?v=" + vids[x, 2];
                 WeamyDataBoundObject newVid = new WeamyDataBoundObject
                 {
                     title = vids[x, 0],
@@ -335,7 +333,7 @@ namespace UIPrototype
 
         private void updateGridContent()
         {
-            
+
         }
 
         private static void openInBrowser(string url, CallbackBrowser b = CallbackBrowser.Default)
@@ -369,7 +367,7 @@ namespace UIPrototype
                 openInBrowser(lstContent.SelectedItem.ToString(), (CallbackBrowser)cbxTwitchBrowser.SelectedValue);
                 lstContent.SelectedItem = null;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -390,7 +388,7 @@ namespace UIPrototype
 
         private void btnSettingsClick(object sender, RoutedEventArgs e)
         {
-            if(pnlSettings.Visibility == Visibility.Collapsed)
+            if (pnlSettings.Visibility == Visibility.Collapsed)
             {
                 YouTubeContent.Visibility = Visibility.Collapsed;
                 pnlSettings.Visibility = Visibility.Visible;
@@ -408,6 +406,11 @@ namespace UIPrototype
             {
                 twitchUsername = txtTwitchUsername.Text;
             }
+            if (!string.IsNullOrEmpty(txtYoutubeUsername.Text))
+            {
+                YouTubeUsername = txtYoutubeUsername.Text;
+            }
+
 
             tickTimer = (int)Math.Floor(sldUpdateRate.Value);
         }

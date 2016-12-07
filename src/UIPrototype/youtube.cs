@@ -10,11 +10,11 @@ namespace YouTubeAPI
 {
     public class YouTubeAPICall
     {
-        public static string[,] GetSubs()
+        public static string[,] GetSubs(string userID)
         {
             HttpClient client = new HttpClient();
 
-            string getSubsWithID = "https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=UCT3IDkrEU07il99Vcf15YYw&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE";
+            string getSubsWithID = "https://www.googleapis.com/youtube/v3/subscriptions?part=Snippet%2CcontentDetails&channelId=" + userID + "&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE";
             //string urlParameters = "?part=Snippet%2CcontentDetails&channelId=UCT3IDkrEU07il99Vcf15YYw&key=AIzaSyA-AZ4yYvaOPlGWb70p-V32n2StrmyFPiE";
             WebRequest subsRequest = WebRequest.Create(getSubsWithID);
             subsRequest.ContentType = "application/json; charset=utf-8";
