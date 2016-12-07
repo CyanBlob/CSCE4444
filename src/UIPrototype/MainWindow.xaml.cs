@@ -450,5 +450,10 @@ namespace UIPrototype
         {
 
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            ((App)Application.Current).notes.saveToFile("notes.xml");
+        }
     }
 }
