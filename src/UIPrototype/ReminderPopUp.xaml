@@ -48,7 +48,8 @@
 
         <Label 
             Name="Hours"
-            Content="Hour (24hr)"
+            Content="Time (24hr)"
+            VerticalAlignment="Center"
             Grid.Column="0"
             Grid.Row="4" />
         <TextBox 
@@ -58,29 +59,19 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             AcceptsReturn="True"
-            Width="100"
+            Width="25"
             Grid.Column="1"
-            Grid.Row="4"/>
-        <Label 
-            Name="Minutes"
-            Content="Minute"
-            Grid.Column="0"
-            Grid.Row="5" />
+            Grid.Row="4" Margin="99,23,379.333,18" TextChanged="HoursText_TextChanged"/>
         <TextBox 
             Name="MinutesText"
             Text="0"
             InputScope="Number"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
             AcceptsReturn="True"
-            Width="100"
+            Width="25"
+            Height="17.96"
             Grid.Column="1"
-            Grid.Row="5"/>
-        <Label 
-            Name="Seconds"
-            Content="Second"
-            Grid.Column="0"
-            Grid.Row="6" />
+            Grid.Row="4" Margin="159,23,379.333,18" VerticalAlignment="Center"/>
         <TextBox 
             Name="SecondsText"
             Text="0"
@@ -88,9 +79,9 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             AcceptsReturn="True"
-            Width="100"
+            Width="25"
             Grid.Column="1"
-            Grid.Row="6"/>
+            Grid.Row="4" Margin="189.333,23.667,349,18.333" TextChanged="SecondsText_TextChanged"/>
 
         <Button x:Name="ScheduleButton" Content="Schedule Reminder"
                 HorizontalAlignment="Center"
