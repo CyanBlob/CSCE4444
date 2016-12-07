@@ -93,12 +93,15 @@ namespace UIPrototype
             if (reminderPopUpResult == true)
             {
                 DateTime today = DateTime.Now;
-                string dateTime = today.Month + "/" + today.Day + "/" + today.Year + " " +
-                    reminderPopUp.HoursText.GetLineText(0) + ":" + reminderPopUp.MinutesText.GetLineText(0) + ":" + reminderPopUp.SecondsText.GetLineText(0) + ".00";
+                //string dateTime = today.Month + "/" + today.Day + "/" + today.Year + " " +
+                    //today.Hour + reminderPopUp.HoursText.GetLineText(0) + ":" + today.Minute + reminderPopUp.MinutesText.GetLineText(0) + ":" + today.Second + reminderPopUp.SecondsText.GetLineText(0) + ".00";
+                double hours = Double.Parse(reminderPopUp.HoursText.GetLineText(0));
+                double minutes = Double.Parse(reminderPopUp.MinutesText.GetLineText(0));
+                double seconds = Double.Parse(reminderPopUp.SecondsText.GetLineText(0));
+                DateTime reminderDate = DateTime.Now.AddHours(hours).AddMinutes(minutes).AddSeconds(seconds);
+                //Console.WriteLine(dateTime);
 
-                Console.WriteLine(dateTime);
-
-                DateTime reminderDate = Convert.ToDateTime(dateTime);
+                //DateTime reminderDate = Convert.ToDateTime(dateTime);
 
                 /*double seconds = (
                     Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
@@ -106,12 +109,12 @@ namespace UIPrototype
                     Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));*/
 
                 string reminderText = "";
-                int i;
+                reminderText = reminderPopUp.NotificationText.Text;
 
-                for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
-                {
-                    reminderText += reminderPopUp.NotificationText.GetLineText(i);
-                }
+                //for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
+                //{
+                //    reminderText += reminderPopUp.NotificationText.GetLineText(i);
+                //}
 
                 //new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
                 new Reminder(reminderDate, reminderText);
@@ -202,6 +205,7 @@ namespace UIPrototype
 
             ((App)Application.Current).notes = new NoteList();
             ((App)Application.Current).notes.loadFromFile("notes.xml");
+            lstNotes.ItemsSource = ((App)Application.Current).notes.notes;
         }
 
         private void combi_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -409,13 +413,13 @@ namespace UIPrototype
         {
             if (pnlSettings.Visibility == Visibility.Collapsed)
             {
-                YouTubeContent.Visibility = Visibility.Collapsed;
+                pnlMainFeed.Visibility = Visibility.Collapsed;
                 pnlSettings.Visibility = Visibility.Visible;
             }
             else
             {
                 pnlSettings.Visibility = Visibility.Collapsed;
-                YouTubeContent.Visibility = Visibility.Visible;
+                pnlMainFeed.Visibility = Visibility.Visible;
             }
         }
 
@@ -486,5 +490,25 @@ namespace UIPrototype
         {
             ((App)Application.Current).notes.saveToFile("notes.xml");
         }
+
+
+        private void btnNoteEdit_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as FrameworkElement).DataContext;
+            int ind = lstNotes.Items.IndexOf(item);
+            NewNote notewin = new NewNote();
+            notewin.noteIndex = ind;
+            notewin.txtTitle.Text = ((App)Application.Current).notes.notes[ind].title;
+            notewin.txtBody.Text = ((App)Application.Current).notes.notes[ind].body;
+            notewin.Show();
+        }
+
+        private void btnNoteDelete_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as FrameworkElement).DataContext;
+            int ind = lstNotes.Items.IndexOf(item);
+            ((App)Application.Current).notes.notes.RemoveAt(ind);
+        }
+
     }
 }

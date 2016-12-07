@@ -32,3 +32,9 @@ C:\Users\Michael\Documents\GitHub\CSCE4444\src\WeamyNotifications\WeamyNotificat
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.csprojResolveAssemblyReference.cache
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.dll
 C:\Users\Michael\Documents\GitHub\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.pdb
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.dll
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\WeamyNotifications.pdb
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\bin\Debug\Windows.xml
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.csprojResolveAssemblyReference.cache
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.dll
+D:\OneDrive\School\CSCE 4444 Software Engineering\Project\GitHubRepo\CSCE4444\src\WeamyNotifications\WeamyNotifications\obj\Debug\WeamyNotifications.pdb
