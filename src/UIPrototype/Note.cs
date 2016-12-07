@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.ComponentModel;
 
-    namespace Weamy
+namespace Weamy
     {
         namespace Notes
         {
             /// <summary>
             ///  Class represents a single note (from various possible sources, or no sources...created in-app)
             /// </summary>
-            public class Note
+            public class Note: INotifyPropertyChanged
             {
                 
                 private string _title;
@@ -34,9 +35,17 @@ using System.Windows;
                 {
                     _body = body;
                     _title = title;
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            private void onPropertyChanged(object sender, string propertyName)
+            {
+                if (this.PropertyChanged != null)
+                {
+                    PropertyChanged(sender, new PropertyChangedEventArgs(propertyName));
                 }
-
-
+            }
 
             /// <summary>
             /// Get/Setter for private member _body
@@ -51,6 +60,7 @@ using System.Windows;
                 set
                 {
                     this._body = value;
+                    onPropertyChanged(this, "Body");
                 }
             }
 
@@ -67,6 +77,7 @@ using System.Windows;
                 set
                 {
                     this._title = value;
+                    onPropertyChanged(this, "Title");
                 }
             }
 

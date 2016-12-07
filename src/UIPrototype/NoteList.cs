@@ -22,6 +22,8 @@ namespace Weamy
         [Serializable]
         public class NoteList
         {
+
+            public ObservableCollection<Note> notes;
             /// <summary>
             /// Default Constructor initializes an empty list
             /// </summary>
@@ -79,8 +81,6 @@ namespace Weamy
                 cereal.Serialize(fileStream, notes);
                 fileStream.Close();
             }
-            public List<Note> notesDeCereal;
-            public ObservableCollection<Note> notes;
         }
     }
 }
