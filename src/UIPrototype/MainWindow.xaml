@@ -43,6 +43,9 @@
             <Button DockPanel.Dock="Top" Click="btnNote_Click" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
                 <Image Width="26" Height="26" Source="./icons/create_new.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Create a Note"></Image>
             </Button>
+            <Button DockPanel.Dock="Top" Click="createReminder"  Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Image Width="26" Height="26" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Set a reminder"></Image>
+            </Button>
             <Button Click="btnSettingsClick" DockPanel.Dock="Bottom" Width="52px" Height="52px" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,0,0,0">
                 <Image Width="26" Height="26" Source="./icons/gear.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="Settings"></Image>
             </Button>

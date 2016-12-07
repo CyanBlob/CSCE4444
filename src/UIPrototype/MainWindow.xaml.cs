@@ -72,32 +72,7 @@ namespace UIPrototype
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
                             if (vkey == KeyCodes.T)
                             {
-                                bool reminderPopUpResult;
-                                ReminderPopUp reminderPopUp = new ReminderPopUp();
-                                reminderPopUpResult = (bool)reminderPopUp.ShowDialog();
-
-                                if (reminderPopUpResult == true)
-                                {
-
-                                    double seconds = (
-                                        Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
-                                        Double.Parse(reminderPopUp.MinutesText.GetLineText(0)) * 60 +
-                                        Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));
-
-                                    string reminderText = "";
-                                    int i;
-
-                                    for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
-                                    {
-                                        reminderText += reminderPopUp.NotificationText.GetLineText(i);
-                                    }
-
-                                    new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
-                                    //tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
-
-                                    //tblock.Text += reminderPopUp.NotificationText.GetLineText(0);
-                                }
-
+                                createReminder(null, null);
                             }
 
                             handled = true;
@@ -106,6 +81,35 @@ namespace UIPrototype
                     break;
             }
             return IntPtr.Zero;
+        }
+
+        private void createReminder(object sender, RoutedEventArgs e)
+        {
+            bool reminderPopUpResult;
+            ReminderPopUp reminderPopUp = new ReminderPopUp();
+            reminderPopUpResult = (bool)reminderPopUp.ShowDialog();
+
+            if (reminderPopUpResult == true)
+            {
+
+                double seconds = (
+                    Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
+                    Double.Parse(reminderPopUp.MinutesText.GetLineText(0)) * 60 +
+                    Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));
+
+                string reminderText = "";
+                int i;
+
+                for (i = 0; i < reminderPopUp.NotificationText.LineCount; i++)
+                {
+                    reminderText += reminderPopUp.NotificationText.GetLineText(i);
+                }
+
+                new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
+                //tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
+
+                //tblock.Text += reminderPopUp.NotificationText.GetLineText(0);
+            }
         }
 
         protected override void OnClosed(EventArgs e)
@@ -437,6 +441,11 @@ namespace UIPrototype
         {
             NewNote notewin = new NewNote();
             notewin.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
