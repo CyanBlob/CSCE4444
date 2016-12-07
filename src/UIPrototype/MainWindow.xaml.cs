@@ -91,11 +91,18 @@ namespace UIPrototype
 
             if (reminderPopUpResult == true)
             {
+                DateTime today = DateTime.Now;
+                string dateTime = today.Month + "/" + today.Day + "/" + today.Year + " " +
+                    reminderPopUp.HoursText.GetLineText(0) + ":" + reminderPopUp.MinutesText.GetLineText(0) + ":" + reminderPopUp.SecondsText.GetLineText(0) + ".00";
 
-                double seconds = (
+                Console.WriteLine(dateTime);
+
+                DateTime reminderDate = Convert.ToDateTime(dateTime);
+
+                /*double seconds = (
                     Double.Parse(reminderPopUp.HoursText.GetLineText(0)) * 3600 +
                     Double.Parse(reminderPopUp.MinutesText.GetLineText(0)) * 60 +
-                    Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));
+                    Double.Parse(reminderPopUp.SecondsText.GetLineText(0)));*/
 
                 string reminderText = "";
                 int i;
@@ -105,7 +112,8 @@ namespace UIPrototype
                     reminderText += reminderPopUp.NotificationText.GetLineText(i);
                 }
 
-                new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
+                //new Reminder(DateTime.Now.AddSeconds(seconds), reminderText);
+                new Reminder(reminderDate, reminderText);
                 //tblock.Text += "Notification set for: " + DateTime.Now.AddSeconds(seconds) + Environment.NewLine;
 
                 //tblock.Text += reminderPopUp.NotificationText.GetLineText(0);

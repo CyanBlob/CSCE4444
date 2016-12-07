@@ -48,7 +48,7 @@
 
         <Label 
             Name="Hours"
-            Content="Hours"
+            Content="Hour (24hr)"
             Grid.Column="0"
             Grid.Row="4" />
         <TextBox 
@@ -63,7 +63,7 @@
             Grid.Row="4"/>
         <Label 
             Name="Minutes"
-            Content="Minutes"
+            Content="Minute"
             Grid.Column="0"
             Grid.Row="5" />
         <TextBox 
@@ -78,7 +78,7 @@
             Grid.Row="5"/>
         <Label 
             Name="Seconds"
-            Content="Seconds"
+            Content="Second"
             Grid.Column="0"
             Grid.Row="6" />
         <TextBox 
