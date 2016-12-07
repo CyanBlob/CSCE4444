@@ -25,16 +25,13 @@
                     <AccessText Text="_title:" FontSize="12"></AccessText>
                 </StackPanel>
             </Label>
-            <TextBox DockPanel.Dock="Top" x:Name="txtA" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="Blah" FontFamily="Times New Roman" FontSize="16"/>
+            <TextBox DockPanel.Dock="Top" x:Name="txtTitle" Height="23" Margin="10,0,9.6,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" Text="" FontFamily="Times New Roman" FontSize="16"/>
             <Label DockPanel.Dock="Top" FontSize="18px" FontWeight="ExtraBlack" Margin="10,2,10,2" Target="{Binding ElementName=txtB}">
                 <StackPanel Width="Auto">
                     <AccessText  Text="_message:" FontSize="12"></AccessText>
                 </StackPanel>
             </Label>
-            <TextBox DockPanel.Dock="Top" x:Name="txtMsg" Height="290px" AutoWordSelection="False" SpellCheck.IsEnabled="True" Language="en-US" AcceptsReturn="True" AcceptsTab="True" Margin="10,0,10,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" FontFamily="Times New Roman" FontSize="16">
-                Blah
-                Blip
-            </TextBox>
+            <TextBox DockPanel.Dock="Top" x:Name="txtBody" Height="290px" AutoWordSelection="False" SpellCheck.IsEnabled="True" Language="en-US" AcceptsReturn="True" AcceptsTab="True" Margin="10,0,10,0" HorizontalAlignment="Stretch" BorderBrush="#FF6487F1" BorderThickness="2" FontFamily="Times New Roman" FontSize="16"></TextBox>
             <StatusBar DockPanel.Dock="Top" Height="30px" Margin="10px">
                 <StatusBar.ItemsPanel>
                     <ItemsPanelTemplate>

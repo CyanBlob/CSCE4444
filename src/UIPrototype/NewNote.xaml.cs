@@ -28,7 +28,7 @@ namespace UIPrototype
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).notes.add(txtA.Text, txtMsg.Text);
+            ((App)Application.Current).notes.add(txtTitle.Text, txtBody.Text);
             Close();
         }
     }
