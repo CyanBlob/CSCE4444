@@ -92,7 +92,7 @@
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="YouTube Channel ID:" FontWeight="Bold" FontSize="18" Width="200"/>
                     <TextBox x:Name="txtYoutubeUsername" Width="470" FontSize="16" Height="30" VerticalContentAlignment="Center"/>
-                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your channel's user ID and channel ID, sign in to YouTube and check your advanced account settings page."></Image>
+                    <Image Width="32" Height="32" Source="./icons/help.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" ToolTip="To find your YouTube Channel ID, sign in to YouTube and check your advanced account settings page."></Image>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
                     <Label Content="Twitch Notifications:" FontWeight="Bold" FontSize="18" Width="200"/>
