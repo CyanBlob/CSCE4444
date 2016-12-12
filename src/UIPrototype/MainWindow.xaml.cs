@@ -57,8 +57,10 @@ namespace UIPrototype
 
             // for now, just register addition hotkeys here
             // be sure to add a statement for each hotkey in HwndHook ( if (vkey == KeyCodes.x) {...} )
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.R); //CTRL + ALT + S
             RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.S); //CTRL + ALT + S
             RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.T); //CTRL + ALT + T
+            RegisterHotKey(_windowHandle, HOTKEY_ID, KeyCodes.CONTROL + KeyCodes.ALT, KeyCodes.N); //CTRL + ALT + N
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -71,10 +73,14 @@ namespace UIPrototype
                     {
                         case HOTKEY_ID:
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
-                            if (vkey == KeyCodes.T)
+                            if (vkey == KeyCodes.T || vkey == KeyCodes.S || vkey == KeyCodes.R)
                             {
                                 createReminder(null, null);
                             }
+                            else if(vkey == KeyCodes.N)
+                            {
+                                btnNote_Click(null, null);
+                            }            
 
                             handled = true;
                             break;
